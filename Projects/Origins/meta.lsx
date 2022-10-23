@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" time="1481120048" />
+    <version major="3" minor="1" revision="1" build="3" />
+    <region id="MetaData">
+        <node id="root">
+        	<attribute id="Name" value="Origins" type="23" />
+            <attribute id="Module" value="1301db3d-1f54-4e98-9be5-5094030916e4" type="23" />
+            <attribute id="Type" value="Adventure" type="23" />
+            <attribute id="UUID" value="826f6410-37f5-4464-a46b-19fea759836d" type="23" />
+        </node>
+    </region>
+</save>

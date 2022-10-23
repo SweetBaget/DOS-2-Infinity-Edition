@@ -1,0 +1,139 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "SkillChest_Umbra"
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_Shadowstep",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralCloak",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralExpertise",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralLeech",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralBlood",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_AbolishResistance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_KnifeHuman",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_BladeFlurry",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_VeiledAssault",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_BouncingBlade",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_SwiftStrikes",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_NerveSlash",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_Cutthroat",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_SmokeBomb",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_Daggerfall",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_BladeDance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_Resourcefulness",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_ChallengeOfTheBlade",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_MasterOfOrder",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_PreemptiveTactics",1,0,0,0,0,0,0,0
+new treasuretable "ST_OdinUMBRA_NewSpells"
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_Shadowstep",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "16"
+object category "I_SKILLBOOK_Odinblade_Shade_AbolishResistance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "4"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralCloak",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "16"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralExpertise",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "13"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralLeech",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "9"
+object category "I_SKILLBOOK_Odinblade_Shade_UmbralBlood",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_KnifeHuman",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_BladeFlurry",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "I_SKILLBOOK_Odinblade_Shade_VeiledAssault",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "4"
+object category "I_SKILLBOOK_Odinblade_Shade_BouncingBlade",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "13"
+object category "I_SKILLBOOK_Odinblade_Shade_SwiftStrikes",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "4"
+object category "I_SKILLBOOK_Odinblade_Shade_NerveSlash",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "9"
+object category "I_SKILLBOOK_Odinblade_Shade_Cutthroat",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "4"
+object category "I_SKILLBOOK_Odinblade_Shade_SmokeBomb",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "9"
+object category "I_SKILLBOOK_Odinblade_Shade_Daggerfall",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "13"
+object category "I_SKILLBOOK_Odinblade_Shade_BladeDance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "13"
+object category "I_SKILLBOOK_Odinblade_Shade_Resourcefulness",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "16"
+object category "I_SKILLBOOK_Odinblade_Shade_ChallengeOfTheBlade",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "16"
+object category "I_SKILLBOOK_Odinblade_Shade_MasterOfOrder",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "9"
+object category "I_SKILLBOOK_Odinblade_Shade_PreemptiveTactics",1,0,0,0,0,0,0,0
+new treasuretable "SkillVendor_Umbra"
+new subtable "1,1"
+StartLevel "1"
+object category "T_ST_OdinUMBRA_NewSpells",1,0,0,0,0,0,0,0
+new subtable "1,1"
+StartLevel "9"
+object category "Dagger",4,0,0,0,1,0,0,0
+new subtable "1,1"
+StartLevel "9"
+object category "Dagger",4,0,0,1,0,0,0,0
+new subtable "1,1"
+StartLevel "4"
+object category "Dagger",4,0,1,0,0,0,0,0
+new subtable "1,1"
+StartLevel "1"
+object category "Dagger",4,1,0,0,0,0,0,0

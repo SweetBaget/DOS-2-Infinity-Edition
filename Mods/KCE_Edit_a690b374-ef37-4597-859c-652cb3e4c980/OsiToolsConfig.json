@@ -1,0 +1,10 @@
+{
+    "RequiredExtensionVersion": 55,
+    "ModTable": "KCE_Edit",
+    "FeatureFlags": [
+        "OsirisExtensions",
+        "Lua",
+        "Preprocessor",
+        "FormulaOverrides"
+    ]
+}

@@ -1,0 +1,23 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Populate crafting books database ==============================
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Arrows_A_000_c7a96636-a86e-4f21-8b8b-b3ee234d8422);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Barrels_A_000_8333d48c-a81c-4587-ab14-6287ab521b56);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Crafting_Tool_A_000_7417e6cf-92b7-4d14-af0a-577f11a98ffd);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grenades_A_001_34267044-9e38-42cd-97a6-fdc71a70b457);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grimoire_A_000_9fad9124-ee8d-41ae-9899-f33c5907af1c);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Potions_A_000_20ccc0dd-8260-4456-b7bb-bbefe1f8da70);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Traps_A_000_1e99a445-52e6-43af-8bf5-47019df71db4);
+DB_RC_CraftingBooks(ITEMGUID_CMP_CO_RCP_Weapon_Boost_A_000_afd7400b-22ab-42e5-8ae5-f77ceb513351);
+KBSECTION
+// Clear book ownership ==========================================
+IF
+	RegionStarted(_)
+	AND DB_RC_CraftingBooks(_Book)
+THEN
+	ItemClearOwner((ITEMGUID)_Book);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "ReapersCoast"

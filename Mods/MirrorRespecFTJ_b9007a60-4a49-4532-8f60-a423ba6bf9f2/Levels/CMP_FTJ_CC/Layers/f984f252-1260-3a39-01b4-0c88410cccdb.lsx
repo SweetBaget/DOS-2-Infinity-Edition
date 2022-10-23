@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="3" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="ID" value="f984f252-1260-3a39-01b4-0c88410cccdb" type="31" />
+            <attribute id="LayerColor" value="0" type="4" />
+            <attribute id="Name" value="ICON_EF_2" type="23" />
+        </node>
+    </region>
+</save>

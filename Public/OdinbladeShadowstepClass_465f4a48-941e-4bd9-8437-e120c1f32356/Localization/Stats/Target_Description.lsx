@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Strike your prey 3 times, each dealing [1]. &lt;br&gt;&lt;br&gt;Each hit has a chance to apply &lt;font color='#c80030'&gt;Bleeding&lt;/font&gt;, or &lt;font color='#c80030'&gt;Atrophy&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Deals &lt;font color='#40b606'&gt;+25% damage&lt;/font&gt; if used from &lt;font color='#639594'&gt;stealth&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Tumultuous Attack&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h67bdde71gd183g47d8gb7c4gc0080f95b132" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADESwiftStrikes_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Strike your prey 3 times, each dealing [1]. &lt;br&gt;&lt;br&gt;Each hit has a chance to apply &lt;font color='#c80030'&gt;Bleeding&lt;/font&gt;, or &lt;font color='#c80030'&gt;Atrophy&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Deals &lt;font color='#40b606'&gt;+25% damage&lt;/font&gt; if used from &lt;font color='#639594'&gt;stealth&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Tumultuous Attack&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="had129a3ag138eg4f60g9a81gbcf692667a8a" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADESwiftStrikesDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Strike your prey 3 times, each dealing [1]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Each hit has a chance to apply &lt;font color=&quot;#7d71d9&quot;&gt;Stunned&lt;/font&gt;, &lt;font color='#65C900'&gt;Poisoned&lt;/font&gt;, or &lt;font color='#c80030'&gt;Fading&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Deals &lt;font color='#40b606'&gt;+25% damage&lt;/font&gt; if used from &lt;font color='#639594'&gt;stealth&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Swift Strikes&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hfff556cdg7043g4cc5g9d10gcdef18867153" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADETumultuousStrike_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Slice the target, dealing [1]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; and setting &lt;font color=&quot;#cfecff&quot;&gt;Silenced&lt;/font&gt;, preventing spells from being cast. &lt;br&gt;&lt;br&gt;Sets &lt;font color=&quot;#c80030&quot;&gt;Fading&lt;/font&gt;, dealing [2]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; each turn. &lt;br&gt;&lt;br&gt;Deals &lt;font color='#40b606'&gt;+25% damage&lt;/font&gt; if used from &lt;font color='#639594'&gt;stealth&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Spite the Vein&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; version of this skill which sets Atrophy.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h58c41bffgb843g490ega839gd3ef9819a5ba" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADESpiteVein_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Slash the target, dealing [1] and setting &lt;font color='#c80030'&gt;Atrophy&lt;/font&gt;, preventing attacks and attack spells. &lt;br&gt;&lt;br&gt;Sets &lt;font color='#c80030'&gt;Bleeding&lt;/font&gt;, dealing [2] each turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Cutthroat&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill which sets Silenced.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hd2858c92gbd87g450agaefcga20474a556e9" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADECutthroat_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Slash the target, dealing [1] and setting &lt;font color='#c80030'&gt;Atrophy&lt;/font&gt;, preventing attacks and attack spells. &lt;br&gt;&lt;br&gt;Sets &lt;font color='#c80030'&gt;Bleeding&lt;/font&gt;, dealing [2] each turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Cutthroat&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill which sets Silenced.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h5c9d7b1fgc2bfg4b0dgaac3gcc60662bc568" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADECutthroatDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Identify a target, marking them for death. &lt;br&gt;&lt;br&gt;If the target is eliminated, you gain &lt;font color='#40b606'&gt;1AP&lt;/font&gt;, &lt;font color='#40b606'&gt;[1]% Damage&lt;/font&gt;, &lt;font color='#a8a8a8'&gt;[2]% Physical Resistance&lt;/font&gt;, [3], and [4] for 1 turn. &lt;br&gt;&lt;br&gt;Should the target survive, they will gain these bonuses instead, and you take [5]. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Challenge of the Shade&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hc3dfe7a9g5678g4fe3gb748gd7070687f526" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEChallengeBlade_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Identify a target, marking them for death. &lt;br&gt;&lt;br&gt;If the target is eliminated, you gain &lt;font color='#40b606'&gt;1AP&lt;/font&gt;, &lt;font color='#40b606'&gt;[1]% Damage&lt;/font&gt;, &lt;font color='#c80030'&gt;[2]% Elemental Resistance&lt;/font&gt;, [3], and [4] for 1 turn. &lt;br&gt;&lt;br&gt;Should the target survive, they will gain these bonuses instead, and you take [5]. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Challenge of the Blade&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h872b3738gee33g4107ga4f3g6b9971bfffc0" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEChallengeShade_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Identify a target, marking them for death. &lt;br&gt;&lt;br&gt;If the target is eliminated, you gain &lt;font color='#40b606'&gt;1AP&lt;/font&gt;, &lt;font color='#40b606'&gt;[1]% Damage&lt;/font&gt;, &lt;font color='#a8a8a8'&gt;[2]% Physical Resistance&lt;/font&gt;, [3], and [4] for 1 turn. &lt;br&gt;&lt;br&gt;Should the target survive, they will gain these bonuses instead, and you take [5]. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Challenge of the Shade&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hb6e5fc98g5912g46d9g8c85gb6a4c7ef19fa" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEChallengeBladeDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Deal [1] to the target and restore &lt;font color=&quot;#97fbff&quot;&gt;Vitality&lt;/font&gt; equal to the damage dealt this way. &lt;br&gt;&lt;br&gt;Applies &lt;font color='#ff8a00'&gt;Exposed&lt;/font&gt;, reducing &lt;font color='#a8a8a8'&gt;Physical Resistance by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;br&gt;&lt;br&gt;Deals &lt;font color='#40b606'&gt;+25% damage&lt;/font&gt; if used from &lt;font color='#639594'&gt;stealth&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Abolish Resistance&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; skill which shreds elemental resistances.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hdbdd8e4dg3bd0g4d6fgbb2eg069e0e845f13" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEDrainingSlash_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Deal [1] to the target and restore &lt;font color=&quot;#97fbff&quot;&gt;Vitality&lt;/font&gt; equal to the damage dealt this way. &lt;br&gt;&lt;br&gt;Applies &lt;font color='#ff8a00'&gt;Exposed&lt;/font&gt;, reducing &lt;font color='#a8a8a8'&gt;Physical Resistance by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;br&gt;&lt;br&gt;Deals &lt;font color='#40b606'&gt;+25% damage&lt;/font&gt; if used from &lt;font color='#639594'&gt;stealth&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Abolish Resistance&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; skill which shreds elemental resistances.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="he2500471g10bdg4365gbefeg05ad2c62e7aa" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEDrainingSlashDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Deal [1]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; to the target and set &lt;font color='#B823CB'&gt;Nullified Resistance&lt;/font&gt;, reducing all &lt;font color='#c80030'&gt;Elemental Resistances by 50%&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Applies &lt;font color='#c80030'&gt;Peril&lt;/font&gt;, reducing &lt;font color='#c80030'&gt;Elemental Resistances by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Draining Slash&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which drains life based on damage dealt.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h9d3feef7gebdag4fd5gb7e3g9b26971c0396" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEAbolishResistance_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Attack with your daggers, dealing [1] &lt;font color='#c80030'&gt;chaos damage&lt;/font&gt;." type="28" handle="hf414f47fgbb36g49bfg9e48g46a9472439e7" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Target_SHADEChaosAttack_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

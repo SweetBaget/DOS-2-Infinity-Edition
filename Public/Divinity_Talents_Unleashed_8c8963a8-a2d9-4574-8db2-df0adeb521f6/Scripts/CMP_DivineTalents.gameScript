@@ -1,0 +1,31 @@
+EVENTS
+EVENT CharacterUsedSkill
+VARS
+	SKILL:_Skill
+	CHARACTER:_Character
+ON
+	OnSkillCast(_Character, _Skill)
+ACTIONS
+	IF "c1&c2"
+		IsSourceSkill(_Skill)
+		IsInCombat(_Character)
+	THEN
+		IterateCharactersNear(_Character, 20.0, "GreedyVesselCheck")
+	ENDIF
+
+EVENT GreedyVessel
+VARS
+	CHARACTER:_Character
+	INT:_Rand
+ON
+	OnIterateCharacter(_Character, "GreedyVesselCheck")
+ACTIONS
+	GetRandomBetween(_Rand, 0, 100)
+	IF "c1&c2&!c3"
+		IsLessThen(_Rand, 25)
+		CharacterHasTalent(_Character, "GreedyVessel")
+		CharacterIsDead(_Character)
+	THEN
+		CharacterAddSourcePoints(_Character, 1)
+		PlayEffectAt(_Character, "RS3_FX_GP_Status_SourceInfused_Hit_01")
+	ENDIF

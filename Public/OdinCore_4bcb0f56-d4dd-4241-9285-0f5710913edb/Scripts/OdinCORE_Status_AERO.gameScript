@@ -1,0 +1,84 @@
+INIT
+CHARACTER:%ConductiveChar
+FIXEDSTRING:%ZapTimer = "OdinAERO_ZAP_TIMER"
+
+EVENTS
+//STATUS -> CONDUCTIVE
+EVENT OdinAero_Status_Conductive
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinAERO_PROC_CONDUCTIVE)
+ACTIONS
+IF "c1&c2"
+	CharacterHasStatus(_Character, OdinAERO_CONDUCTIVE)
+	CharacterGetStatusSourceCharacter(_Character, OdinAERO_CONDUCTIVE, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinAERO_PROC_CONDUCTIVE_DAMAGE, 1, 1, _Source)
+ENDIF
+
+//STATUS -> CONDUCTIVE_LOW
+EVENT OdinAero_Status_Conductive_Low
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinAERO_PROC_CONDUCTIVE_LOW)
+ACTIONS
+IF "c1&c2"
+	CharacterHasStatus(_Character, OdinAERO_CONDUCTIVE)
+	CharacterGetStatusSourceCharacter(_Character, OdinAERO_CONDUCTIVE, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinAERO_PROC_CONDUCTIVE_LOW_DAMAGE, 1, 1, _Source)
+ENDIF
+
+//STATUS -> CONDUCTIVE_DAZE
+EVENT OdinAero_Status_Conductive_Daze
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinAERO_PROC_CONDUCTIVE_DAZE)
+ACTIONS
+IF "c1&c2"
+	CharacterHasStatus(_Character, OdinAERO_CONDUCTIVE)
+	CharacterGetStatusSourceCharacter(_Character, OdinAERO_CONDUCTIVE, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinAERO_PROC_CONDUCTIVE_DAZE_DAMAGE, 1, 1, _Source)
+ENDIF
+
+//STATUS -> RANDOM_CLOUD
+EVENT OdinAero_Status_RandomCloud
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+SURFACE:_Cloud
+FLOAT3:_Pos
+
+ON
+	OnCharacterStatusApplied(_Character, OdinAERO_PROC_RANDOMCLOUD)
+ACTIONS
+IF "c1"
+	CharacterGetStatusSourceCharacter(_Character, OdinAERO_PROC_RANDOMCLOUD, _Source)
+THEN
+IF "c1"
+	CharacterHasStatus(_Character, BLEEDING)
+THEN
+	CreateSurfaceAt(_Character, SurfaceBloodCloudElectrified, 2, 2, _Source)
+ELIF "c1"
+	CharacterHasStatus(_Character, POISONED)
+THEN
+	CreateSurfaceAt(_Character, SurfacePoisonCloud, 2, 2, _Source)
+ELIF "c1|c2"
+	CharacterHasStatus(_Character, SHOCKED)
+	CharacterHasStatus(_Character, STUNNED)
+THEN
+	CreateSurfaceAt(_Character, SurfaceWaterCloudElectrified, 2, 2, _Source)
+ELSE
+	CreateSurfaceAt(_Character, SurfaceSmokeCloud, 2, 2, _Source)
+ENDIF
+ENDIF

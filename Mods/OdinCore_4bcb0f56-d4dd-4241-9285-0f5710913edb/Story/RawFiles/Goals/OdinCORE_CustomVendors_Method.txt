@@ -1,0 +1,75 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// DB_OBCORE_CustomVendor((GUIDSTRING)_Vendor, (STRING)_Dialog);
+DB_OBCORE_CustomVendor(OdinCORE_OdinNPC_000_4c4ff654-a924-4d8f-bbaf-c5a12d2e1d7e, "OdinCORE_CustomVendor_Test"); //TestRoom
+DB_OBCORE_GameRegion("FJ_FortJoy_Main"); //Fort Joy
+DB_OBCORE_GameRegion("RC_Main"); //Reapers Coast
+DB_OBCORE_GameRegion("CoS_Main"); //Nameless Isle
+DB_OBCORE_GameRegion("ARX_Main"); //Arx
+
+KBSECTION
+//REGION OBCORE_CUSTOMVENDORS_FLAGS
+//Sets CustomVendors to be ON for new saves.
+IF
+GameStarted(_, _)
+AND
+GlobalGetFlag("OdinCORE_CustomVendors_Aware", 0)
+THEN
+GlobalSetFlag("OdinCORE_CustomVendors_Setting");
+
+// Sets CustomVendors to be ON if the user hasn't chosen already on an existing save.
+IF
+SavegameLoaded(_, _, _, _)
+AND
+GlobalGetFlag("OdinCORE_CustomVendors_Aware", 0)
+THEN
+GlobalSetFlag("OdinCORE_CustomVendors_Setting");
+
+// Hides CustomVendors on newly-enabled mods if vendors have already been set to OFF.
+IF
+SavegameLoaded(_, _, _, _)
+AND
+GlobalGetFlag("OdinCORE_CustomVendors_Setting", 0)
+AND
+DB_OBCORE_CustomVendor(_Vendor, _Dialog)
+THEN
+SetOnStage(_Vendor, 0);
+//END_REGION
+
+//REGION OBCORE_CUSTOMVENDORS_LOGIC
+//Interrupt current dialog with and hide the vendor.
+IF
+GlobalFlagCleared("OdinCORE_CustomVendors_Setting")
+AND
+DB_OBCORE_CustomVendor(_Vendor, _Dialog)
+AND
+GetPosition(_Vendor, _X, _Y, _Z)
+THEN
+PlayEffectAtPosition("OdinCORE_NPC_Disappear_02", _X, _Y, _Z);
+DialogRequestStopForDialog(_Dialog, (CHARACTERGUID)_Vendor);
+SetOnStage(_Vendor, 0);
+
+//Show the vendor.
+IF
+GlobalFlagSet("OdinCORE_CustomVendors_Setting")
+AND
+DB_OBCORE_CustomVendor(_Vendor, _Dialog)
+THEN
+SetOnStage(_Vendor, 1);
+
+//When changing between acts with vendors turned off, hide the vendors.
+IF
+RegionStarted(_Region)
+AND
+DB_OBCORE_GameRegion(_Region)
+AND
+GlobalGetFlag("OdinCORE_CustomVendors_Setting", 0)
+AND
+DB_OBCORE_CustomVendor(_Vendor, _Dialog)
+THEN
+SetOnStage(_Vendor, 0);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

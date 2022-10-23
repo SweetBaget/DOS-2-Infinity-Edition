@@ -1,0 +1,14 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION
+IF
+SavegameLoaded(_,_,_,_)
+THEN
+GlobalSetFlag("OdinCORE_PREVENTWARNING");
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

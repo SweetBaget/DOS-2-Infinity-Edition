@@ -1,0 +1,178 @@
+requirement "Flanking","WarriorLore 5"
+
+requirement "AttackOfOpportunity",""
+
+requirement "ResistDead",""
+
+requirement "Carry",""
+
+requirement "ExtraStatPoints","Level 2"
+
+requirement "ExtraSkillPoints","Level 2"
+
+requirement "Durability",""
+
+requirement "AnimalEmpathy",""
+
+requirement "Escapist",""
+
+requirement "StandYourGround",""
+
+requirement "SurpriseAttack",""
+
+requirement "LightStep",""
+
+requirement "ResurrectToFullHealth",""
+
+requirement "Scientist",""
+
+requirement "Raistlin",""
+
+requirement "MrKnowItAll",""
+
+requirement "WhatARush",""
+
+requirement "FaroutDude",""
+
+requirement "Leech",""
+
+requirement "ElementalAffinity",""
+
+requirement "FiveStarRestaurant",""
+
+requirement "Bully",""
+
+requirement "ElementalRanger","RangerLore 1"
+
+requirement "LightningRod","AirSpecialist 5"
+
+requirement "Politician",""
+
+requirement "WeatherProof","EarthSpecialist 5"
+
+requirement "LoneWolf",""
+
+requirement "Zombie",""
+
+requirement "Demon","FireSpecialist 1"
+
+requirement "IceKing","WaterSpecialist 1"
+
+requirement "Courageous",""
+
+requirement "GoldenMage",""
+
+requirement "WalkItOff",""
+
+requirement "FolkDancer","Sneaking 1"
+
+requirement "SpillNoBlood","SingleHanded 1"
+
+requirement "Stench",""
+
+requirement "WarriorLoreNaturalArmor","WarriorLore 1"
+
+requirement "WarriorLoreNaturalHealth","WarriorLore 1"
+
+requirement "WarriorLoreNaturalResistance","WarriorLore 5"
+
+requirement "WarriorLoreGrenadeRange",""
+
+requirement "RangerLoreArrowRecover",""
+
+requirement "RangerLoreEvasionBonus","RangerLore 4"
+
+requirement "RangerLoreRangedAPBonus","RangerLore 5"
+
+requirement "Sight","RangerLore 2"
+
+requirement "NoAttackOfOpportunity","RangerLore 1"
+
+requirement "RogueLoreDaggerAPBonus","RogueLore 1"
+
+requirement "RogueLoreDaggerBackStab",""
+
+requirement "RogueLoreMovementBonus","RogueLore 2"
+
+requirement "RogueLoreHoldResistance","RogueLore 5"
+
+requirement "RogueLoreGrenadePrecision","RogueLore 1"
+
+requirement "ExtraWandCharge","Wand 1"
+
+requirement "DualWieldingBlock","DualWielding 1"
+
+requirement "BeastMaster","Summoning 2"
+
+requirement "Executioner","WarriorLore 1"
+
+requirement "QuickStep","RogueLore 1"
+
+requirement "Backstab",""
+
+requirement "Trade",""
+
+requirement "Lockpick",""
+
+requirement "ChanceToHitRanged",""
+
+requirement "ChanceToHitMelee",""
+
+requirement "Damage",""
+
+requirement "ActionPoints",""
+
+requirement "ActionPoints2",""
+
+requirement "Criticals",""
+
+requirement "IncreasedArmor",""
+
+requirement "ResistFear",""
+
+requirement "ResistKnockdown",""
+
+requirement "ResistStun",""
+
+requirement "ResistPoison",""
+
+requirement "ResistSilence",""
+
+requirement "ItemMovement",""
+
+requirement "ItemCreation",""
+
+requirement "Throwing",""
+
+requirement "Repair",""
+
+requirement "ExpGain",""
+
+requirement "Awareness",""
+
+requirement "Vitality",""
+
+requirement "FireSpells",""
+
+requirement "WaterSpells",""
+
+requirement "AirSpells",""
+
+requirement "EarthSpells",""
+
+requirement "Charm",""
+
+requirement "Intimidate",""
+
+requirement "Reason",""
+
+requirement "Luck",""
+
+requirement "Initiative",""
+
+requirement "InventoryAccess",""
+
+requirement "AvoidDetection",""
+
+requirement "Kickstarter",""
+

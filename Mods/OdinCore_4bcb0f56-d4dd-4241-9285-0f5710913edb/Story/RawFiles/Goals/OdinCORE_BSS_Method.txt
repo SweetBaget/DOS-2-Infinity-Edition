@@ -1,0 +1,25 @@
+INITSECTION
+
+KBSECTION
+IF
+GameStarted(_, _)
+AND
+GlobalGetFlag("OdinBSS_Enabled", 1)
+AND
+GlobalGetFlag("OdinCORE_BSS_Aware", 0)
+THEN
+GlobalSetFlag("OdinCORE_BSS_Setting");
+
+//Sets BSS to be ON if the user hasn't chosen already on an existing save.
+IF
+SavegameLoaded(_, _, _, _)
+AND
+GlobalGetFlag("OdinBSS_Enabled", 1)
+AND
+GlobalGetFlag("OdinCORE_BSS_Aware", 0)
+THEN
+GlobalSetFlag("OdinCORE_BSS_Setting");
+
+EXITSECTION
+
+ENDEXITSECTION

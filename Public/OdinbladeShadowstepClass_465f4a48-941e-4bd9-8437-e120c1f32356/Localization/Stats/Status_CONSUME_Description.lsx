@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="&quot;Darkness often leads to salvation...&quot;" type="28" handle="hd076d9e6g0c2fg45b6ga34fg569294f13926" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="SHADE_ShadeForm_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="&quot;Focus is deadlier than raw strength...&quot;" type="28" handle="hdd2aff18gf34ag4d49gadf3g9500fe7c76d6" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="SHADE_OrderForm_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

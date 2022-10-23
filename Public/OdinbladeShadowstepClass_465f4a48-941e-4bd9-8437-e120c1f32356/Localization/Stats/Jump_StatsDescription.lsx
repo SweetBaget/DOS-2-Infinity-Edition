@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [2]" type="28" handle="h3db65a99gc749g46c0gab43g5b43fb6f4b44" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_SHADEVeiledAssault_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [2]" type="28" handle="h47ef1bbeg3dadg4c29gaee3g312a3b246e77" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_SHADEDarkRaid_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [2]" type="28" handle="h9ce6e8e8g3c20g4b80gae9dgf74903f2f527" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_SHADEDummyVeiledAssault_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [1]" type="28" handle="h8fbb486cgd5f2g4055ga2b5gf0ec76e52e1d" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_TEMPORARYSKILLLLZ_StatsDescription" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

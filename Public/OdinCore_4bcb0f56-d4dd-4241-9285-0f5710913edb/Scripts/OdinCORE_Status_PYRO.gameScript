@@ -1,0 +1,91 @@
+INIT
+EVENTS
+//SKILL -> FLAMING_CRESCENDO
+EVENT OdinPyro_FlamingCrescendo_Expunge
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character, OdinPyro_BURNING5)
+ACTIONS
+IF "c1"
+	CharacterHasStatus(_Character, FLAMING_CRESCENDO)
+THEN
+	CharacterRemoveStatus(_Character, FLAMING_CRESCENDO)
+ENDIF
+
+//SKILL -> DEVOUR_FLAMES
+EVENT OdinPyro_DevourFlames
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character, OdinPyro_DEVOURFLAMES)
+ACTIONS
+IF "c1"
+	CharacterHasStatus(_Character, BURNING)
+THEN
+	CharacterRemoveStatus(_Character, BURNING)
+ENDIF
+
+
+//SKILL -> WILL_OF_THE_PHOENIX_CAUTERIZE
+EVENT OdinPyro_WillOfThePhoenix
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character, OdinPyro_PHOENIXFIRE_HEALING)
+ACTIONS
+IF "c1"
+	CharacterHasStatus(_Character, POISONED)
+THEN
+	CharacterRemoveStatus(_Character, POISONED)
+ENDIF
+
+IF "c1"
+	CharacterHasStatus(_Character, BLEEDING)
+THEN
+	CharacterRemoveStatus(_Character, BLEEDING)
+ENDIF
+
+//STATUS -> PROC_SCORCH
+EVENT	OdinPyro_Proc_Scorch
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+ON
+	OnCharacterStatusApplied(_Character, OdinPyro_PROC_SCORCH)
+ACTIONS
+IF "c1"
+	CharacterGetStatusSourceCharacter(_Character, OdinPyro_PROC_SCORCH, _Source)
+THEN
+ENDIF
+IF "c1"
+	CharacterHasStatus(_Character, OdinPyro_BURNING5)
+THEN
+	CharacterApplyStatus(_Character, OdinPyro_BURNING5, 2, 0, _Source)
+	
+ELIF "c1"
+	CharacterHasStatus(_Character, OdinPyro_BURNING4)
+THEN
+	CharacterApplyStatus(_Character, OdinPyro_BURNING5, 2, 0, _Source)
+	
+ELIF "c1"
+	CharacterHasStatus(_Character, OdinPyro_BURNING3)
+THEN
+	CharacterApplyStatus(_Character, OdinPyro_BURNING4, 2, 0, _Source)
+	
+ELIF "c1"
+	CharacterHasStatus(_Character, OdinPyro_BURNING2)
+THEN
+	CharacterApplyStatus(_Character, OdinPyro_BURNING3, 2, 0, _Source)
+	
+ELIF "c1"
+	CharacterHasStatus(_Character, OdinPyro_BURNING1)
+THEN
+	CharacterApplyStatus(_Character, OdinPyro_BURNING2, 2, 0, _Source)
+	
+ELSE
+	CharacterApplyStatus(_Character, OdinPyro_BURNING1, 2, 0, _Source)
+ENDIF

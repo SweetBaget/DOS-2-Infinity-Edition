@@ -1,0 +1,106 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION OBCORE_Spawn_OdinNPC
+IF
+CharacterUsedItemTemplate(_Character, "OdinCORE_Book_Odinomicon_01_a8c50c46-2fec-44c4-be17-7971f92ed3fb", _Item)
+AND
+CharacterIsInCombat(_Character, 0)
+AND
+GetPosition(_Character, _X, _Y, _Z)
+AND
+TemporaryCharacterCreateAtPosition(_X, _Y, _Z, "OdinCORE_OdinNPC_01_b1e3a419-4a5e-4ae4-b37a-22e5f5ebe810", 1, _OdinNPC)
+THEN
+Proc_StartDialog(0, "OdinCORE_OdinNPC_01", _OdinNPC, _Character);
+ProcObjectTimer(_OdinNPC, "OBCORE_VFX_Spawn_Timer", 250);
+
+PROC
+ProcObjectTimerFinished((GUIDSTRING)_OdinNPC, "OBCORE_VFX_Spawn_Timer")
+AND
+GetPosition((GUIDSTRING)_OdinNPC, _X, _Y, _Z)
+THEN
+PlayEffectAtPosition("OdinCORE_NPC_Appear_01", _X, _Y, _Z);
+//END_REGION
+
+//REGION OBCORE_Add_Odinomicon
+IF
+GameStarted(_Level, _)
+AND
+DB_IsPlayer(_Player)
+AND
+NOT DB_OBCORE_HasBook(_Player)
+AND
+CharacterGetItemTemplateCount(_Player, "OdinCORE_Book_Odinomicon_01_a8c50c46-2fec-44c4-be17-7971f92ed3fb", 0)
+THEN
+ItemTemplateAddTo("OdinCORE_Book_Odinomicon_01_a8c50c46-2fec-44c4-be17-7971f92ed3fb", _Player, 1);
+
+IF
+SavegameLoaded(_,_,_,_)
+AND
+DB_IsPlayer(_Player)
+AND
+NOT DB_OBCORE_HasBook(_Player)
+AND
+CharacterGetItemTemplateCount(_Player, "OdinCORE_Book_Odinomicon_01_a8c50c46-2fec-44c4-be17-7971f92ed3fb", 0)
+THEN
+ItemTemplateAddTo("OdinCORE_Book_Odinomicon_01_a8c50c46-2fec-44c4-be17-7971f92ed3fb", _Player, 1);
+
+IF
+ItemAddedToCharacter(_Item, _Player)
+AND
+CharacterGetItemTemplateCount(_Player, "OdinCORE_Book_Odinomicon_01_a8c50c46-2fec-44c4-be17-7971f92ed3fb", 1)
+THEN
+DB_OBCORE_HasBook(_Player);
+//END_REGION
+
+//REGION OBCCORE_Destroy_OdinNPC
+IF
+DialogEnded("OdinCORE_OdinNPC_01", _InstanceID)
+AND
+DialogGetInvolvedNPC(_InstanceID, 1, (CHARACTERGUID)_OdinNPC)
+AND
+GetPosition(_OdinNPC, _X, _Y, _Z)
+THEN
+PlayEffectAtPosition("OdinCORE_NPC_Disappear_01", _X, _Y, _Z);
+UserSetFlag(_OdinNPC, "OdinCORE_Cleanup_TemporaryNPC");
+//END_REGION
+
+//REGION OBCORE_DialogueFlags
+//Enemy Skills
+IF
+GlobalFlagSet("OdinCORE_EnemySkills_Setting")
+THEN
+DialogSetVariableString("OdinCORE_OdinNPC_01", "OdinCORE_EnemySkills_Value_51846049-ce6a-40ba-8ede-816cd3457fe0", "<font color='#40B606'>ON</font>");
+
+IF
+GlobalFlagCleared("OdinCORE_EnemySkills_Setting")
+THEN
+DialogSetVariableString("OdinCORE_OdinNPC_01", "OdinCORE_EnemySkills_Value_51846049-ce6a-40ba-8ede-816cd3457fe0", "<font color='#C80030'>OFF</font>");
+
+//Custom Vendors
+IF
+GlobalFlagSet("OdinCORE_CustomVendors_Setting")
+THEN
+DialogSetVariableString("OdinCORE_OdinNPC_01", "OdinCORE_CustomVendors_Value_5df00af8-4e59-4a8c-82a8-094aba487ad2", "<font color='#40B606'>ON</font>");
+
+IF
+GlobalFlagCleared("OdinCORE_CustomVendors_Setting")
+THEN
+DialogSetVariableString("OdinCORE_OdinNPC_01", "OdinCORE_CustomVendors_Value_5df00af8-4e59-4a8c-82a8-094aba487ad2", "<font color='#C80030'>OFF</font>");
+
+//Enhanced Summon Scaling
+IF
+GlobalFlagSet("OdinCORE_BSS_Setting")
+THEN
+DialogSetVariableString("OdinCORE_OdinNPC_01", "OdinCORE_BSS_Value_3f4cfb42-3e70-4105-a7f2-52e3eea0576a", "<font color='#40B606'>ON</font>");
+
+IF
+GlobalFlagCleared("OdinCORE_BSS_Setting")
+THEN
+DialogSetVariableString("OdinCORE_OdinNPC_01", "OdinCORE_BSS_Value_3f4cfb42-3e70-4105-a7f2-52e3eea0576a", "<font color='#C80030'>OFF</font>");
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

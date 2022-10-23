@@ -1,0 +1,253 @@
+----------------------------------------------------------------------------
+COMBAT AI of Sandbox_Market_Bryan
+
+|cl0;255;0;SAVEAP - 0. Action [ATTACK]      - 21.66   =   (320.63 +  0.00 +  0.00) *  0.50 /  7.40 - 2 6 - [E] S_Player_Beast
+
+
+
+1. Action [SKILL]       - 19.57   =   (367.71 +  0.00 +  0.00) *  0.50 /  9.30 - 3 7 - Target_HeavyAttack_-1 - [E] S_Player_Beast
+
+
+
+2. Action [SKILL]       -  3.25   =   (61.08 +  0.00 +  0.00) *  0.50 /  9.30 - 3 7 - Target_HeavyAttack_-1 - [E] Elves_Hero_Female
+
+
+
+3. Action [ATTACK]      -  3.20   =   (53.06 +  0.00 +  0.00) *  0.50 /  8.30 - 2 7 - [E] Elves_Hero_Female
+
+
+
+4. Action [ATTACK]      -  2.28   =   (25.50 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] UmbraTrader1_000
+
+
+
+5. Action [SKILL]       - -75.00   =   (-1000.00 +  0.00 +  0.00) *  0.50 /  6.60 - 3 4 - Target_HeavyAttack_-1 - [E] UmbraTrader1_000
+
+
+
+----------------------------------------------------------------------------
+COMBAT AI of Sandbox_Market_Midas_Goldbeard
+
+|cl0;255;0;SAVEAP - 0. Action [ATTACK]      -  3.15   =   (40.92 +  0.00 +  0.00) *  0.50 /  6.50 - 2 5 - [E] Elves_Hero_Female
+
+
+
+1. Action [ATTACK]      -  2.47   =   (32.14 +  0.00 +  0.00) *  0.50 /  6.50 - 2 5 - [E] UmbraTrader1_000
+
+
+
+2. Action [ATTACK]      -  1.95   =   (25.36 +  0.00 +  0.00) *  0.50 /  6.50 - 2 5 - [E] S_Player_Beast
+
+
+
+----------------------------------------------------------------------------
+COMBAT AI of UmbraTrader1_000
+
+0. Action [ATTACK]      -  7.76   =   (22.51 +  0.00 +  0.00) *  1.00 /  2.90 - 2 1 - [E] Sandbox_Market_Ernest_Herringway
+
+
+
+1. Action [SKILL]       -  3.64   =   (14.32 +  0.00 +  0.00) *  0.99 /  3.90 - 3 1 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Ernest_Herringway
+
+
+
+2. Action [ATTACK]      -  3.48   =   (32.74 +  0.00 +  0.00) *  0.50 /  4.70 - 2 3 - [E] Sandbox_Bar_Elf
+
+
+
+3. Action [ATTACK]      -  3.48   =   (32.74 +  0.00 +  0.00) *  0.50 /  4.70 - 2 3 - [E] Sandbox_Bar_Human_001
+
+
+
+4. Action [ATTACK]      -  3.48   =   (32.74 +  0.00 +  0.00) *  0.50 /  4.70 - 2 3 - [E] Sandbox_Bar_Human_000
+
+
+
+5. Action [ATTACK]      -  3.00   =   (33.60 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] Sandbox_Madam_Aya
+
+
+
+6. Action [ATTACK]      -  2.78   =   (31.18 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] Sandbox_Market_Midas_Goldbeard
+
+
+
+7. Action [ATTACK]      -  2.78   =   (31.18 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] Humans_Male_Clothing_Rich_000
+
+
+
+8. Action [ATTACK]      -  2.78   =   (31.18 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] Lizards_Female_Clothing_000
+
+
+
+9. Action [ATTACK]      -  2.78   =   (31.18 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] Dwarves_Male_Clothing_002
+
+
+
+10. Action [ATTACK]      -  2.39   =   (22.51 +  0.00 +  0.00) *  0.50 /  4.70 - 2 3 - [E] Sandbox_Bar_Lizard
+
+
+
+11. Action [ATTACK]      -  2.39   =   (22.51 +  0.00 +  0.00) *  0.50 /  4.70 - 2 3 - [E] Sandbox_Market_Tabitha
+
+
+
+12. Action [ATTACK]      -  2.28   =   (21.43 +  0.00 +  0.00) *  0.50 /  4.70 - 2 3 - [E] Sandbox_Market_Bryan
+
+
+
+13. Action [ATTACK]      -  2.21   =   (32.74 +  0.00 +  0.00) *  0.50 /  7.40 - 2 6 - [E] Sandbox_Market_Malhazar
+
+
+
+14. Action [ATTACK]      -  2.01   =   (22.51 +  0.00 +  0.00) *  0.50 /  5.60 - 2 4 - [E] Dwarves_Male_Clothing_001
+
+
+
+15. Action [ATTACK]      -  1.88   =   (31.18 +  0.00 +  0.00) *  0.50 /  8.30 - 2 7 - [E] Sandbox_Market_Duncan
+
+
+
+16. Action [ATTACK]      -  1.73   =   (22.51 +  0.00 +  0.00) *  0.50 /  6.50 - 2 5 - [E] Sandbox_Market_Lis
+
+
+
+17. Action [SKILL]       -  1.48   =   (14.32 +  0.00 +  0.00) *  0.50 /  4.80 - 3 2 - Target_DualWieldingAttack_-1 - [E] Sandbox_Bar_Elf
+
+
+
+18. Action [SKILL]       -  1.48   =   (14.32 +  0.00 +  0.00) *  0.50 /  4.80 - 3 2 - Target_DualWieldingAttack_-1 - [E] Sandbox_Bar_Lizard
+
+
+
+19. Action [SKILL]       -  1.41   =   (13.64 +  0.00 +  0.00) *  0.50 /  4.80 - 3 2 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Bryan
+
+
+
+20. Action [ATTACK]      -  1.36   =   (22.51 +  0.00 +  0.00) *  0.50 /  8.30 - 2 7 - [E] Sandbox_Market_Lingo
+
+
+
+21. Action [SKILL]       -  1.28   =   (14.70 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Sandbox_Madam_Aya
+
+
+
+22. Action [SKILL]       -  1.24   =   (14.32 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Sandbox_Bar_Human_001
+
+
+
+23. Action [SKILL]       -  1.24   =   (14.32 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Tabitha
+
+
+
+24. Action [SKILL]       -  1.24   =   (14.32 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Sandbox_Bar_Human_000
+
+
+
+25. Action [SKILL]       -  1.18   =   (13.64 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Midas_Goldbeard
+
+
+
+26. Action [SKILL]       -  1.18   =   (13.64 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Humans_Male_Clothing_Rich_000
+
+
+
+27. Action [SKILL]       -  1.18   =   (13.64 +  0.00 +  0.00) *  0.50 /  5.70 - 3 3 - Target_DualWieldingAttack_-1 - [E] Dwarves_Male_Clothing_002
+
+
+
+28. Action [SKILL]       -  1.07   =   (14.32 +  0.00 +  0.00) *  0.50 /  6.60 - 3 4 - Target_DualWieldingAttack_-1 - [E] Dwarves_Male_Clothing_001
+
+
+
+29. Action [ATTACK]      -  1.07   =   (31.18 +  1.90 +  0.00) *  0.50 / 15.50 - 2 15 - [E] Sandbox_Ship_Elisabeth_Fendrish
+
+
+
+30. Action [ATTACK]      -  1.07   =   (31.18 +  1.90 +  0.00) *  0.50 / 15.50 - 2 15 - [E] Sandbox_Ship_Captain
+
+
+
+31. Action [SKILL]       -  1.02   =   (13.64 +  0.00 +  0.00) *  0.50 /  6.60 - 3 4 - Target_DualWieldingAttack_-1 - [E] Lizards_Female_Clothing_000
+
+
+
+32. Action [SKILL]       -  1.02   =   (13.64 +  0.00 +  0.00) *  0.50 /  6.60 - 3 4 - Target_DualWieldingAttack_-1 - [E] Humans_Male_Armor_Bandit_A_000
+
+
+
+33. Action [SKILL]       -  0.95   =   (14.32 +  0.00 +  0.00) *  0.50 /  7.50 - 3 5 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Lis
+
+
+
+34. Action [SKILL]       -  0.84   =   (14.32 +  0.00 +  0.00) *  0.50 /  8.40 - 3 6 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Malhazar
+
+
+
+35. Action [SKILL]       -  0.80   =   (13.64 +  0.00 +  0.00) *  0.50 /  8.40 - 3 6 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Duncan
+
+
+
+36. Action [SKILL]       -  0.76   =   (14.32 +  0.00 +  0.00) *  0.50 /  9.30 - 3 7 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Lingo
+
+
+
+37. Action [SKILL]       -  0.49   =   (13.64 +  1.85 +  0.00) *  0.50 / 15.60 - 3 14 - Target_DualWieldingAttack_-1 - [E] Sandbox_Ship_Captain
+
+
+
+38. Action [SKILL]       -  0.47   =   (13.64 +  2.00 +  0.00) *  0.50 / 16.50 - 3 15 - Target_DualWieldingAttack_-1 - [E] Sandbox_Ship_Elisabeth_Fendrish
+
+
+
+39. Action [SKILL]       - -1000.00   =   (14.32 +  0.00 +  0.00) *  1.00 /  1.00 - 3 0 - Target_DualWieldingAttack_-1 - [E] Sandbox_Market_Syss
+
+
+
+40. Action [ATTACK]      - -1000.00   =   (22.51 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Sandbox_Market_Syss
+
+
+
+41. Action [ATTACK]      - -1000.00   =   (31.18 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Humans_Male_Armor_Bandit_A_000
+
+
+
+42. Action [ATTACK]      - -1000.00   =   (21.44 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Lizards_Male_Armor_001
+
+
+
+43. Action [SKILL]       - -1000.00   =   (13.64 +  0.00 +  0.00) *  1.00 /  1.00 - 3 0 - Target_DualWieldingAttack_-1 - [E] Lizards_Male_Armor_001
+
+
+
+44. Action [ATTACK]      - -1000.00   =   (21.44 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Lizards_Male_Armor_000
+
+
+
+45. Action [SKILL]       - -1000.00   =   (13.64 +  0.00 +  0.00) *  1.00 /  1.00 - 3 0 - Target_DualWieldingAttack_-1 - [E] Lizards_Male_Armor_000
+
+
+
+46. Action [ATTACK]      - -1000.00   =   (21.44 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Dwarves_Male_Clothing_000
+
+
+
+47. Action [SKILL]       - -1000.00   =   (13.64 +  0.00 +  0.00) *  1.00 /  1.00 - 3 0 - Target_DualWieldingAttack_-1 - [E] Dwarves_Male_Clothing_000
+
+
+
+48. Action [ATTACK]      - -1000.00   =   (21.44 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Dwarves_Female_Clothing_000
+
+
+
+49. Action [SKILL]       - -1000.00   =   (13.64 +  0.00 +  0.00) *  1.00 /  1.00 - 3 0 - Target_DualWieldingAttack_-1 - [E] Dwarves_Female_Clothing_000
+
+
+
+50. Action [SKILL]       - -1000.00   =   (13.64 +  0.00 +  0.00) *  1.00 /  1.00 - 3 0 - Target_DualWieldingAttack_-1 - [E] Dwarves_Female_Armor_001
+
+
+
+51. Action [ATTACK]      - -1000.00   =   (21.44 +  0.00 +  0.00) *  1.00 /  1.00 - 2 0 - [E] Dwarves_Female_Armor_001
+
+
+

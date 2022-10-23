@@ -1,0 +1,50 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION SHADE_Reset
+IF
+ObjectFlagSet("Odinblade_SHADE_StartDialog", _Char, _Int)
+AND
+CharacterGetLevel((CHARACTERGUID)_Char, _Lvl)
+THEN
+DB_OdinbladeUmbra_Reset(_Char, _Lvl);
+
+IF
+ObjectFlagSet("Odinblade_SHADE_Ezuri", _Ezuri, _Dis)
+THEN
+DB_OdinbladeUmbra_Ezuri(_Ezuri);
+
+IF
+ObjectFlagSet("Odinblade_SHADE_Reset", _Char, _Int)
+AND
+CharacterGetEquippedItem((CHARACTERGUID)_Char, "Amulet", _Item)
+AND
+GetTemplate(_Item, _Template)
+AND
+DB_OdinbladeUmbra_Reset((CHARACTERGUID)_Char, _Lvl)
+AND
+DB_OdinbladeUmbra_Ezuri(_Ezuri)
+THEN
+TransferItemsToCharacter((CHARACTERGUID)_Char, (CHARACTERGUID)_Ezuri);
+CharacterApplyPreset(_Char, "Umbra");
+CharacterLevelUpTo(_Char, _Lvl);
+TransferItemsToCharacter((CHARACTERGUID)_Ezuri, (CHARACTERGUID)_Char);
+ItemTemplateAddTo(_Template,_Char,1,0);
+Proc_GLO_SourceCollars_EquipSourceCollar(_Char);
+//ItemLockUnEquip(_Item,1);
+NOT DB_OdinbladeUmbra_Reset(_Char, _Lvl);
+//END_REGION
+
+//REGION SHADE_SWITCHEDSTANCE
+IF
+StoryEvent(_Object, "OdinUMBRA_SWITCHEDSTANCE")
+AND
+DB_CombatCharacters((CHARACTERGUID)_Object, _ID)
+THEN
+CharacterUseSkill((CHARACTERGUID)_Object, "Shout_SHADEDummyShout", _Object, 1, 1);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

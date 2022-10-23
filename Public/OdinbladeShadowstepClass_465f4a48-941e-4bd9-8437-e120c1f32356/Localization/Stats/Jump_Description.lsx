@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Leap without breaking &lt;font color=&quot;#639594&quot;&gt;Invisibility&lt;/font&gt;. If used whilst &lt;font color=&quot;#639594&quot;&gt;Invisible&lt;/font&gt;, the cost is refunded and you gain [1]. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Dark Passage&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h0c14c68ag9a1dg4822ga68fgad950a348702" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_SHADEVeiledAssault_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Leap without breaking &lt;font color=&quot;#639594&quot;&gt;Invisibility&lt;/font&gt;. If used whilst &lt;font color=&quot;#639594&quot;&gt;Invisible&lt;/font&gt;, the cost is refunded and you gain [1]. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#a8a8a8'&gt;Nimble Leap&lt;/font&gt;, an &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h0a202c94g43d4g4af7ga2e1g4e7a6d007bc0" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_SHADEDarkRaid_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Leap without breaking &lt;font color=&quot;#639594&quot;&gt;Invisibility&lt;/font&gt;. If used whilst &lt;font color=&quot;#639594&quot;&gt;Invisible&lt;/font&gt;, the cost is refunded and you gain [1]. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Dark Passage&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h3e2d1b34gf961g4353g844fgb341507fd5fa" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_SHADEDummyVeiledAssault_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="|Teleport without breaking sneaking.|" type="28" handle="h2752e4ceg1b51g4e59gacdegbd511b7fbbf2" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Jump_TEMPORARYSKILLLLZ_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

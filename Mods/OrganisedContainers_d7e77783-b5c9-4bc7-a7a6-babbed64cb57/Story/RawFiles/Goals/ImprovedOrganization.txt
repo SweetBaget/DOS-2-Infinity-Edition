@@ -1,0 +1,64 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Containers database ==============================================
+SysClear("DB_MOD_ContainerIDs",1);
+	DB_MOD_ContainerIDs("7fee91ba-fa82-4928-8bab-886a0d84ad0e"); 	// Tools
+	DB_MOD_ContainerIDs("f5874b2d-ee95-45af-bd87-f37fc6803ef8");	// Arrows
+	DB_MOD_ContainerIDs("39715850-1093-423c-b116-91d5df2df8e5");	// Bladed Weapons
+	DB_MOD_ContainerIDs("b5fa4223-7951-4800-a943-4f9f40147615");	// Blunt Weapons
+	DB_MOD_ContainerIDs("099c3bb5-c32a-4b83-9d45-dae44387ce5f");	// Bombs
+	DB_MOD_ContainerIDs("b17d8d2a-14cc-48b0-b477-5e53d7abd2eb");	// Books
+	DB_MOD_ContainerIDs("2060995e-255e-48cb-b292-095eb871e2fc");	// Boots and Belts
+	DB_MOD_ContainerIDs("47838f1d-479b-4c5d-84f2-fee6eff4dc38");	// Chest and Pants
+	DB_MOD_ContainerIDs("d23d4797-6d6c-4793-b5c3-e6ed000a64b7");	// Gems and Jewelry
+	DB_MOD_ContainerIDs("5675f53c-b2d7-4ce7-b6b4-967f62573937");	// Purses and Wares
+	DB_MOD_ContainerIDs("612bc443-f654-4116-9419-d298ae2f9bcf");	// Essence
+	DB_MOD_ContainerIDs("cdef1bc4-df4e-4d51-af18-f0094cab6e43");	// Food
+	DB_MOD_ContainerIDs("7a200322-3802-4f62-b3ff-48cd426be43a");	// Helmets and Gloves
+	DB_MOD_ContainerIDs("40553018-7036-4bb6-9905-7058dcaf0a41");	// Keys
+	DB_MOD_ContainerIDs("30a59c9f-873f-4137-a2ea-6154e12645aa");	// Magic Weapons
+	DB_MOD_ContainerIDs("93b6ae3d-5733-4a38-bb48-80e913f2f21c");	// Marterials
+	DB_MOD_ContainerIDs("001c7951-f98b-4739-adae-1a66ca9bf838");	// Potions
+	DB_MOD_ContainerIDs("1278faf7-5a91-499b-a2c6-6c1922243690");	// Quest Items
+	DB_MOD_ContainerIDs("490e500a-ba71-45b2-a602-cf46e71e42ac");	// Ranged Weapons
+	DB_MOD_ContainerIDs("e676d5f0-8aa2-4a1e-934b-48626bfb9773");	// Runes
+	DB_MOD_ContainerIDs("c7804224-080e-46d0-bab4-03fbfd0f9e8e");	// Scrolls
+	DB_MOD_ContainerIDs("69d2ec50-1e00-44d6-8dad-8c360c122060");	// Shields
+	DB_MOD_ContainerIDs("d9da5d77-6833-4338-ad70-a2a2e28e550e");	// Skill Books
+KBSECTION
+//REGION Load Inventory
+
+// Give each party member its own set of bags =======================
+IF
+	GameStarted(_,_)
+	AND	DB_IsPlayer(_Character)
+	AND CharacterIsSummon(_Character,0)
+	AND CharacterIsPartyFollower(_Character, 0)
+THEN
+	Proc_MOD_AddBagToInventory(_Character);
+
+PROC
+	Proc_MOD_AddBagToInventory((CHARACTERGUID)_Character)
+	AND	DB_MOD_ContainerIDs(_bagTemplate)
+	AND	ItemTemplateIsInCharacterInventory(_Character, _bagTemplate, 0)
+THEN
+	ItemTemplateAddTo(_bagTemplate,_Character, 1);
+
+
+// Give bags to a new party member ==================================
+IF
+	CharacterJoinedParty(_Character)
+	AND CharacterIsSummon(_Character,0)
+	AND CharacterIsPartyFollower(_Character, 0)
+THEN
+	Proc_MOD_AddBagToInventory(_Character);
+
+
+
+//END_REGION
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

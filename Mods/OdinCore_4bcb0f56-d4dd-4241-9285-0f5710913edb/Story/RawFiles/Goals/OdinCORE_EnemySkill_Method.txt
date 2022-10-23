@@ -1,0 +1,72 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_OBCORE_EnemySkill_Pair("", "");
+DB_OBCORE_EnemySkill_Pair_Level("", "", 0);
+
+KBSECTION
+IF
+ObjectEnteredCombat((CHARACTERGUID)_Character, _)
+AND
+GlobalGetFlag("OdinCORE_EnemySkills_Setting", 1)
+AND
+NOT DB_IsPlayer(_Character)
+AND
+NOT DB_Origins(_Character)
+AND
+CharacterIsSummon(_Character, 0)
+AND
+IsBoss(_Character, 0)
+THEN
+PROC_OBCORE_AddNewSkills(_Character);
+
+//Adds new skills which do not have a level requirement
+PROC
+PROC_OBCORE_AddNewSkills((CHARACTERGUID)_Character)
+AND
+DB_OBCORE_EnemySkill_Pair((STRING)_OriginalSkill, (STRING)_NewSkill)
+AND
+_OriginalSkill != ""
+AND
+CharacterHasSkill((CHARACTERGUID)_Character, _NewSkill, 0)
+AND
+CharacterHasSkill((CHARACTERGUID)_Character, _OriginalSkill, 1)
+THEN
+CharacterAddSkill(_Character, _NewSkill);
+
+//Adds skills which do have a level requirement
+PROC
+PROC_OBCORE_AddNewSkills((CHARACTERGUID)_Character)
+AND
+DB_OBCORE_EnemySkill_Pair_Level((STRING)_OriginalSkill, (STRING)_NewSkill, (INTEGER)_Level)
+AND
+CharacterGetLevel(_Character, _CharLevel)
+AND
+_CharLevel >= _Level
+AND
+_OriginalSkill != ""
+AND
+CharacterHasSkill((CHARACTERGUID)_Character, _NewSkill, 0)
+AND
+CharacterHasSkill((CHARACTERGUID)_Character, _OriginalSkill, 1)
+THEN
+CharacterAddSkill(_Character, _NewSkill);
+
+//Sets EnemySkills to be ON for new saves.
+IF
+GameStarted(_, _)
+AND
+GlobalGetFlag("OdinCORE_EnemySkills_Aware", 0)
+THEN
+GlobalSetFlag("OdinCORE_EnemySkills_Setting");
+
+// //Sets EnemySkills to be ON if the user hasn't chosen already on an existing save.
+IF
+SavegameLoaded(_, _, _, _)
+AND
+GlobalGetFlag("OdinCORE_EnemySkills_Aware", 0)
+THEN
+GlobalSetFlag("OdinCORE_EnemySkills_Setting");
+EXITSECTION
+
+ENDEXITSECTION

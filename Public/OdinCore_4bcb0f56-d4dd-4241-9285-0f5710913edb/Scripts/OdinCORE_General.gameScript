@@ -1,0 +1,71 @@
+EVENTS
+EVENT OdinCORE_SetTimer
+ON
+	OnLoaded(_,_,_,_)
+ACTIONS
+	SetGlobalFlag("OdinCORE_DONTDISPLAYWARNING")
+
+//STATUS -> LOSTFOOTING
+EVENT OdinCore_Status_LostFooting
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+FLOAT:_PhysArmour
+FLOAT:_MagArmour
+
+ON
+	OnCharacterStatusAttempt(_Character, OdinCORE_PROC_LOSTFOOTING)
+ACTIONS
+IF "c1&((c2&c3)|(c4&c5))"
+	CharacterHasStatus(_Character, OdinCORE_LOSTFOOTING)
+	CharacterGetStat(_PhysArmour, _Character, PhysicalArmorPoints)
+	IsEqual(_PhysArmour, 0)
+	CharacterGetStat(_MagArmour, _Character, MagicArmorPoints)
+	IsEqual(_MagArmour, 0)
+THEN
+	CharacterRemoveStatus(_Character, OdinCORE_LOSTFOOTING)
+	CharacterApplyStatus(_Character, KNOCKED_DOWN, 1, 1, _Source)
+ELSE
+	IF "!c1"
+		CharacterHasStatus(_Character, KNOCKED_DOWN)
+	THEN
+		CharacterApplyStatus(_Character, OdinCORE_LOSTFOOTING, 2, 1, _Source)
+	ENDIF
+ENDIF
+
+//STATUS -> DOUBLE_LOSTFOOTING
+EVENT OdinCore_Status_Double_LostFooting
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+FLOAT:_PhysArmour
+FLOAT:_MagArmour
+
+ON
+	OnCharacterStatusAttempt(_Character, OdinCORE_PROC_DOUBLE_LOSTFOOTING)
+ACTIONS
+IF "(c1&c2)|(c3&c4)"
+	CharacterGetStat(_PhysArmour, _Character, PhysicalArmorPoints)
+	IsEqual(_PhysArmour, 0)
+	CharacterGetStat(_MagArmour, _Character, MagicArmorPoints)
+	IsEqual(_MagArmour, 0)
+THEN
+	CharacterRemoveStatus(_Character, OdinCORE_LOSTFOOTING)
+	CharacterApplyStatus(_Character, KNOCKED_DOWN, 1, 1, _Source)
+ELSE
+	IF "!c1"
+		CharacterHasStatus(_Character, KNOCKED_DOWN)
+	THEN
+		CharacterApplyStatus(_Character, OdinCORE_LOSTFOOTING, 2, 1, _Source)
+	ENDIF
+ENDIF
+
+//Removes OdinNPCs when flagged by a Story script
+EVENT OdinCore_TemporaryNPC_Cleanup
+VARS
+CHARACTER:_OdinNPC
+
+ON
+	OnCharacterFlagSet("OdinCORE_Cleanup_TemporaryNPC", _OdinNPC)
+ACTIONS
+	CharacterDestroy(_OdinNPC)

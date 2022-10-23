@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Daggerfall" type="28" handle="hf12a01a0gd275g405ag8a1bg9ac19e834d7e" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEDaggerfall_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Daggerfall" type="28" handle="h345d0d0fg8628g406bgb6b3g9aeb684e6bc1" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEDaggerfallDummy_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Chaos Crash" type="28" handle="h0c2eda04g4e67g473eg9860g80377e9f2679" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEChaosCrash_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Master of Chaos" type="28" handle="h8de0b156gb739g4d90g9b5bg4ea5cd0b3640" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEMasterOfChaos_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Master of Chaos" type="28" handle="he3067097gc051g404agb5d4gfc3426a6516f" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEMasterOfChaosDUMMY_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Chaos Crash" type="28" handle="h7f795909gf6c0g42efg9ea2ge50f9d957d1d" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEChaosCrashDummy_DisplayName" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

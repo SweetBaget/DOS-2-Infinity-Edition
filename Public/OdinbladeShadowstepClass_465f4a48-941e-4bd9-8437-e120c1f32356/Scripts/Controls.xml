@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controlscheme xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <stepsize>0.1</stepsize>
+  <snaptostep>false</snaptostep>
+  <scalesize>0.1</scalesize>
+  <snaptoscale>true</snaptoscale>
+  <anglesize>5</anglesize>
+  <snaptoangle>false</snaptoangle>
+  <gridsize>0.5</gridsize>
+  <snaptofloor>false</snaptofloor>
+  <usehexgrid>false</usehexgrid>
+  <snaptogrid>false</snaptogrid>
+  <gizmoscale>0.2</gizmoscale>
+  <mousesensitivity>0.01</mousesensitivity>
+  <speed>100</speed>
+  <restore>Right</restore>
+  <cut>Left</cut>
+  <flatten>Left</flatten>
+  <lower>Left</lower>
+  <raise>Left</raise>
+  <erase_x0020_layer>Right</erase_x0020_layer>
+  <paint_x0020_layer>Left</paint_x0020_layer>
+  <select>Left</select>
+  <pan>Right</pan>
+  <look>Middle</look>
+  <Jump_x0020_to_x0020_selected_x0020_object>J</Jump_x0020_to_x0020_selected_x0020_object>
+  <Regenerate_x0020_painted_x0020_decal>R</Regenerate_x0020_painted_x0020_decal>
+  <Shape_x0020_edit_x0020_interaction_x0020_mode>D6</Shape_x0020_edit_x0020_interaction_x0020_mode>
+  <Create_x0020_interaction_x0020_mode>D5</Create_x0020_interaction_x0020_mode>
+  <Scale_x0020_interaction_x0020_mode>D4</Scale_x0020_interaction_x0020_mode>
+  <Rotate_x0020_interaction_x0020_mode>D3</Rotate_x0020_interaction_x0020_mode>
+  <Translate_x0020_interaction_x0020_mode>D2</Translate_x0020_interaction_x0020_mode>
+  <SelectInteractionMode>D1</SelectInteractionMode>
+  <DecreaseRotation>OemMinus</DecreaseRotation>
+  <IncreaseRotation>Oemplus</IncreaseRotation>
+  <DecreaseRadius>OemOpenBrackets</DecreaseRadius>
+  <IncreaseRadius>OemCloseBrackets</IncreaseRadius>
+  <redo>LButton Back Tab ShiftKey ControlKey FinalMode HanjaMode KanjiMode A H I P Q X Y Control</redo>
+  <undo>RButton Back LineFeed ShiftKey Menu FinalMode B H J P R X Z Control</undo>
+  <delete>Delete</delete>
+  <right>Right</right>
+  <left>Left</left>
+  <backward>Down</backward>
+  <forward>Up</forward>
+</controlscheme>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="DialogVariables">
+        <node id="root">
+            <children>
+                <node id="DialogVariable">
+                    <attribute id="DefaultValue" value="&lt;font color=&apos;#40B606&apos;&gt;ON&lt;/font&gt;" type="23" />
+                    <attribute id="Description" value="" type="23" />
+                    <attribute id="UUID" value="3f4cfb42-3e70-4105-a7f2-52e3eea0576a" type="31" />
+                    <attribute id="name" value="OdinCORE_BSS_Value" type="22" />
+                    <attribute id="type" value="String" type="23" />
+                </node>
+                <node id="DialogVariable">
+                    <attribute id="DefaultValue" value="&lt;font color=&apos;#40B606&apos;&gt;ON&lt;/font&gt;" type="23" />
+                    <attribute id="Description" value="" type="23" />
+                    <attribute id="UUID" value="5df00af8-4e59-4a8c-82a8-094aba487ad2" type="31" />
+                    <attribute id="name" value="OdinCORE_CustomVendors_Value" type="22" />
+                    <attribute id="type" value="String" type="23" />
+                </node>
+                <node id="DialogVariable">
+                    <attribute id="DefaultValue" value="&lt;font color=&apos;#C80030&apos;&gt;OFF&lt;/font&gt;" type="23" />
+                    <attribute id="Description" value="" type="23" />
+                    <attribute id="UUID" value="51846049-ce6a-40ba-8ede-816cd3457fe0" type="31" />
+                    <attribute id="name" value="OdinCORE_EnemySkills_Value" type="22" />
+                    <attribute id="type" value="String" type="23" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

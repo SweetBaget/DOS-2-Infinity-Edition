@@ -1,0 +1,2 @@
+OpenMessageBoxChoice 3
+DB_ApplyPreset 2DialogGetInvolvedNPC 2IsSwitch 1

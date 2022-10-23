@@ -1,0 +1,9 @@
+{
+    "RequiredExtensionVersion": 55,
+    "ModTable" : "TALENTS",
+    "FeatureFlags": [
+        "OsirisExtensions",
+        "Lua",
+	    "Preprocessor"
+    ]
+}

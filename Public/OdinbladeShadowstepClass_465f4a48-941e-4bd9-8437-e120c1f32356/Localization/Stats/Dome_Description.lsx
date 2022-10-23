@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Conjure a &lt;font color='#c80030'&gt;shadowy portal&lt;/font&gt;, lasting 2 turns. &lt;br&gt;&lt;br&gt;Non-&lt;font color=&quot;#88a25b&quot;&gt;allies&lt;/font&gt; in the zone become &lt;font color=&quot;#cfecff&quot;&gt;Silenced&lt;/font&gt;, preventing spells from being cast, and &lt;font color=&quot;#7d71d9&quot;&gt;Dazed&lt;/font&gt;, reducing &lt;font color='#7d71d9'&gt;Air Resistance by [1]%&lt;/font&gt; and &lt;font color='#c80030'&gt;increasing AP costs by 1&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Smoke Grenade&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which creates a smoke cloud.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hb86dce2fg7ce8g4fb1g942agffaabfaa225c" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Dome_SHADENullZone_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

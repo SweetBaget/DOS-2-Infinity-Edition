@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="6" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Switch between &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; forms, transforming all non-&lt;font color='#ff00a8'&gt;Elite&lt;/font&gt; &lt;font color='#ff00a8'&gt;Umbra&lt;/font&gt; skills and resetting their cooldowns. &lt;br&gt;&lt;br&gt;This skill also makes the user &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn. &lt;br&gt;&lt;br&gt;&lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; skills deal &lt;font color='#a8a8a8'&gt;physical damage&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; skills deal &lt;font color='#c80030'&gt;chaos damage&lt;/font&gt;, both based on weapon damage. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Elite Skill&lt;/font&gt;: This skill is the same across &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; forms, and shares the same cooldown.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hd5d3ae62g7660g4096ga317g341c54d81e54" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEShadowstep_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Вращайтесь с обнаженными кинжалами, нанося [1] ближайшим врагам. Накладывает на противников &quot;Уязвимость&quot;. Суммируется до 3-х раз.&lt;br&gt;" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEBladeFlurry_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Вращайтесь с обнаженными кинжалами, нанося [1] ближайшим врагам. Накладывает на противников &quot;Уязвимость&quot;. Суммируется до 3-х раз.&lt;br&gt;" type="28" handle="he151ba13gfdefg44efg9263g47a2effad44f" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEDummyBladeFlurry_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Reset the cooldowns of all non-&lt;font color='#ff00a8'&gt;Elite&lt;/font&gt; &lt;font color='#ff00a8'&gt;Umbra&lt;/font&gt; skills and immediately gain &lt;font color='#40b606'&gt;2AP&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Become &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Source of Ferocity&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hafb2b210g5787g4a26gbc3fg14542035c131" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEResourcefulness_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Reset the cooldowns of all non-&lt;font color='#ff00a8'&gt;Elite&lt;/font&gt; &lt;font color='#ff00a8'&gt;Umbra&lt;/font&gt; skills and immediately gain &lt;font color='#40b606'&gt;2AP&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Become &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Source of Ferocity&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h7d9808bega9dfg4318g9ee6gffde5c35b216" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEResourcefulnessDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Reset the cooldowns of all non-&lt;font color='#ff00a8'&gt;Elite&lt;/font&gt; &lt;font color='#ff00a8'&gt;Umbra&lt;/font&gt; skills and immediately gain &lt;font color='#40b606'&gt;2AP&lt;/font&gt;. &lt;br&gt;&lt;br&gt;Become &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Resourcefulness&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; version of this skill.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h021be5beg6cf5g4aebgb80ag8e448d39ed3f" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADESourceOfFerocity_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Gain &lt;font color=&quot;#40b606&quot;&gt;15% Damage&lt;/font&gt; and &lt;font color=&quot;#40b606&quot;&gt;50% Movement Speed&lt;/font&gt; for 1 turn. Become &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn.  &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Retreat Into Shadow&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; skill which restores a portion health and armour.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h7a1c1ef8gd3bag4534ga913ga918be94124a" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEPreemptiveTactics_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Gain &lt;font color=&quot;#40b606&quot;&gt;15% Damage&lt;/font&gt; and &lt;font color=&quot;#40b606&quot;&gt;50% Movement Speed&lt;/font&gt; for 1 turn. Become &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn.  &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Retreat Into Shadow&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; skill which restores a portion health and armour.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hc7fdb759g9e3eg47b1g8070g25958d2cdd9b" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEPreemptiveTacticsDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Restore &lt;font color=&quot;#97fbff&quot;&gt;20% of your max. Vitality&lt;/font&gt; and gain [1] and [2] for 1 turn. Become &lt;font color='#639594'&gt;Invisible&lt;/font&gt; until the end of the current turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Preemptive Tactics&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which bestows a damage and movement boost.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h02231754g33c3g4e45gb597g406401fd2007" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADERetreatIntoShadow_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Become &lt;font color=&quot;#639594&quot;&gt;Invisible&lt;/font&gt; for 1 turn. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Elite Skill&lt;/font&gt;: This skill is the same across &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; forms, and shares the same cooldown.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hc6fffbb4g14b4g4ddagbdeag8b1deabb392b" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralCloak_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Gain &lt;font color='#B823CB'&gt;Death Resist&lt;/font&gt; for 1 turn, preventing your &lt;font color=&quot;#97fbff&quot;&gt;Vitality&lt;/font&gt; from falling below 1.&lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Elite Skill&lt;/font&gt;: This skill is the same across &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; forms, and shares the same cooldown.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hfd3359f5gc06eg4d96gb545g37c0b929038e" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralBlood_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Gain &lt;font color='#FF9600'&gt;Umbral Expertise&lt;/font&gt;, increasing &lt;font color='#639594'&gt;Scoundrel&lt;/font&gt; and &lt;font color=&quot;#40b606&quot;&gt;Initiative by [1]&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Elite Skill&lt;/font&gt;: This skill is the same across &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; forms, and shares the same cooldown.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hd0f07e03g36a9g43f7g911dg7ba37aebedbc" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralExpertise_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Gain &lt;font color=&quot;#4197e2&quot;&gt;Vampiric Hunger&lt;/font&gt; for 2 turns, adding &lt;font color=&quot;#b823cb&quot;&gt;50% Life Steal&lt;/font&gt; for its duration. &lt;br&gt;&lt;br&gt;Also grants &lt;font color='#dbdbdb'&gt;Hasted&lt;/font&gt; for 1 turn, cleansing &lt;font color='#c7a758'&gt;Slowed&lt;/font&gt; and &lt;font color='#c80030'&gt;Crippled&lt;/font&gt; whilst providing an additional &lt;font color=&quot;#40b606&quot;&gt;1AP per turn&lt;/font&gt; and &lt;font color=&quot;#40b606&quot;&gt;+2 Movement&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Elite Skill&lt;/font&gt;: This skill is the same across &lt;font color='#a8a8a8'&gt;Order&lt;/font&gt; and &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; forms, and shares the same cooldown.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h67b5ebfag611eg46cfga5f6g4bac71ef9b3a" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralLeech_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

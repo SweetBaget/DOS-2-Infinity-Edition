@@ -1,0 +1,26 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+PROC
+ProcOdinCoreRespec((CHARACTERGUID)_Char,(CHARACTERGUID)_Vendor,(STRING)_Preset,(STRING)_FlagChar,(STRING)_FlagVendor)
+AND
+CharacterGetEquippedItem((CHARACTERGUID)_Char, "Amulet", _Item)
+AND
+GetTemplate(_Item, _Template)
+AND
+CharacterGetLevel((CHARACTERGUID)_Char,_Lvl)
+THEN
+TransferItemsToCharacter((CHARACTERGUID)_Char, (CHARACTERGUID)_Vendor);
+CharacterApplyPreset(_Char, _Preset);
+CharacterLevelUpTo(_Char, _Lvl);
+TransferItemsToCharacter((CHARACTERGUID)_Vendor, (CHARACTERGUID)_Char);
+ItemTemplateAddTo(_Template,(CHARACTERGUID)_Char,1,0);
+//ItemDestroy((ITEMGUID)_Item);
+// Proc_GLO_SourceCollars_EquipSourceCollar(_Char);
+ObjectClearFlag((CHARACTERGUID)_Char,_FlagChar,0);
+ObjectClearFlag((CHARACTERGUID)_Vendor,_FlagVendor,0);
+EXITSECTION
+
+ENDEXITSECTION

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="4" build="0" />
+    <region id="Config">
+        <node id="root">
+            <children>
+                <node id="Dependencies">
+                    <children>
+                        <node id="ModuleShortDesc">
+                            <attribute id="Folder" value="DivinityOrigins_1301db3d-1f54-4e98-9be5-5094030916e4" type="30" />
+                            <attribute id="MD5" value="" type="23" />
+                            <attribute id="Name" value="Divinity: Original Sin 2" type="22" />
+                            <attribute id="UUID" value="1301db3d-1f54-4e98-9be5-5094030916e4" type="22" />
+                            <attribute id="Version" value="371460775" type="4" />
+                        </node>
+                    </children>
+                </node>
+                <node id="ModuleInfo">
+                    <attribute id="Author" value="" type="30" />
+                    <attribute id="CharacterCreationLevelName" value="" type="22" />
+                    <attribute id="DisplayName" value="Fort Joy Magic Mirror" handle="h10ddd14cgf98fg4001ga4b5g11c98ff73a50" type="28" />
+                   <attribute id="DescriptionName" value="Manifests a Magic Mirror in the Arena of Fort Joy, along with a new Character Creation level. This allows you to respec before moving on to the next act of the game.&lt;br&gt;&lt;br&gt;Note that this is a persistent modification that cannot be turned off once activated." handle="hdae5ce22g69afg4b31ga2d9g95c1859f68e4" type="28" />
+                    <attribute id="Description" value="Manifests a Magic Mirror in the Arena of Fort Joy, along with a new Character Creation level. This allows you to respec before moving on to the next act of the game. Note that this is a persistent modification that cannot be turned off once activated." type="30" />
+                    <attribute id="Folder" value="CMP_FTJRespec_Kamil" type="30" />
+                    <attribute id="GMTemplate" value="" type="22" />
+                    <attribute id="LobbyLevelName" value="" type="22" />
+                    <attribute id="MD5" value="" type="23" />
+                    <attribute id="MenuLevelName" value="" type="22" />
+                    <attribute id="Name" value="Fort Joy Magic Mirror" type="22" />
+                    <attribute id="NumPlayers" value="4" type="1" />
+                    <attribute id="PhotoBooth" value="" type="22" />
+                    <attribute id="StartupLevelName" value="" type="22" />
+                    <attribute id="Tags" value="" type="30" />
+                    <attribute id="Type" value="Add-on" type="22" />
+                    <attribute id="UUID" value="2d42113c-681a-47b6-96a1-d90b3b1b07d3" type="22" />
+                    <attribute id="Version" value="268435456" type="4" />
+                    <children>
+                        <node id="PublishVersion">
+                            <attribute id="Version" value="908594795" type="4" />
+                        </node>
+                        <node id="Scripts" />
+                        <node id="TargetModes">
+                            <children>
+                                <node id="Target">
+                                    <attribute id="Object" value="Story" type="22" />
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

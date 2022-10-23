@@ -1,0 +1,23 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Populate crafting books database ==============================
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Arrows_A_000_e464d1a5-148e-4435-88b5-59a75fe32543);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Barrels_A_000_0a473b35-4129-423d-b13a-7d35c3c40e42);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Crafting_Tool_A_000_c4a1b121-28a6-494c-af3d-479647686e51);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grenades_A_000_1acd2805-c071-452e-b1ba-f6e6eb11e803);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grimoire_A_000_77be9e8d-35b9-4e51-b9e7-ffb10670dcc2);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Potions_A_000_11d989b2-5d8f-4294-8ea9-b1ae085aa11c);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Traps_A_000_eed8b13a-4f6a-454f-a2fa-2c7fe2e145ac);
+DB_CoS_CraftingBooks(ITEMGUID_CMP_CO_RCP_Weapon_Boost_A_000_d88f0f6d-da59-431a-9b02-304bc67b511e);
+KBSECTION
+// Clear book ownership ==========================================
+IF
+	RegionStarted(_)
+	AND DB_CoS_CraftingBooks(_Book)
+THEN
+	ItemClearOwner((ITEMGUID)_Book);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "CouncilOfSeven"

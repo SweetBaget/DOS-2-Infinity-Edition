@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Rush forward, dealing [1]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; and applying &lt;font color=&quot;#c80030&quot;&gt;Fading&lt;/font&gt;, dealing [2]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; each turn. &lt;br&gt;&lt;br&gt;Applies &lt;font color='#c80030'&gt;Peril&lt;/font&gt;, reducing &lt;font color='#c80030'&gt;Elemental Resistances by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Nerve Slash&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which leaps to and backstabs a target.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h55297322g9d44g4495gb700g3d37e1207196" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Rush_SHADEShadowRush_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Rush forward, dealing [1] &lt;font color='#c80030'&gt;as chaos damage&lt;/font&gt; and applying &lt;font color=&quot;#c80030&quot;&gt;Fading&lt;/font&gt;, dealing [2]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; each turn. &lt;br&gt;&lt;br&gt;Applies &lt;font color='#c80030'&gt;Peril&lt;/font&gt;, reducing &lt;font color='#c80030'&gt;Elemental Resistances by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Nerve Slash&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which leaps to and backstabs a target.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h025fbaa3gd60bg49e5g9814ga375fed45ad7" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Rush_SHADEShadowRushDUMMY_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

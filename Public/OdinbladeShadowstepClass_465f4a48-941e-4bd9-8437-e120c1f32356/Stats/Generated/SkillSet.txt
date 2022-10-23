@@ -1,0 +1,4 @@
+new skillset "Class_Umbra"
+add skill "Shout_SHADEShadowstep"
+add skill "Shout_SHADEBladeFlurry"
+add skill "Projectile_SHADEKnifeTest_Human"

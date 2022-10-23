@@ -1,0 +1,52 @@
+INIT
+
+EVENTS
+//Cleanse Pyrokinetic Overhaul statuses
+EVENT OdinCORE_Statuses_PYRO
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character, CHILLED)
+	OnCharacterStatusApplied(_Character, WET)
+	OnCharacterStatusApplied(_Character, FROZEN)
+	OnCharacterStatusApplied(_Character, PERMAFROST)
+	OnCharacterStatusApplied(_Character, OdinWater_HYPOTHERMIA)
+	OnCharacterStatusApplied(_Character, OdinWater_DEEPFREEZE)
+ACTIONS
+IF "c1|c2|c3|c4|c5|c6"
+	CharacterHasStatus(_Character, OdinPyro_BURNING1)
+	CharacterHasStatus(_Character, OdinPyro_BURNING2)
+	CharacterHasStatus(_Character, OdinPyro_BURNING3)
+	CharacterHasStatus(_Character, OdinPyro_BURNING4)
+	CharacterHasStatus(_Character, OdinPyro_BURNING5)
+	CharacterHasStatus(_Character, OdinPyro_SMOLDER)
+THEN
+	CharacterRemoveStatus(_Character, OdinPyro_BURNING1)
+	CharacterRemoveStatus(_Character, OdinPyro_BURNING2)
+	CharacterRemoveStatus(_Character, OdinPyro_BURNING3)
+	CharacterRemoveStatus(_Character, OdinPyro_BURNING4)
+	CharacterRemoveStatus(_Character, OdinPyro_BURNING5)
+	CharacterRemoveStatus(_Character, OdinPyro_SMOLDER)
+ENDIF
+
+//Cleanse Hydrosophist Overhaul statuses
+EVENT OdinCORE_Statuses_HYDRO
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character, WARM)
+	OnCharacterStatusApplied(_Character, BURNING)
+	OnCharacterStatusApplied(_Character, NECROFIRE)
+	OnCharacterStatusApplied(_Character, OdinPyro_BURNING1)
+	OnCharacterStatusApplied(_Character, OdinPyro_BURNING2)
+	OnCharacterStatusApplied(_Character, OdinPyro_BURNING3)
+	OnCharacterStatusApplied(_Character, OdinPyro_BURNING4)
+	OnCharacterStatusApplied(_Character, OdinPyro_BURNING5)
+ACTIONS
+IF "c1"
+	CharacterHasStatus(_Character, OdinWater_HYPOTHERMIA)
+THEN
+	CharacterRemoveStatus(_Character, OdinWater_HYPOTHERMIA)
+ENDIF

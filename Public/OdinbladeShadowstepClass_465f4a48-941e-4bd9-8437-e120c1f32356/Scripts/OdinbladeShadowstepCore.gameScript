@@ -1,0 +1,1205 @@
+EVENTS
+
+EVENT ActivateStance
+VARS
+CHARACTER:_Character
+
+ON
+    OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	IF "c1"
+		//CharacterHasSkill(_Character, Jump_SHADEDarkRaid)
+		HasUserFlag(_Character,ODINSHADE)
+	THEN
+		CharacterRemoveSkill(_Character, Shout_SHADEShadowstep)
+		CharacterAddSkill(_Character, Shout_SHADEShadowstep)
+		CharacterApplyStatus(_Character,SHADE_ShadeForm, -1)
+		SetUserFlag(_Character,ODINSHADE)
+		CharacterAddActionPoints(_Character, 1)
+		DisplayText(_Character, "Form has not successfully changed. Costs refunded. Please recast!", 3)
+		IF "c1"
+			HasUserFlag(_Character, CastedOneTurnINVISIBLE)
+		THEN
+			CharacterRemoveStatus(_Character, INVISIBLE, null, 0)
+			ClearUserFlag(_Character, CastedOneTurnINVISIBLE)
+		ENDIF
+	ELSE
+		CharacterRemoveSkill(_Character, Shout_SHADEShadowstep)
+		CharacterAddSkill(_Character, Shout_SHADEShadowstep)
+		CharacterApplyStatus(_Character,SHADE_OrderForm, -1)
+		SetUserFlag(_Character,ODINORDER)
+		CharacterAddActionPoints(_Character, 1)
+		DisplayText(_Character, "Form has not successfully changed. Costs refunded. Please recast!", 3)
+		IF "c1"
+			HasUserFlag(_Character, CastedOneTurnINVISIBLE)
+		THEN
+			CharacterRemoveStatus(_Character, INVISIBLE, null, 0)
+			ClearUserFlag(_Character, CastedOneTurnINVISIBLE)
+		ENDIF
+	ENDIF
+ELIF "!c1"
+    CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_OrderForm, null, 0)
+    CharacterApplyStatus(_Character, SHADE_ShadeForm, -1, 1)
+	ClearUserFlag(_Character,ODINORDER)
+	SetUserFlag(_Character,ODINSHADE)
+ELIF "c1"
+    CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+    CharacterApplyStatus(_Character, SHADE_OrderForm, -1, 1)
+	ClearUserFlag(_Character,ODINSHADE)
+	SetUserFlag(_Character,ODINORDER)
+ENDIF
+
+EVENT StanceCombatStartHandler
+VARS
+CHARACTER:_Character
+
+ON
+	OnEnteredCombat(_Character, _)
+ACTIONS
+IF "c1&c2"
+	HasUserFlag(_Character,ODINORDER)
+	CharacterHasSkill(_Character, Shout_SHADEShadowstep)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+	CharacterRemoveStatus(_Character, SHADE_OrderForm, null, 0)
+	CharacterApplyStatus(_Character, SHADE_OrderForm, -1)
+ELIF "c1&c2"
+	HasUserFlag(_Character,ODINSHADE)
+	CharacterHasSkill(_Character, Shout_SHADEShadowstep)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_OrderForm, null, 0)
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+	CharacterApplyStatus(_Character, SHADE_ShadeForm, -1)
+ENDIF
+IF "c1"
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	ClearUserFlag(_Character,ODINSHADE)
+	SetUserFlag(_Character,ODINORDER)
+ELIF "c1"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	ClearUserFlag(_Character,ODINORDER)
+	SetUserFlag(_Character,ODINSHADE)
+ENDIF
+
+EVENT StatusSaveLoads
+VARS
+CHARACTER:_Character
+
+ON
+	OnLoaded(null,null,null,null)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADEShadowstep)
+	HasUserFlag(_Character,ODINSHADE)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_OrderForm, null, 0)
+	CharacterApplyStatus(_Character, SHADE_ShadeForm, -1, 1)
+	ClearUserFlag(_Character,ODINORDER)
+	SetUserFlag(_Character, ODINSHADE)
+ELIF "c1"
+	CharacterHasSkill(_Character, Shout_SHADEShadowstep)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+	CharacterApplyStatus(_Character, SHADE_OrderForm, -1, 1)
+	ClearUserFlag(_Character,ODINSHADE)
+	SetUserFlag(_Character, ODINORDER)
+ENDIF
+
+
+EVENT StatusResurrected
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character,RESURRECT)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADEShadowstep)
+	HasUserFlag(_Character,ODINSHADE)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_OrderForm, null, 0)
+	CharacterApplyStatus(_Character, SHADE_ShadeForm, -1, 1)
+ELIF "c1"
+	CharacterHasSkill(_Character, Shout_SHADEShadowstep)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+	CharacterApplyStatus(_Character, SHADE_OrderForm, -1, 1)
+	ClearUserFlag(_Character,ODINSHADE)
+	SetUserFlag(_Character, ODINORDER)
+ENDIF
+
+
+EVENT LearnStanceSkill
+VARS
+CHARACTER:_Character
+
+ON
+    OnSkillActivated(_Character, Shout_SHADEShadowstep)
+ACTIONS
+IF "!c1"
+    CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+    CharacterApplyStatus(_Character, SHADE_OrderForm, -1, 1)
+ENDIF
+
+EVENT RemoveStanceSkill
+VARS
+CHARACTER:_Character
+
+ON
+    OnSkillDeactivated(_Character, Shout_SHADEShadowstep)
+ACTIONS
+IF "c1"
+    CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_OrderForm, null, 0)
+ENDIF
+
+IF "c1"
+    CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveStatus(_Character, SHADE_ShadeForm, null, 0)
+ENDIF
+
+EVENT ShadeSkills_KnifeTest
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	IsSkillActive(_Character, Projectile_SHADEKnifeTest_Human)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTest_Human)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+ELIF "c1&c2"
+	IsSkillActive(_Character, Projectile_SHADEKnifeTest_Shade)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTest_Human)
+ENDIF
+
+EVENT DummyShadeSkills_KnifeTest
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Projectile_SHADEKnifeTestDummy_Human,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Projectile_SHADEKnifeTest_Human)
+	CharacterHasSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTestDummy_Human)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_KnifeHuman)
+	DisplayText(_Character, "I already know this skill.", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedKnifeTest)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTestDummy_Human)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+	SetFlag(_Character,SHADELearnedKnifeTest)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedKnifeTest)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTestDummy_Human)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTest_Human)
+	SetFlag(_Character,SHADELearnedKnifeTest)
+ENDIF
+
+EVENT ShadeSkills_ChloroTest
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1"
+	IsSkillActive(_Character, Projectile_SHADEChloroTest_Human)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEChloroTest_Human)
+	CharacterAddSkill(_Character, Projectile_SHADEChloroTest_Shade)
+ELIF "c1"
+	IsSkillActive(_Character, Projectile_SHADEChloroTest_Shade)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEChloroTest_Shade)
+	CharacterAddSkill(_Character, Projectile_SHADEChloroTest_Human)
+ENDIF
+EVENT ShadeSkills_BladeFlurry
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADEBladeFlurry)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEBladeFlurry)
+	CharacterAddSkill(_Character, Cone_SHADEShadeFury)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Cone_SHADEShadeFury)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Cone_SHADEShadeFury)
+	CharacterAddSkill(_Character, Shout_SHADEBladeFlurry)
+ENDIF
+
+EVENT DummyShadeSkills_BladeFlurry
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Shout_SHADEDummyBladeFlurry,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Shout_SHADEBladeFlurry)
+	CharacterHasSkill(_Character, Cone_SHADEShadeFury)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEDummyBladeFlurry)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_BladeFlurry)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedBladeFlurry)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEDummyBladeFlurry)
+	CharacterAddSkill(_Character, Cone_SHADEShadeFury)
+	SetFlag(_Character,SHADELearnedBladeFlurry)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedBladeFlurry)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEDummyBladeFlurry)
+	CharacterAddSkill(_Character, Shout_SHADEBladeFlurry)
+	SetFlag(_Character,SHADELearnedBladeFlurry)
+ENDIF
+
+EVENT ShadeSkills_VeiledAssault
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Jump_SHADEVeiledAssault)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEVeiledAssault)
+	CharacterAddSkill(_Character, Jump_SHADEDarkRaid)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Jump_SHADEDarkRaid)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEDarkRaid)
+	CharacterAddSkill(_Character, Jump_SHADEVeiledAssault)
+ENDIF
+
+EVENT DummyShadeSkills_VeiledAssault
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Jump_SHADEDummyVeiledAssault,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Jump_SHADEVeiledAssault)
+	CharacterHasSkill(_Character, Jump_SHADEDarkRaid)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEDummyVeiledAssault)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_VeiledAssault)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedVeiledAssault)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEDummyVeiledAssault)
+	CharacterAddSkill(_Character, Jump_SHADEDarkRaid)
+	SetFlag(_Character,SHADELearnedVeiledAssault)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedVeiledAssault)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEDummyVeiledAssault)
+	CharacterAddSkill(_Character, Jump_SHADEVeiledAssault)
+	SetFlag(_Character,SHADELearnedVeiledAssault)
+ENDIF
+
+EVENT ShadeSkills_BouncingBlade
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Projectile_SHADEBouncingBlade)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEBouncingBlade)
+	CharacterAddSkill(_Character, Projectile_SHADEDivergentDagger)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Projectile_SHADEDivergentDagger)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEDivergentDagger)
+	CharacterAddSkill(_Character, Projectile_SHADEBouncingBlade)
+ENDIF
+
+EVENT DummyShadeSkills_BouncingBlade
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Projectile_SHADEBouncingBladeDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Projectile_SHADEBouncingBlade)
+	CharacterHasSkill(_Character, Projectile_SHADEDivergentDagger)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEBouncingBladeDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_BouncingBlade)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedBouncingBlade)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEBouncingBladeDummy)
+	CharacterAddSkill(_Character, Projectile_SHADEDivergentDagger)
+	SetFlag(_Character,SHADELearnedBouncingBlade)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedBouncingBlade)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEBouncingBladeDummy)
+	CharacterAddSkill(_Character, Projectile_SHADEBouncingBlade)
+	SetFlag(_Character,SHADELearnedBouncingBlade)
+ENDIF
+
+EVENT ShadeSkills_SwiftStrikes
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADESwiftStrikes)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESwiftStrikes)
+	CharacterAddSkill(_Character, Target_SHADETumultuousStrike)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADETumultuousStrike)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADETumultuousStrike)
+	CharacterAddSkill(_Character, Target_SHADESwiftStrikes)
+ENDIF
+
+EVENT DummyShadeSkills_SwiftStrikes
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Target_SHADESwiftStrikesDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Target_SHADESwiftStrikes)
+	CharacterHasSkill(_Character, Target_SHADETumultuousStrike)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESwiftStrikesDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_SwiftStrikes)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedSwiftStrikes)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESwiftStrikesDummy)
+	CharacterAddSkill(_Character, Target_SHADETumultuousStrike)
+	SetFlag(_Character,SHADELearnedSwiftStrikes)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedSwiftStrikes)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESwiftStrikesDummy)
+	CharacterAddSkill(_Character, Target_SHADESwiftStrikes)
+	SetFlag(_Character,SHADELearnedSwiftStrikes)
+ENDIF
+
+
+EVENT ShadeSkills_NerveSlash
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADENerveSlash)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADENerveSlash)
+	CharacterAddSkill(_Character, Rush_SHADEShadowRush)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Rush_SHADEShadowRush)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Rush_SHADEShadowRush)
+	CharacterAddSkill(_Character, MultiStrike_SHADENerveSlash)
+ENDIF
+
+EVENT DummyShadeSkills_NerveSlash
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, MultiStrike_SHADEDummyNerveSlash,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADENerveSlash)
+	CharacterHasSkill(_Character, Rush_SHADEShadowRush)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEDummyNerveSlash)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_NerveSlash)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedNerveSlash)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEDummyNerveSlash)
+	CharacterAddSkill(_Character, Rush_SHADEShadowRush)
+	SetFlag(_Character,SHADELearnedNerveSlash)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedNerveSlash)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEDummyNerveSlash)
+	CharacterAddSkill(_Character, MultiStrike_SHADENerveSlash)
+	SetFlag(_Character,SHADELearnedNerveSlash)
+ENDIF
+
+
+EVENT ShadeSkills_Cutthroat
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADECutthroat)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADECutthroat)
+	CharacterAddSkill(_Character, Target_SHADESpiteVein)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADESpiteVein)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESpiteVein)
+	CharacterAddSkill(_Character, Target_SHADECutthroat)
+ENDIF
+
+EVENT DummyShadeSkills_Cutthroat
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Target_SHADECutthroatDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Target_SHADECutthroat)
+	CharacterHasSkill(_Character, Target_SHADESpiteVein)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADECutthroatDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_Cutthroat)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedCutthroat)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADECutthroatDummy)
+	CharacterAddSkill(_Character, Target_SHADESpiteVein)
+	SetFlag(_Character,SHADELearnedCutthroat)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedCutthroat)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADECutthroatDummy)
+	CharacterAddSkill(_Character, Target_SHADECutthroat)
+	SetFlag(_Character,SHADELearnedCutthroat)
+ENDIF
+
+
+EVENT ShadeSkills_SmokeBomb
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Projectile_SHADESmokeBomb)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADESmokeBomb)
+	CharacterAddSkill(_Character, Dome_SHADENullZone)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Dome_SHADENullZone)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Dome_SHADENullZone)
+	CharacterAddSkill(_Character, Projectile_SHADESmokeBomb)
+ENDIF
+
+EVENT DummyShadeSkills_SmokeBomb
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Projectile_SHADESmokeBombDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Projectile_SHADESmokeBomb)
+	CharacterHasSkill(_Character, Dome_SHADENullZone)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADESmokeBombDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_SmokeBomb)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedSmokeBomb)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADESmokeBombDummy)
+	CharacterAddSkill(_Character, Dome_SHADENullZone)
+	SetFlag(_Character,SHADELearnedSmokeBomb)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedSmokeBomb)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADESmokeBombDummy)
+	CharacterAddSkill(_Character, Projectile_SHADESmokeBomb)
+	SetFlag(_Character,SHADELearnedSmokeBomb)
+ENDIF
+
+
+EVENT ShadeSkills_Daggerfall
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+ENDIF
+
+EVENT DummyShadeSkills_Daggerfall
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, ProjectileStrike_SHADEDaggerfallDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEDaggerfallDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_Daggerfall)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedDaggerfall)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEDaggerfallDummy)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+	SetFlag(_Character,SHADELearnedDaggerfall)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedDaggerfall)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEDaggerfallDummy)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+	SetFlag(_Character,SHADELearnedDaggerfall)
+ENDIF
+
+
+EVENT ShadeSkills_BladeDance
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADEBladeDance)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEBladeDance)
+	CharacterAddSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+	CharacterAddSkill(_Character, MultiStrike_SHADEBladeDance)
+ENDIF
+
+EVENT DummyShadeSkills_BladeDance
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, MultiStrike_SHADEBladeDanceDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADEBladeDance)
+	CharacterHasSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEBladeDanceDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_BladeDance)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedBlanceDance)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEBladeDanceDummy)
+	CharacterAddSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+	SetFlag(_Character,SHADELearnedBlanceDance)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedBlanceDance)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEBladeDanceDummy)
+	CharacterAddSkill(_Character, MultiStrike_SHADEBladeDance)
+	SetFlag(_Character,SHADELearnedBlanceDance)
+ENDIF
+
+
+EVENT ShadeSkills_Resourcefulness
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADEResourcefulness)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEResourcefulness)
+	CharacterAddSkill(_Character, Shout_SHADESourceOfFerocity)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADESourceOfFerocity)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADESourceOfFerocity)
+	CharacterAddSkill(_Character, Shout_SHADEResourcefulness)
+ENDIF
+
+EVENT DummyShadeSkills_Resourcefulness
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Shout_SHADEResourcefulnessDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Shout_SHADEResourcefulness)
+	CharacterHasSkill(_Character, Shout_SHADESourceOfFerocity)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEResourcefulnessDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_Resourcefulness)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedResourcefulness)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEResourcefulnessDummy)
+	CharacterAddSkill(_Character, Shout_SHADESourceOfFerocity)
+	SetFlag(_Character,SHADELearnedResourcefulness)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedResourcefulness)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEResourcefulnessDummy)
+	CharacterAddSkill(_Character, Shout_SHADEResourcefulness)
+	SetFlag(_Character,SHADELearnedResourcefulness)
+ENDIF
+
+
+EVENT ShadeSkills_ChallengeBlade
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADEChallengeBlade)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeBlade)
+	CharacterAddSkill(_Character, Target_SHADEChallengeShade)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADEChallengeShade)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeShade)
+	CharacterAddSkill(_Character, Target_SHADEChallengeBlade)
+ENDIF
+
+EVENT DummyShadeSkills_ChallengeBlade
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Target_SHADEChallengeBladeDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Target_SHADEChallengeBlade)
+	CharacterHasSkill(_Character, Target_SHADEChallengeShade)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeBladeDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_ChallengeOfTheBlade)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedChallenge)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeBladeDummy)
+	CharacterAddSkill(_Character, Target_SHADEChallengeShade)
+	SetFlag(_Character,SHADELearnedChallenge)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedChallenge)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeBladeDummy)
+	CharacterAddSkill(_Character, Target_SHADEChallengeBlade)
+	SetFlag(_Character,SHADELearnedChallenge)
+ENDIF
+
+
+EVENT ShadeSkills_MasterOfOrder
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+	CharacterAddSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+ENDIF
+
+EVENT DummyShadeSkills_MasterOfOrder
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, MultiStrike_SHADEMasterOfOrderDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEMasterOfOrderDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_MasterOfOrder)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedMasterOfOrder)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEMasterOfOrderDummy)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+	SetFlag(_Character,SHADELearnedMasterOfOrder)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedMasterOfOrder)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEMasterOfOrderDummy)
+	CharacterAddSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+	SetFlag(_Character,SHADELearnedMasterOfOrder)
+ENDIF
+
+
+EVENT ShadeSkills_PreemptiveTactics
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADEPreemptiveTactics)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEPreemptiveTactics)
+	CharacterAddSkill(_Character, Shout_SHADERetreatIntoShadow)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Shout_SHADERetreatIntoShadow)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADERetreatIntoShadow)
+	CharacterAddSkill(_Character, Shout_SHADEPreemptiveTactics)
+ENDIF
+
+EVENT DummyShadeSkills_PreemptiveTactics
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Shout_SHADEPreemptiveTacticsDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Shout_SHADEPreemptiveTactics)
+	CharacterHasSkill(_Character, Shout_SHADERetreatIntoShadow)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEPreemptiveTacticsDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_PreemptiveTactics)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedPreemptiveTactics)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEPreemptiveTacticsDummy)
+	CharacterAddSkill(_Character, Shout_SHADERetreatIntoShadow)
+	SetFlag(_Character,SHADELearnedPreemptiveTactics)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedPreemptiveTactics)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEPreemptiveTacticsDummy)
+	CharacterAddSkill(_Character, Shout_SHADEPreemptiveTactics)
+	SetFlag(_Character,SHADELearnedPreemptiveTactics)
+ENDIF
+
+
+EVENT ShadeSkills_DrainingSlash
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character,Shout_SHADEShadowstep)
+ACTIONS
+IF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADEDrainingSlash)
+	CharacterHasStatus(_Character, SHADE_OrderForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEDrainingSlash)
+	CharacterAddSkill(_Character, Target_SHADEAbolishResistance)
+ELIF "c1&c2"
+	CharacterHasSkill(_Character, Target_SHADEAbolishResistance)
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEAbolishResistance)
+	CharacterAddSkill(_Character, Target_SHADEDrainingSlash)
+ENDIF
+
+EVENT DummyShadeSkills_DrainingSlash
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillAdded(_Character, Target_SHADEDrainingSlashDummy,1)
+ACTIONS
+IF "c1|c2"
+	CharacterHasSkill(_Character, Target_SHADEDrainingSlash)
+	CharacterHasSkill(_Character, Target_SHADEAbolishResistance)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEDrainingSlashDummy)
+	CharacterAddToInventory(_Character,SKILLBOOK_Odinblade_Shade_AbolishResistance)
+	DisplayText(_Character, "I already know this skill!", 3)
+ELIF "c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedDrainingSlash)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEDrainingSlashDummy)
+	CharacterAddSkill(_Character, Target_SHADEAbolishResistance)
+	SetFlag(_Character,SHADELearnedDrainingSlash)
+ELIF "!c1&!c2"
+	CharacterHasStatus(_Character, SHADE_ShadeForm)
+	HasFlag(_Character,SHADELearnedDrainingSlash)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEDrainingSlashDummy)
+	CharacterAddSkill(_Character, Target_SHADEDrainingSlash)
+	SetFlag(_Character,SHADELearnedDrainingSlash)
+ENDIF
+
+EVENT SHADEOneTurnINVISIBLE
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character, Shout_SHADEShadowstep)
+	OnSkillCast(_Character, Shout_SHADEPreemptiveTactics)
+	OnSkillCast(_Character, Shout_SHADERetreatIntoShadow)
+	OnSkillCast(_Character, Shout_SHADEResourcefulness)
+	OnSkillCast(_Character, Shout_SHADESourceOfFerocity)
+ACTIONS
+	SetFlag(_Character, CastedOneTurnINVISIBLE)
+	CharacterApplyStatus(_Character, INVISIBLE, 1)
+
+EVENT SHADECheckIncomingINVISIBLE
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusApplied(_Character, INVISIBLE)
+ACTIONS
+IF "c1"
+	HasFlag(_Character, CastedOneTurnINVISIBLE)
+THEN
+	SetFlag(_Character, OneTurnINVISIBLE)
+	ClearFlag(_Character, CastedOneTurnINVISIBLE)
+ELSE
+	ClearFlag(_Character, OneTurnINVISIBLE)
+ENDIF
+
+EVENT SHADEEndOfTurnINVISIBLERemove
+VARS
+CHARACTER:_Character
+
+ON
+	OnTurnEnded(_Character,_)
+ACTIONS
+IF "c1"
+	HasFlag(_Character, OneTurnINVISIBLE)
+THEN
+	CharacterRemoveStatus(_Character, INVISIBLE)
+	ClearFlag(_Character, OneTurnINVISIBLE)
+ENDIF
+
+
+EVENT SHADEDaggerfangDummyBugFix
+VARS
+CHARACTER:_Character
+
+ON
+	OnLoaded(null,null,null,null)
+ACTIONS
+IF "c1&c2"
+	HasFlag(_Character,SHADELearnedKnifeTest)
+	CharacterHasSkill(_Character, Projectile_SHADEKnifeTestDummy_Human)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTestDummy_Human)
+	ClearFlag(_Character,SHADELearnedKnifeTest)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTestDummy_Human)
+ENDIF
+
+
+EVENT SHADEResourcefulnessSourceOfFerocityResets
+VARS
+CHARACTER:_Character
+
+ON
+	OnSkillCast(_Character, Shout_SHADEResourcefulness)
+	OnSkillCast(_Character, Shout_SHADESourceOfFerocity)
+ACTIONS
+IF "c1"
+	CharacterHasSkill(_Character, Projectile_SHADEKnifeTest_Human)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTest_Human)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTest_Human)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+	CharacterAddSkill(_Character, Projectile_SHADEKnifeTest_Shade)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Projectile_SHADEBouncingBlade)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEBouncingBlade)
+	CharacterAddSkill(_Character, Projectile_SHADEBouncingBlade)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Projectile_SHADEDivergentDagger)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADEDivergentDagger)
+	CharacterAddSkill(_Character, Projectile_SHADEDivergentDagger)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Projectile_SHADESmokeBomb)
+THEN
+	CharacterRemoveSkill(_Character, Projectile_SHADESmokeBomb)
+	CharacterAddSkill(_Character, Projectile_SHADESmokeBomb)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Dome_SHADENullZone)
+THEN
+	CharacterRemoveSkill(_Character, Dome_SHADENullZone)
+	CharacterAddSkill(_Character, Dome_SHADENullZone)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Shout_SHADEBladeFlurry)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEBladeFlurry)
+	CharacterAddSkill(_Character, Shout_SHADEBladeFlurry)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Cone_SHADEShadeFury)
+THEN
+	CharacterRemoveSkill(_Character, Cone_SHADEShadeFury)
+	CharacterAddSkill(_Character, Cone_SHADEShadeFury)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Shout_SHADEPreemptiveTactics)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADEPreemptiveTactics)
+	CharacterAddSkill(_Character, Shout_SHADEPreemptiveTactics)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Shout_SHADERetreatIntoShadow)
+THEN
+	CharacterRemoveSkill(_Character, Shout_SHADERetreatIntoShadow)
+	CharacterAddSkill(_Character, Shout_SHADERetreatIntoShadow)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Jump_SHADEVeiledAssault)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEVeiledAssault)
+	CharacterAddSkill(_Character, Jump_SHADEVeiledAssault)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Jump_SHADEDarkRaid)
+THEN
+	CharacterRemoveSkill(_Character, Jump_SHADEDarkRaid)
+	CharacterAddSkill(_Character, Jump_SHADEDarkRaid)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, MultiStrike_SHADENerveSlash)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADENerveSlash)
+	CharacterAddSkill(_Character, MultiStrike_SHADENerveSlash)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, MultiStrike_SHADEBladeDance)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEBladeDance)
+	CharacterAddSkill(_Character, MultiStrike_SHADEBladeDance)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+	CharacterAddSkill(_Character, MultiStrike_SHADEDanceOfDeath)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+THEN
+	CharacterRemoveSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+	CharacterAddSkill(_Character, MultiStrike_SHADEMasterOfOrder)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEDaggerfall)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEChaosCrash)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+THEN
+	CharacterRemoveSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+	CharacterAddSkill(_Character, ProjectileStrike_SHADEMasterOfChaos)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Rush_SHADEShadowRush)
+THEN
+	CharacterRemoveSkill(_Character, Rush_SHADEShadowRush)
+	CharacterAddSkill(_Character, Rush_SHADEShadowRush)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADESwiftStrikes)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESwiftStrikes)
+	CharacterAddSkill(_Character, Target_SHADESwiftStrikes)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADETumultuousStrike)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADETumultuousStrike)
+	CharacterAddSkill(_Character, Target_SHADETumultuousStrike)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADECutthroat)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADECutthroat)
+	CharacterAddSkill(_Character, Target_SHADECutthroat)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADESpiteVein)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADESpiteVein)
+	CharacterAddSkill(_Character, Target_SHADESpiteVein)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADEChallengeBlade)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeBlade)
+	CharacterAddSkill(_Character, Target_SHADEChallengeBlade)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADEChallengeShade)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEChallengeShade)
+	CharacterAddSkill(_Character, Target_SHADEChallengeShade)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADEDrainingSlash)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEDrainingSlash)
+	CharacterAddSkill(_Character, Target_SHADEDrainingSlash)
+ENDIF
+IF "c1"
+	CharacterHasSkill(_Character, Target_SHADEAbolishResistance)
+THEN
+	CharacterRemoveSkill(_Character, Target_SHADEAbolishResistance)
+	CharacterAddSkill(_Character, Target_SHADEAbolishResistance)
+ENDIF

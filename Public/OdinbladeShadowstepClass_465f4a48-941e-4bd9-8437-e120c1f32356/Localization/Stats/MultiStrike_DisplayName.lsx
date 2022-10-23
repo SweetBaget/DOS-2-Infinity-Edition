@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Nerve Slash" type="28" handle="hb8aaa804g8442g48c4gbb7ag34886f23f1b3" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADENerveSlash_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Nerve Slash" type="28" handle="h025233c3gc40fg4ab8g9cacg727b4b3a461b" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADEDummyNerveSlash_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Blade Dance" type="28" handle="h2f8cec35g0a6bg43f6g84b6geae77181f870" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADEBladeDance_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Blade Dance" type="28" handle="hc9f229d7g2058g4844ga4cagf504cd0ec524" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADEBladeDanceDummy_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Dance of Death" type="28" handle="he8ded2ddg8a50g41e1ga8d6gd92497b855a9" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADEDanceOfDeath_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Master of Order" type="28" handle="hd119a225gf21dg4354ga4fbgdc6d2560fdbe" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADEMasterOfOrder_DisplayName" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Master of Order" type="28" handle="he9d22e64gab6fg49fag9a45g0566e07391b2" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="MultiStrike_SHADEMasterOfOrderDummy_DisplayName" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

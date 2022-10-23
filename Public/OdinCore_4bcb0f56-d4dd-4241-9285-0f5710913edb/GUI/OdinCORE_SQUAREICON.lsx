@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Aeroblast" type="22" />
+                    <attribute id="U1" value="0.453247" type="6" />
+                    <attribute id="U2" value="0.468628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_ConductiveTherapy" type="22" />
+                    <attribute id="U1" value="0.468872" type="6" />
+                    <attribute id="U2" value="0.484253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Conduit" type="22" />
+                    <attribute id="U1" value="0.484497" type="6" />
+                    <attribute id="U2" value="0.499878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_ConjureWindElemental" type="22" />
+                    <attribute id="U1" value="0.500122" type="6" />
+                    <attribute id="U2" value="0.515503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Haze" type="22" />
+                    <attribute id="U1" value="0.515747" type="6" />
+                    <attribute id="U2" value="0.531128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_InsulationShield" type="22" />
+                    <attribute id="U1" value="0.531372" type="6" />
+                    <attribute id="U2" value="0.546753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_LightningWarp" type="22" />
+                    <attribute id="U1" value="0.546997" type="6" />
+                    <attribute id="U2" value="0.562378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_MasterOfVolts" type="22" />
+                    <attribute id="U1" value="0.562622" type="6" />
+                    <attribute id="U2" value="0.578003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Overcast" type="22" />
+                    <attribute id="U1" value="0.578247" type="6" />
+                    <attribute id="U2" value="0.593628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_RepulsionBlast" type="22" />
+                    <attribute id="U1" value="0.593872" type="6" />
+                    <attribute id="U2" value="0.609253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_RollingThunder" type="22" />
+                    <attribute id="U1" value="0.609497" type="6" />
+                    <attribute id="U2" value="0.624878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_ShockingTouch" type="22" />
+                    <attribute id="U1" value="0.625122" type="6" />
+                    <attribute id="U2" value="0.640503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_ThunderSlam" type="22" />
+                    <attribute id="U1" value="0.656372" type="6" />
+                    <attribute id="U2" value="0.671753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_ThunderVault" type="22" />
+                    <attribute id="U1" value="0.671997" type="6" />
+                    <attribute id="U2" value="0.687378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Thunderbrand" type="22" />
+                    <attribute id="U1" value="0.640747" type="6" />
+                    <attribute id="U2" value="0.656128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Tornado" type="22" />
+                    <attribute id="U1" value="0.687622" type="6" />
+                    <attribute id="U2" value="0.703003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_TurbulentWind" type="22" />
+                    <attribute id="U1" value="0.703247" type="6" />
+                    <attribute id="U2" value="0.718628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Updraft" type="22" />
+                    <attribute id="U1" value="0.718872" type="6" />
+                    <attribute id="U2" value="0.734253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_Vaporise" type="22" />
+                    <attribute id="U1" value="0.828247" type="6" />
+                    <attribute id="U2" value="0.843628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_VoltAssault" type="22" />
+                    <attribute id="U1" value="0.734497" type="6" />
+                    <attribute id="U2" value="0.749878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Skill_VoltSwings" type="22" />
+                    <attribute id="U1" value="0.750122" type="6" />
+                    <attribute id="U2" value="0.765503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Status_Gravity" type="22" />
+                    <attribute id="U1" value="0.765747" type="6" />
+                    <attribute id="U2" value="0.781128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Status_Hawkeye" type="22" />
+                    <attribute id="U1" value="0.781372" type="6" />
+                    <attribute id="U2" value="0.796753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBAERO_Status_Stratuswalk" type="22" />
+                    <attribute id="U1" value="0.796997" type="6" />
+                    <attribute id="U2" value="0.812378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Skill_DesignateRedirection" type="22" />
+                    <attribute id="U1" value="0.0626221" type="6" />
+                    <attribute id="U2" value="0.0780029" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boon_Aggrevation" type="22" />
+                    <attribute id="U1" value="0.968872" type="6" />
+                    <attribute id="U2" value="0.984253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boon_Artillery" type="22" />
+                    <attribute id="U1" value="0.984497" type="6" />
+                    <attribute id="U2" value="0.999878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boon_Chaos" type="22" />
+                    <attribute id="U1" value="0.0313721" type="6" />
+                    <attribute id="U2" value="0.0467529" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boon_Mending" type="22" />
+                    <attribute id="U1" value="0.00012207" type="6" />
+                    <attribute id="U2" value="0.0155029" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boon_Redirection" type="22" />
+                    <attribute id="U1" value="0.0157471" type="6" />
+                    <attribute id="U2" value="0.0311279" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boon_Voracity" type="22" />
+                    <attribute id="U1" value="0.0469971" type="6" />
+                    <attribute id="U2" value="0.0623779" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBBSS_Status_Boons" type="22" />
+                    <attribute id="U1" value="0.328247" type="6" />
+                    <attribute id="U2" value="0.343628" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBCORE_Status_LostFooting" type="22" />
+                    <attribute id="U1" value="0.812622" type="6" />
+                    <attribute id="U2" value="0.828003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_ArtillerySpores" type="22" />
+                    <attribute id="U1" value="0.281372" type="6" />
+                    <attribute id="U2" value="0.296753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_BoulderCrash" type="22" />
+                    <attribute id="U1" value="0.125122" type="6" />
+                    <attribute id="U2" value="0.140503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_ConjureEarthElemental" type="22" />
+                    <attribute id="U1" value="0.203247" type="6" />
+                    <attribute id="U2" value="0.218628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_CorruptingVial" type="22" />
+                    <attribute id="U1" value="0.890747" type="6" />
+                    <attribute id="U2" value="0.906128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_Expunge" type="22" />
+                    <attribute id="U1" value="0.0313721" type="6" />
+                    <attribute id="U2" value="0.0467529" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_GranitePlating" type="22" />
+                    <attribute id="U1" value="0.00012207" type="6" />
+                    <attribute id="U2" value="0.0155029" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_MidnightOil" type="22" />
+                    <attribute id="U1" value="0.875122" type="6" />
+                    <attribute id="U2" value="0.890503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_NaturalRemedy" type="22" />
+                    <attribute id="U1" value="0.140747" type="6" />
+                    <attribute id="U2" value="0.156128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_NaturesJudgement" type="22" />
+                    <attribute id="U1" value="0.984497" type="6" />
+                    <attribute id="U2" value="0.999878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_Oilbrand" type="22" />
+                    <attribute id="U1" value="0.250122" type="6" />
+                    <attribute id="U2" value="0.265503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_OilyTouch" type="22" />
+                    <attribute id="U1" value="0.953247" type="6" />
+                    <attribute id="U2" value="0.968628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_ParasiticAffliction" type="22" />
+                    <attribute id="U1" value="0.218872" type="6" />
+                    <attribute id="U2" value="0.234253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_PoisonousTouch" type="22" />
+                    <attribute id="U1" value="0.968872" type="6" />
+                    <attribute id="U2" value="0.984253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_RockValley" type="22" />
+                    <attribute id="U1" value="0.921997" type="6" />
+                    <attribute id="U2" value="0.937378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_SeismicSlide" type="22" />
+                    <attribute id="U1" value="0.937622" type="6" />
+                    <attribute id="U2" value="0.953003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_Shapeshift_Revert" type="22" />
+                    <attribute id="U1" value="0.187622" type="6" />
+                    <attribute id="U2" value="0.203003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_Shapeshift_Sentinel" type="22" />
+                    <attribute id="U1" value="0.0626221" type="6" />
+                    <attribute id="U2" value="0.0780029" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_SongOfTheDryads" type="22" />
+                    <attribute id="U1" value="0.234497" type="6" />
+                    <attribute id="U2" value="0.249878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_SporeShrooms" type="22" />
+                    <attribute id="U1" value="0.906372" type="6" />
+                    <attribute id="U2" value="0.921753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_TectonicSpray" type="22" />
+                    <attribute id="U1" value="0.0157471" type="6" />
+                    <attribute id="U2" value="0.0311279" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_VenomBurst" type="22" />
+                    <attribute id="U1" value="0.265747" type="6" />
+                    <attribute id="U2" value="0.281128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_VineGrasp" type="22" />
+                    <attribute id="U1" value="0.0469971" type="6" />
+                    <attribute id="U2" value="0.0623779" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Skill_WormGrasp" type="22" />
+                    <attribute id="U1" value="0.859497" type="6" />
+                    <attribute id="U2" value="0.874878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Status_Corrupted" type="22" />
+                    <attribute id="U1" value="0.156372" type="6" />
+                    <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Status_Ironbark" type="22" />
+                    <attribute id="U1" value="0.171997" type="6" />
+                    <attribute id="U2" value="0.187378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Status_Oiled" type="22" />
+                    <attribute id="U1" value="0.109497" type="6" />
+                    <attribute id="U2" value="0.124878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Status_Rabbit" type="22" />
+                    <attribute id="U1" value="0.0782471" type="6" />
+                    <attribute id="U2" value="0.0936279" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBGEO_Status_Squirrel" type="22" />
+                    <attribute id="U1" value="0.0938721" type="6" />
+                    <attribute id="U2" value="0.109253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_AnimalCompanion" type="22" />
+                    <attribute id="U1" value="0.796997" type="6" />
+                    <attribute id="U2" value="0.812378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_Camouflage" type="22" />
+                    <attribute id="U1" value="0.890747" type="6" />
+                    <attribute id="U2" value="0.906128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_Dismiss_AnimalCompanion" type="22" />
+                    <attribute id="U1" value="0.921997" type="6" />
+                    <attribute id="U2" value="0.937378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_HuntersTrap" type="22" />
+                    <attribute id="U1" value="0.906372" type="6" />
+                    <attribute id="U2" value="0.921753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_NaturalBond" type="22" />
+                    <attribute id="U1" value="0.812622" type="6" />
+                    <attribute id="U2" value="0.828003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_NowhereToHide" type="22" />
+                    <attribute id="U1" value="0.843872" type="6" />
+                    <attribute id="U2" value="0.859253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_PowerShot" type="22" />
+                    <attribute id="U1" value="0.828247" type="6" />
+                    <attribute id="U2" value="0.843628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_PrimalRoar" type="22" />
+                    <attribute id="U1" value="0.937622" type="6" />
+                    <attribute id="U2" value="0.953003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_SavvyHunter" type="22" />
+                    <attribute id="U1" value="0.953247" type="6" />
+                    <attribute id="U2" value="0.968628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_SeekingArrows" type="22" />
+                    <attribute id="U1" value="0.875122" type="6" />
+                    <attribute id="U2" value="0.890503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Skill_TheHunt" type="22" />
+                    <attribute id="U1" value="0.859497" type="6" />
+                    <attribute id="U2" value="0.874878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHUN_Status_Nimble" type="22" />
+                    <attribute id="U1" value="0.781372" type="6" />
+                    <attribute id="U2" value="0.796753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_AegisAssault" type="22" />
+                    <attribute id="U1" value="0.328247" type="6" />
+                    <attribute id="U2" value="0.343628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_ArcticRoar" type="22" />
+                    <attribute id="U1" value="0.531372" type="6" />
+                    <attribute id="U2" value="0.546753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Bubblebeam" type="22" />
+                    <attribute id="U1" value="0.546997" type="6" />
+                    <attribute id="U2" value="0.562378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_ChillingTouch" type="22" />
+                    <attribute id="U1" value="0.562622" type="6" />
+                    <attribute id="U2" value="0.578003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_ConjureIceElemental" type="22" />
+                    <attribute id="U1" value="0.578247" type="6" />
+                    <attribute id="U2" value="0.593628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_DampeningWave" type="22" />
+                    <attribute id="U1" value="0.593872" type="6" />
+                    <attribute id="U2" value="0.609253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Frostblade" type="22" />
+                    <attribute id="U1" value="0.609497" type="6" />
+                    <attribute id="U2" value="0.624878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_FrozenBulwark" type="22" />
+                    <attribute id="U1" value="0.625122" type="6" />
+                    <attribute id="U2" value="0.640503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_FuryOfTheNorth" type="22" />
+                    <attribute id="U1" value="0.640747" type="6" />
+                    <attribute id="U2" value="0.656128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_HarshCurrent" type="22" />
+                    <attribute id="U1" value="0.656372" type="6" />
+                    <attribute id="U2" value="0.671753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_IceShard" type="22" />
+                    <attribute id="U1" value="0.671997" type="6" />
+                    <attribute id="U2" value="0.687378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_IceWall" type="22" />
+                    <attribute id="U1" value="0.687622" type="6" />
+                    <attribute id="U2" value="0.703003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_IcyVeins" type="22" />
+                    <attribute id="U1" value="0.296997" type="6" />
+                    <attribute id="U2" value="0.312378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_PrismaticBubble" type="22" />
+                    <attribute id="U1" value="0.703247" type="6" />
+                    <attribute id="U2" value="0.718628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Rebuke" type="22" />
+                    <attribute id="U1" value="0.718872" type="6" />
+                    <attribute id="U2" value="0.734253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_ReleaseTheKraken" type="22" />
+                    <attribute id="U1" value="0.734497" type="6" />
+                    <attribute id="U2" value="0.749878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_RideTheTide" type="22" />
+                    <attribute id="U1" value="0.750122" type="6" />
+                    <attribute id="U2" value="0.765503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_RingOfFrost" type="22" />
+                    <attribute id="U1" value="0.765747" type="6" />
+                    <attribute id="U2" value="0.781128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_SongOfTheSeas" type="22" />
+                    <attribute id="U1" value="0.781372" type="6" />
+                    <attribute id="U2" value="0.796753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Thrash" type="22" />
+                    <attribute id="U1" value="0.421997" type="6" />
+                    <attribute id="U2" value="0.437378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_ToAndFlow" type="22" />
+                    <attribute id="U1" value="0.796997" type="6" />
+                    <attribute id="U2" value="0.812378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Waterfall" type="22" />
+                    <attribute id="U1" value="0.812622" type="6" />
+                    <attribute id="U2" value="0.828003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_WatersOfLife" type="22" />
+                    <attribute id="U1" value="0.828247" type="6" />
+                    <attribute id="U2" value="0.843628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Waterspout" type="22" />
+                    <attribute id="U1" value="0.843872" type="6" />
+                    <attribute id="U2" value="0.859253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Skill_Whirlpool" type="22" />
+                    <attribute id="U1" value="0.859497" type="6" />
+                    <attribute id="U2" value="0.874878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_DAMPENED" type="22" />
+                    <attribute id="U1" value="0.875122" type="6" />
+                    <attribute id="U2" value="0.890503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_DROWNING" type="22" />
+                    <attribute id="U1" value="0.890747" type="6" />
+                    <attribute id="U2" value="0.906128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_HYPOTHERMIA" type="22" />
+                    <attribute id="U1" value="0.906372" type="6" />
+                    <attribute id="U2" value="0.921753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_ICEARMOUR" type="22" />
+                    <attribute id="U1" value="0.312622" type="6" />
+                    <attribute id="U2" value="0.328003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_RIDETIDE_1" type="22" />
+                    <attribute id="U1" value="0.921997" type="6" />
+                    <attribute id="U2" value="0.937378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_RIDETIDE_2" type="22" />
+                    <attribute id="U1" value="0.937622" type="6" />
+                    <attribute id="U2" value="0.953003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_ROOTED" type="22" />
+                    <attribute id="U1" value="0.953247" type="6" />
+                    <attribute id="U2" value="0.968628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_SCALDED" type="22" />
+                    <attribute id="U1" value="0.968872" type="6" />
+                    <attribute id="U2" value="0.984253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_SLOWCURRENT" type="22" />
+                    <attribute id="U1" value="0.984497" type="6" />
+                    <attribute id="U2" value="0.999878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBHYDRO_Status_SWIFTCURRENT" type="22" />
+                    <attribute id="U1" value="0.00012207" type="6" />
+                    <attribute id="U2" value="0.0155029" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_ArcanePunishment" type="22" />
+                    <attribute id="U1" value="0.375122" type="6" />
+                    <attribute id="U2" value="0.390503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_ArcaneVolley" type="22" />
+                    <attribute id="U1" value="0.390747" type="6" />
+                    <attribute id="U2" value="0.406128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_BloodBarrage" type="22" />
+                    <attribute id="U1" value="0.406372" type="6" />
+                    <attribute id="U2" value="0.421753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_Bloodletting" type="22" />
+                    <attribute id="U1" value="0.421997" type="6" />
+                    <attribute id="U2" value="0.437378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_CoagulatedArmour" type="22" />
+                    <attribute id="U1" value="0.437622" type="6" />
+                    <attribute id="U2" value="0.453003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_Desecrate" type="22" />
+                    <attribute id="U1" value="0.453247" type="6" />
+                    <attribute id="U2" value="0.468628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_DispelUndead" type="22" />
+                    <attribute id="U1" value="0.468872" type="6" />
+                    <attribute id="U2" value="0.484253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_FrenzyOfTheRestless" type="22" />
+                    <attribute id="U1" value="0.484497" type="6" />
+                    <attribute id="U2" value="0.499878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_Hemoplague" type="22" />
+                    <attribute id="U1" value="0.500122" type="6" />
+                    <attribute id="U2" value="0.515503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_HorrificScream" type="22" />
+                    <attribute id="U1" value="0.515747" type="6" />
+                    <attribute id="U2" value="0.531128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_LocustPlague" type="22" />
+                    <attribute id="U1" value="0.531372" type="6" />
+                    <attribute id="U2" value="0.546753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_Mute" type="22" />
+                    <attribute id="U1" value="0.546997" type="6" />
+                    <attribute id="U2" value="0.562378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_MysticRupture" type="22" />
+                    <attribute id="U1" value="0.562622" type="6" />
+                    <attribute id="U2" value="0.578003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_OathOfDesecration" type="22" />
+                    <attribute id="U1" value="0.578247" type="6" />
+                    <attribute id="U2" value="0.593628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_RaiseBoneGolem" type="22" />
+                    <attribute id="U1" value="0.593872" type="6" />
+                    <attribute id="U2" value="0.609253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_RaiseUndeadAssassin" type="22" />
+                    <attribute id="U1" value="0.609497" type="6" />
+                    <attribute id="U2" value="0.624878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_RaiseUndeadElementalist" type="22" />
+                    <attribute id="U1" value="0.625122" type="6" />
+                    <attribute id="U2" value="0.640503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_RaiseUndeadWarrior" type="22" />
+                    <attribute id="U1" value="0.640747" type="6" />
+                    <attribute id="U2" value="0.656128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_SanguineTorrent" type="22" />
+                    <attribute id="U1" value="0.656372" type="6" />
+                    <attribute id="U2" value="0.671753" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_ShallowGrave" type="22" />
+                    <attribute id="U1" value="0.671997" type="6" />
+                    <attribute id="U2" value="0.687378" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_Translocate" type="22" />
+                    <attribute id="U1" value="0.687622" type="6" />
+                    <attribute id="U2" value="0.703003" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_UndeadOverlord" type="22" />
+                    <attribute id="U1" value="0.703247" type="6" />
+                    <attribute id="U2" value="0.718628" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_UnearthCorpse" type="22" />
+                    <attribute id="U1" value="0.718872" type="6" />
+                    <attribute id="U2" value="0.734253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Skill_WitchesBrew" type="22" />
+                    <attribute id="U1" value="0.734497" type="6" />
+                    <attribute id="U2" value="0.749878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Status_Fearless" type="22" />
+                    <attribute id="U1" value="0.765747" type="6" />
+                    <attribute id="U2" value="0.781128" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBNECRO_Status_Overlord_Minion" type="22" />
+                    <attribute id="U1" value="0.750122" type="6" />
+                    <attribute id="U2" value="0.765503" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_BlazeOfGlory" type="22" />
+                    <attribute id="U1" value="0.0157471" type="6" />
+                    <attribute id="U2" value="0.0311279" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_BurningTouch" type="22" />
+                    <attribute id="U1" value="0.0313721" type="6" />
+                    <attribute id="U2" value="0.0467529" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_ConjureFlameElemental" type="22" />
+                    <attribute id="U1" value="0.0469971" type="6" />
+                    <attribute id="U2" value="0.0623779" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_DevourFlames" type="22" />
+                    <attribute id="U1" value="0.0626221" type="6" />
+                    <attribute id="U2" value="0.0780029" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_EmberShower" type="22" />
+                    <attribute id="U1" value="0.0782471" type="6" />
+                    <attribute id="U2" value="0.0936279" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_Eruption" type="22" />
+                    <attribute id="U1" value="0.0938721" type="6" />
+                    <attribute id="U2" value="0.109253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_Incinerate" type="22" />
+                    <attribute id="U1" value="0.109497" type="6" />
+                    <attribute id="U2" value="0.124878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_Inferno" type="22" />
+                    <attribute id="U1" value="0.125122" type="6" />
+                    <attribute id="U2" value="0.140503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_Inflame" type="22" />
+                    <attribute id="U1" value="0.140747" type="6" />
+                    <attribute id="U2" value="0.156128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_MagmaGeyser" type="22" />
+                    <attribute id="U1" value="0.156372" type="6" />
+                    <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_MagmaWall" type="22" />
+                    <attribute id="U1" value="0.171997" type="6" />
+                    <attribute id="U2" value="0.187378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_MeteorStrike" type="22" />
+                    <attribute id="U1" value="0.187622" type="6" />
+                    <attribute id="U2" value="0.203003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_PhoenixianAshes" type="22" />
+                    <attribute id="U1" value="0.203247" type="6" />
+                    <attribute id="U2" value="0.218628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_PurifyingFire" type="22" />
+                    <attribute id="U1" value="0.218872" type="6" />
+                    <attribute id="U2" value="0.234253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_Ragnarok" type="22" />
+                    <attribute id="U1" value="0.234497" type="6" />
+                    <attribute id="U2" value="0.249878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_RoaringStrike" type="22" />
+                    <attribute id="U1" value="0.437622" type="6" />
+                    <attribute id="U2" value="0.453003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_SearingVolley" type="22" />
+                    <attribute id="U1" value="0.250122" type="6" />
+                    <attribute id="U2" value="0.265503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_SelfImmolation" type="22" />
+                    <attribute id="U1" value="0.265747" type="6" />
+                    <attribute id="U2" value="0.281128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Skill_WillOfThePhoenix" type="22" />
+                    <attribute id="U1" value="0.281372" type="6" />
+                    <attribute id="U2" value="0.296753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Firebrand" type="22" />
+                    <attribute id="U1" value="0.843872" type="6" />
+                    <attribute id="U2" value="0.859253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Scorch_1" type="22" />
+                    <attribute id="U1" value="0.296997" type="6" />
+                    <attribute id="U2" value="0.312378" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Scorch_2" type="22" />
+                    <attribute id="U1" value="0.312622" type="6" />
+                    <attribute id="U2" value="0.328003" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Scorch_3" type="22" />
+                    <attribute id="U1" value="0.328247" type="6" />
+                    <attribute id="U2" value="0.343628" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Scorch_4" type="22" />
+                    <attribute id="U1" value="0.343872" type="6" />
+                    <attribute id="U2" value="0.359253" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Scorch_5" type="22" />
+                    <attribute id="U1" value="0.359497" type="6" />
+                    <attribute id="U2" value="0.374878" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Smolder" type="22" />
+                    <attribute id="U1" value="0.375122" type="6" />
+                    <attribute id="U2" value="0.390503" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_Snared" type="22" />
+                    <attribute id="U1" value="0.390747" type="6" />
+                    <attribute id="U2" value="0.406128" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBPYRO_Status_WillOfThePhoenix_Healing" type="22" />
+                    <attribute id="U1" value="0.406372" type="6" />
+                    <attribute id="U2" value="0.421753" type="6" />
+                    <attribute id="V1" value="0.0313721" type="6" />
+                    <attribute id="V2" value="0.0467529" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_CrawlingInfestation" type="22" />
+                    <attribute id="U1" value="0.218872" type="6" />
+                    <attribute id="U2" value="0.234253" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_DeadlyFlourish" type="22" />
+                    <attribute id="U1" value="0.187622" type="6" />
+                    <attribute id="U2" value="0.203003" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_FindersKeepers" type="22" />
+                    <attribute id="U1" value="0.171997" type="6" />
+                    <attribute id="U2" value="0.187378" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_Firecracker" type="22" />
+                    <attribute id="U1" value="0.203247" type="6" />
+                    <attribute id="U2" value="0.218628" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_Misdirection" type="22" />
+                    <attribute id="U1" value="0.265747" type="6" />
+                    <attribute id="U2" value="0.281128" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_Misfire" type="22" />
+                    <attribute id="U1" value="0.109497" type="6" />
+                    <attribute id="U2" value="0.124878" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_Outmaneuver" type="22" />
+                    <attribute id="U1" value="0.0938721" type="6" />
+                    <attribute id="U2" value="0.109253" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_ShadowStep" type="22" />
+                    <attribute id="U1" value="0.234497" type="6" />
+                    <attribute id="U2" value="0.249878" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_SinisterStrike" type="22" />
+                    <attribute id="U1" value="0.281372" type="6" />
+                    <attribute id="U2" value="0.296753" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_SlipIntoShadows" type="22" />
+                    <attribute id="U1" value="0.250122" type="6" />
+                    <attribute id="U2" value="0.265503" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Skill_WhirlingSlash" type="22" />
+                    <attribute id="U1" value="0.0782471" type="6" />
+                    <attribute id="U2" value="0.0936279" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Status_Combo_1" type="22" />
+                    <attribute id="U1" value="0.140747" type="6" />
+                    <attribute id="U2" value="0.156128" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Status_Combo_2" type="22" />
+                    <attribute id="U1" value="0.156372" type="6" />
+                    <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Status_Combo_3" type="22" />
+                    <attribute id="U1" value="0.125122" type="6" />
+                    <attribute id="U2" value="0.140503" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSCO_Status_Precision" type="22" />
+                    <attribute id="U1" value="0.296997" type="6" />
+                    <attribute id="U2" value="0.312378" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Item_Skillbook_Normal" type="22" />
+                    <attribute id="U1" value="0.812622" type="6" />
+                    <attribute id="U2" value="0.828003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Item_Skillbook_Source" type="22" />
+                    <attribute id="U1" value="0.828247" type="6" />
+                    <attribute id="U2" value="0.843628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_AgonyOfTheDamned" type="22" />
+                    <attribute id="U1" value="0.843872" type="6" />
+                    <attribute id="U2" value="0.859253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_AnnihilatingPurge" type="22" />
+                    <attribute id="U1" value="0.859497" type="6" />
+                    <attribute id="U2" value="0.874878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_BansheeShriek" type="22" />
+                    <attribute id="U1" value="0.875122" type="6" />
+                    <attribute id="U2" value="0.890503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Bonechill" type="22" />
+                    <attribute id="U1" value="0.890747" type="6" />
+                    <attribute id="U2" value="0.906128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_ConduitOfTheCruel" type="22" />
+                    <attribute id="U1" value="0.906372" type="6" />
+                    <attribute id="U2" value="0.921753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Corruption" type="22" />
+                    <attribute id="U1" value="0.921997" type="6" />
+                    <attribute id="U2" value="0.937378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_CruelIntent" type="22" />
+                    <attribute id="U1" value="0.937622" type="6" />
+                    <attribute id="U2" value="0.953003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Curse_Inept" type="22" />
+                    <attribute id="U1" value="0.953247" type="6" />
+                    <attribute id="U2" value="0.968628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Curse_Vulnerable" type="22" />
+                    <attribute id="U1" value="0.968872" type="6" />
+                    <attribute id="U2" value="0.984253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Curse_Weakness" type="22" />
+                    <attribute id="U1" value="0.984497" type="6" />
+                    <attribute id="U2" value="0.999878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Dreadfall" type="22" />
+                    <attribute id="U1" value="0.00012207" type="6" />
+                    <attribute id="U2" value="0.0155029" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_EssenceBolt" type="22" />
+                    <attribute id="U1" value="0.0157471" type="6" />
+                    <attribute id="U2" value="0.0311279" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_EtherealVeil" type="22" />
+                    <attribute id="U1" value="0.0313721" type="6" />
+                    <attribute id="U2" value="0.0467529" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_InflictAgony" type="22" />
+                    <attribute id="U1" value="0.0469971" type="6" />
+                    <attribute id="U2" value="0.0623779" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Languish" type="22" />
+                    <attribute id="U1" value="0.0626221" type="6" />
+                    <attribute id="U2" value="0.0780029" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_MercifulResurrection" type="22" />
+                    <attribute id="U1" value="0.0782471" type="6" />
+                    <attribute id="U2" value="0.0936279" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Pact_Artillery" type="22" />
+                    <attribute id="U1" value="0.0938721" type="6" />
+                    <attribute id="U2" value="0.109253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Pact_Brutality" type="22" />
+                    <attribute id="U1" value="0.109497" type="6" />
+                    <attribute id="U2" value="0.124878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Pact_Immortality" type="22" />
+                    <attribute id="U1" value="0.125122" type="6" />
+                    <attribute id="U2" value="0.140503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Purge" type="22" />
+                    <attribute id="U1" value="0.140747" type="6" />
+                    <attribute id="U2" value="0.156128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_RaiseSpectralBanshee" type="22" />
+                    <attribute id="U1" value="0.156372" type="6" />
+                    <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_Riftwalk" type="22" />
+                    <attribute id="U1" value="0.171997" type="6" />
+                    <attribute id="U2" value="0.187378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_RiteOfTheLich" type="22" />
+                    <attribute id="U1" value="0.187622" type="6" />
+                    <attribute id="U2" value="0.203003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_SeedOfMalice" type="22" />
+                    <attribute id="U1" value="0.203247" type="6" />
+                    <attribute id="U2" value="0.218628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_SoulExtraction" type="22" />
+                    <attribute id="U1" value="0.218872" type="6" />
+                    <attribute id="U2" value="0.234253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_SoulPierce" type="22" />
+                    <attribute id="U1" value="0.234497" type="6" />
+                    <attribute id="U2" value="0.249878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_SpectralSlash" type="22" />
+                    <attribute id="U1" value="0.312622" type="6" />
+                    <attribute id="U2" value="0.328003" type="6" />
+                    <attribute id="V1" value="0.0626221" type="6" />
+                    <attribute id="V2" value="0.0780029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_SpectralThrow" type="22" />
+                    <attribute id="U1" value="0.250122" type="6" />
+                    <attribute id="U2" value="0.265503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_SpreadTheSickness" type="22" />
+                    <attribute id="U1" value="0.265747" type="6" />
+                    <attribute id="U2" value="0.281128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_StyxianPortal" type="22" />
+                    <attribute id="U1" value="0.281372" type="6" />
+                    <attribute id="U2" value="0.296753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_TerribleFate" type="22" />
+                    <attribute id="U1" value="0.296997" type="6" />
+                    <attribute id="U2" value="0.312378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_TormentedVolley" type="22" />
+                    <attribute id="U1" value="0.312622" type="6" />
+                    <attribute id="U2" value="0.328003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_UnderhandedBargain" type="22" />
+                    <attribute id="U1" value="0.328247" type="6" />
+                    <attribute id="U2" value="0.343628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Skill_UnholyRitual" type="22" />
+                    <attribute id="U1" value="0.343872" type="6" />
+                    <attribute id="U2" value="0.359253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Agony1" type="22" />
+                    <attribute id="U1" value="0.359497" type="6" />
+                    <attribute id="U2" value="0.374878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Agony2" type="22" />
+                    <attribute id="U1" value="0.375122" type="6" />
+                    <attribute id="U2" value="0.390503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Agony3" type="22" />
+                    <attribute id="U1" value="0.390747" type="6" />
+                    <attribute id="U2" value="0.406128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Agony4" type="22" />
+                    <attribute id="U1" value="0.406372" type="6" />
+                    <attribute id="U2" value="0.421753" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Agony5" type="22" />
+                    <attribute id="U1" value="0.421997" type="6" />
+                    <attribute id="U2" value="0.437378" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Ascended" type="22" />
+                    <attribute id="U1" value="0.437622" type="6" />
+                    <attribute id="U2" value="0.453003" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Dread" type="22" />
+                    <attribute id="U1" value="0.453247" type="6" />
+                    <attribute id="U2" value="0.468628" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Exalted" type="22" />
+                    <attribute id="U1" value="0.468872" type="6" />
+                    <attribute id="U2" value="0.484253" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Ghostwalk" type="22" />
+                    <attribute id="U1" value="0.484497" type="6" />
+                    <attribute id="U2" value="0.499878" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Lamented" type="22" />
+                    <attribute id="U1" value="0.500122" type="6" />
+                    <attribute id="U2" value="0.515503" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBSPECTRE_Status_Wither" type="22" />
+                    <attribute id="U1" value="0.515747" type="6" />
+                    <attribute id="U2" value="0.531128" type="6" />
+                    <attribute id="V1" value="0.0157471" type="6" />
+                    <attribute id="V2" value="0.0311279" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Item_Skillbook_Elite" type="22" />
+                    <attribute id="U1" value="0.343872" type="6" />
+                    <attribute id="U2" value="0.359253" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Item_Skillbook_Normal" type="22" />
+                    <attribute id="U1" value="0.00012207" type="6" />
+                    <attribute id="U2" value="0.0155029" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Item_Skillbook_Source" type="22" />
+                    <attribute id="U1" value="0.0157471" type="6" />
+                    <attribute id="U2" value="0.0311279" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_AbolishResistance" type="22" />
+                    <attribute id="U1" value="0.0313721" type="6" />
+                    <attribute id="U2" value="0.0467529" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_BasicAttack_Chaos" type="22" />
+                    <attribute id="U1" value="0.359497" type="6" />
+                    <attribute id="U2" value="0.374878" type="6" />
+                    <attribute id="V1" value="0.0469971" type="6" />
+                    <attribute id="V2" value="0.0623779" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_BladeDance" type="22" />
+                    <attribute id="U1" value="0.0469971" type="6" />
+                    <attribute id="U2" value="0.0623779" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_BladeFlurry" type="22" />
+                    <attribute id="U1" value="0.0626221" type="6" />
+                    <attribute id="U2" value="0.0780029" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_BouncingBlade" type="22" />
+                    <attribute id="U1" value="0.0782471" type="6" />
+                    <attribute id="U2" value="0.0936279" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_ChallengeBlade" type="22" />
+                    <attribute id="U1" value="0.0938721" type="6" />
+                    <attribute id="U2" value="0.109253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_ChallengeShade" type="22" />
+                    <attribute id="U1" value="0.109497" type="6" />
+                    <attribute id="U2" value="0.124878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_ChaosCrash" type="22" />
+                    <attribute id="U1" value="0.125122" type="6" />
+                    <attribute id="U2" value="0.140503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_Cutthroat" type="22" />
+                    <attribute id="U1" value="0.140747" type="6" />
+                    <attribute id="U2" value="0.156128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_Daggerfall" type="22" />
+                    <attribute id="U1" value="0.156372" type="6" />
+                    <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_Daggerfang" type="22" />
+                    <attribute id="U1" value="0.171997" type="6" />
+                    <attribute id="U2" value="0.187378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_DanceOfDeath" type="22" />
+                    <attribute id="U1" value="0.187622" type="6" />
+                    <attribute id="U2" value="0.203003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_DarkPassage" type="22" />
+                    <attribute id="U1" value="0.203247" type="6" />
+                    <attribute id="U2" value="0.218628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_DivergentDagger" type="22" />
+                    <attribute id="U1" value="0.218872" type="6" />
+                    <attribute id="U2" value="0.234253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_DrainingSlash" type="22" />
+                    <attribute id="U1" value="0.234497" type="6" />
+                    <attribute id="U2" value="0.249878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_MasterOfChaos" type="22" />
+                    <attribute id="U1" value="0.250122" type="6" />
+                    <attribute id="U2" value="0.265503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_MasterOfOrder" type="22" />
+                    <attribute id="U1" value="0.265747" type="6" />
+                    <attribute id="U2" value="0.281128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_NerveSlash" type="22" />
+                    <attribute id="U1" value="0.281372" type="6" />
+                    <attribute id="U2" value="0.296753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_NimbleLeap" type="22" />
+                    <attribute id="U1" value="0.296997" type="6" />
+                    <attribute id="U2" value="0.312378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_NullZone" type="22" />
+                    <attribute id="U1" value="0.312622" type="6" />
+                    <attribute id="U2" value="0.328003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_PreemptiveTactics" type="22" />
+                    <attribute id="U1" value="0.328247" type="6" />
+                    <attribute id="U2" value="0.343628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_Resourcefulness" type="22" />
+                    <attribute id="U1" value="0.343872" type="6" />
+                    <attribute id="U2" value="0.359253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_RetreatIntoShadow" type="22" />
+                    <attribute id="U1" value="0.359497" type="6" />
+                    <attribute id="U2" value="0.374878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_ShadeFury" type="22" />
+                    <attribute id="U1" value="0.375122" type="6" />
+                    <attribute id="U2" value="0.390503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_ShadowRush" type="22" />
+                    <attribute id="U1" value="0.406372" type="6" />
+                    <attribute id="U2" value="0.421753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_Shadowfang" type="22" />
+                    <attribute id="U1" value="0.390747" type="6" />
+                    <attribute id="U2" value="0.406128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_SmokeBomb" type="22" />
+                    <attribute id="U1" value="0.421997" type="6" />
+                    <attribute id="U2" value="0.437378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_SourceOfFerocity" type="22" />
+                    <attribute id="U1" value="0.437622" type="6" />
+                    <attribute id="U2" value="0.453003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_SpiteTheVein" type="22" />
+                    <attribute id="U1" value="0.453247" type="6" />
+                    <attribute id="U2" value="0.468628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_SwiftStrikes" type="22" />
+                    <attribute id="U1" value="0.468872" type="6" />
+                    <attribute id="U2" value="0.484253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_TumultuousAttack" type="22" />
+                    <attribute id="U1" value="0.484497" type="6" />
+                    <attribute id="U2" value="0.499878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_UmbralBlood" type="22" />
+                    <attribute id="U1" value="0.500122" type="6" />
+                    <attribute id="U2" value="0.515503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_UmbralCloak" type="22" />
+                    <attribute id="U1" value="0.515747" type="6" />
+                    <attribute id="U2" value="0.531128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_UmbralExpertise" type="22" />
+                    <attribute id="U1" value="0.531372" type="6" />
+                    <attribute id="U2" value="0.546753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_UmbralLeech" type="22" />
+                    <attribute id="U1" value="0.546997" type="6" />
+                    <attribute id="U2" value="0.562378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Skill_WayOfTheUmbra" type="22" />
+                    <attribute id="U1" value="0.562622" type="6" />
+                    <attribute id="U2" value="0.578003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_ChallengeBlade_Lose" type="22" />
+                    <attribute id="U1" value="0.578247" type="6" />
+                    <attribute id="U2" value="0.593628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_ChallengeBlade_Win" type="22" />
+                    <attribute id="U1" value="0.593872" type="6" />
+                    <attribute id="U2" value="0.609253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_ChallengeShade_Lose" type="22" />
+                    <attribute id="U1" value="0.609497" type="6" />
+                    <attribute id="U2" value="0.624878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_ChallengeShade_Win" type="22" />
+                    <attribute id="U1" value="0.625122" type="6" />
+                    <attribute id="U2" value="0.640503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_ChaosForm" type="22" />
+                    <attribute id="U1" value="0.640747" type="6" />
+                    <attribute id="U2" value="0.656128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Determined" type="22" />
+                    <attribute id="U1" value="0.656372" type="6" />
+                    <attribute id="U2" value="0.671753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Exposed_1" type="22" />
+                    <attribute id="U1" value="0.671997" type="6" />
+                    <attribute id="U2" value="0.687378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Exposed_2" type="22" />
+                    <attribute id="U1" value="0.687622" type="6" />
+                    <attribute id="U2" value="0.703003" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Exposed_3" type="22" />
+                    <attribute id="U1" value="0.703247" type="6" />
+                    <attribute id="U2" value="0.718628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Fading" type="22" />
+                    <attribute id="U1" value="0.718872" type="6" />
+                    <attribute id="U2" value="0.734253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Focus" type="22" />
+                    <attribute id="U1" value="0.734497" type="6" />
+                    <attribute id="U2" value="0.749878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_OrderForm" type="22" />
+                    <attribute id="U1" value="0.750122" type="6" />
+                    <attribute id="U2" value="0.765503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Peril_1" type="22" />
+                    <attribute id="U1" value="0.765747" type="6" />
+                    <attribute id="U2" value="0.781128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Peril_2" type="22" />
+                    <attribute id="U1" value="0.781372" type="6" />
+                    <attribute id="U2" value="0.796753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="OBUMBRA_Status_Peril_3" type="22" />
+                    <attribute id="U1" value="0.796997" type="6" />
+                    <attribute id="U2" value="0.812378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" value="64" type="4" />
+                    <attribute id="Width" value="64" type="4" />
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" value="GUI/OdinCORE_SQUAREICON.dds" type="20" />
+                    <attribute id="UUID" value="09fa13b0-1d45-4fe4-abcf-d9e2732b9278" type="22" />
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" value="4096" type="4" />
+                    <attribute id="Width" value="4096" type="4" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

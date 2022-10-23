@@ -1,0 +1,6 @@
+new deltamod "Boost_Weapon_Crafting_Damage_Fire"
+param "BoostType" "ItemCombo"
+param "Frequency" "1"
+param "ModifierType" "Weapon"
+new boost "_Boost_Weapon_Crafting_Damage_Fire",1
+

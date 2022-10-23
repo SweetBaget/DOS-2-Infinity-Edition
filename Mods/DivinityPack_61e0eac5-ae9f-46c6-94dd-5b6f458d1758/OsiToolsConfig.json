@@ -1,0 +1,10 @@
+{
+    "RequiredExtensionVersion": 55,
+    "ModTable": "DivinityPack",
+    "FeatureFlags": [
+        "OsirisExtensions",
+        "Lua",
+        "Preprocessor",
+        "FormulaOverrides"
+    ]
+}

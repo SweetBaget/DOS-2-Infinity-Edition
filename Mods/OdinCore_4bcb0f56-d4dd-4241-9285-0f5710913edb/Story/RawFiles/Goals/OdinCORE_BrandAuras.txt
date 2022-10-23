@@ -1,0 +1,43 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_OBCORE_BrandAura("OdinCORE_AURA_FIREBRAND", "FIRE_BRAND");
+DB_OBCORE_BrandAura("OdinCORE_AURA_VENOMCOATING", "VENOM_COATING");
+
+KBSECTION
+IF
+CharacterStatusApplied(_Character, _BrandAura, _Source)
+AND
+HasActiveStatus(_Character, "OdinCORE_WEAPON_AURA", 0)
+AND
+DB_OBCORE_BrandAura(_BrandAura, _BrandStatus)
+AND
+HasActiveStatus(_Character, _BrandStatus, 0)
+THEN
+ApplyStatus(_Character, _BrandStatus, -1.0, 1, _Source);
+ApplyStatus(_Character, "OdinCORE_WEAPON_AURA", -1.0, 1, _Source);
+
+IF
+CharacterStatusRemoved(_Character, _BrandAura, _)
+AND
+DB_OBCORE_BrandAura(_BrandAura, _BrandStatus)
+AND
+HasActiveStatus(_Character, "OdinCORE_WEAPON_AURA", 1)
+THEN
+RemoveStatus(_Character, _BrandStatus);
+RemoveStatus(_Character, "OdinCORE_WEAPON_AURA");
+PROC_OBCORE_Cleanup_Aura(_Character);
+
+// Removes all auras from the player. Larian aura logic will re-apply those which are still valid.
+PROC
+PROC_OBCORE_Cleanup_Aura((CHARACTERGUID)_Character)
+AND
+DB_OBCORE_BrandAura(_BrandAura, _BrandStatus)
+AND
+HasActiveStatus(_Character, _BrandAura, 1)
+THEN
+RemoveStatus(_Character, _BrandAura);
+RemoveStatus(_Character, _BrandStatus);
+EXITSECTION
+
+ENDEXITSECTION

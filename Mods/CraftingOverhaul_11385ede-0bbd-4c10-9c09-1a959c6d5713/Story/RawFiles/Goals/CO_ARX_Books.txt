@@ -1,0 +1,24 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Populate crafting books database ==============================
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_BOOK_Crafting_Bible_A_000_29c98318-91b4-4bb8-aaea-10e3ae28f3ca);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Arrows_A_000_dd61baa1-5dde-462b-962b-fbc23ea16eca);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Barrels_A_001_65d52d91-9c43-4772-9cb7-d844b9150328);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Crafting_Tool_A_000_d8e30dae-b67e-4871-90b3-8d4849c75f0e);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grenades_A_000_f4fa517b-ad4f-42ae-90ee-b9287887c31f);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grimoire_A_000_79242530-5679-42be-a9ba-5011cbffac32);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Potions_A_001_f806feff-979a-4244-9fc6-64774b894a36);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Traps_A_000_52a94a77-4904-493e-9afe-426704208817);
+DB_ARX_CraftingBooks(ITEMGUID_CMP_CO_RCP_Weapon_Boost_A_000_845a33c3-ec36-4b11-b1aa-7f9760e33f18);
+KBSECTION
+// Clear book ownership ==========================================
+IF
+	RegionStarted(_)
+	AND DB_ARX_CraftingBooks(_Book)
+THEN
+	ItemClearOwner((ITEMGUID)_Book);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "ARX"

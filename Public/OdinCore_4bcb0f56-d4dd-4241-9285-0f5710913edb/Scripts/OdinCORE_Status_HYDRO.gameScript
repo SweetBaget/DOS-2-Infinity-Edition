@@ -1,0 +1,153 @@
+INIT
+
+EVENTS
+//SKILL -> RESTORATION
+EVENT OdinWater_Restoration
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_BURSTHEAL_PROC)
+ACTIONS
+IF "c1"
+	CharacterGetStatusSourceCharacter(_Character, OdinWater_BURSTHEAL_PROC, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinWater_BURSTHEAL, 0, 0, _Source)
+	CharacterRemoveStatus(_Character, BURNING)
+ENDIF
+
+//SKILL -> ARCTIC_ROAR
+EVENT OdinWater_ArcticRoar
+VARS
+CHARACTER:_Character
+FLOAT3:_Pos
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_ARCTICROAR_DAMAGE)
+ACTIONS
+	GetPosition(_Character, _Pos)
+	CreateSurfaceAt(_Character, SurfaceWaterFrozen, 1, 1, _Character)
+
+
+//SKILL -> EBB_AND_FLOW
+EVENT OdinWater_EbbAndFlow
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_EBB_DAMAGE_PROC)
+ACTIONS
+IF "c1"
+	CharacterGetStatusSourceCharacter(_Character, OdinWater_EBB_DAMAGE_PROC, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinWater_EBB_DAMAGE, 0, 0, _Source)
+ENDIF
+
+//SKILL -> WATERSPOUT
+EVENT OdinWater_Waterspout
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+FLOAT:_MagicArmour
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_WATERSPOUT_PROC)
+ACTIONS
+IF "c1&c2&c3"
+	CharacterGetStat(_MagicArmour, _Character, MagicArmorPoints)
+	IsEqual(_MagicArmour, 0)
+	CharacterGetStatusSourceCharacter(_Character, OdinWater_WATERSPOUT_PROC, _Source)
+THEN
+	CharacterApplyStatus(_Character, KNOCKED_DOWN, 1, 1, _Source)
+ENDIF
+
+//STATUS -> HYPOTHERMIA_APPLY
+EVENT OdinWater_Status_Hypothermia
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusAttempt(_Character, OdinWater_PROC_HYPOTHERMIA)
+ACTIONS
+IF "c1|c2"
+	CharacterHasStatus(_Character, CHILLED)
+	CharacterHasStatus(_Character, FROZEN)
+THEN
+	IF "c1"
+		CharacterGetStatusSourceCharacter(_Character, OdinWater_PROC_HYPOTHERMIA, _Source)
+	THEN
+		CharacterApplyStatus(_Character, OdinWater_HYPOTHERMIA, 2, 0, _Source)
+	ENDIF
+ENDIF
+CharacterRemoveStatus(_Character, OdinWater_PROC_HYPOTHERMIA)
+
+//STATUS -> HYPOTHERMIA_ICYVEINS_APPLY
+EVENT OdinWater_Status_IcyVeins_Hypothermia
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_PROC_HYPOTHERMIA)
+ACTIONS
+IF "c1&c2"
+	CharacterGetStatusSourceCharacter(_Character, OdinWater_PROC_HYPOTHERMIA, _Source)
+	CharacterHasStatus(_Source, OdinWater_ICYVEINS)
+THEN
+	CharacterApplyStatus(_Character, OdinWater_HYPOTHERMIA, 2, 1, _Source)
+ENDIF
+
+
+
+//STATUS -> NO_CHECK_HYPOTHERMIA_APPLY
+EVENT OdinWater_Status_NoCheck_Hypothermia
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_NOCHECK_HYPOTHERMIA)
+ACTIONS
+IF "c1"
+	CharacterGetStatusSourceCharacter(_Character, OdinWater_NOCHECK_HYPOTHERMIA, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinWater_HYPOTHERMIA, 2, 0, _Source)
+ENDIF
+
+//STATUS -> SCALDED
+EVENT OdinWater_Status_Scalded
+VARS
+CHARACTER:_Character
+CHARACTER:_Source
+
+ON
+	OnCharacterStatusApplied(_Character, OdinWater_PROC_SCALDED)
+ACTIONS
+IF "c1"
+	CharacterGetStatusSourceCharacter(_Character, OdinWater_PROC_SCALDED, _Source)
+THEN
+	CharacterApplyStatus(_Character, OdinWater_SCALDED, 2, 1, _Source)
+ENDIF
+
+//STATUS -> RIDETIDE_1
+EVENT OdinWater_Status_RideTide_1
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusRemoved(_Character, OdinWater_RIDETIDE_1)
+ACTIONS
+	CharacterApplyStatus(_Character, OdinWater_RIDETIDE_2, 1, 0)
+
+//STATUS -> RIDETIDE_2
+EVENT OdinWater_Status_RideTide_2
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterStatusRemoved(_Character, OdinWater_RIDETIDE_2)
+ACTIONS
+	CharacterApplyStatus(_Character, OdinWater_RIDETIDE_3, 1, 0)

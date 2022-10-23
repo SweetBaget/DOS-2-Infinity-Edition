@@ -1,0 +1,24 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Populate crafting books database ==============================
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_BOOK_Crafting_Bible_A_000_7c490278-95ff-4e2f-8b15-4999e4f48a0a);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Arrows_A_000_f2e4b4ec-ab65-4772-8835-f46a17ffcc74);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Barrels_A_000_ea29ec1f-2599-4091-9890-ccd0138f236e);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Crafting_Tool_A_000_ed0159a5-1c54-4c90-b64b-2f680eade890);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grenades_A_000_124b2a61-c596-4b36-94e8-0e4804a433cf);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Grimoire_A_000_95d97788-e7c2-4d7c-ba7b-c600432830e9);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Potions_A_000_9586c589-eb15-4b3c-b5e2-a7f35d01f869);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Traps_A_000_1299a3f3-1ef4-4df5-b3ab-e084155732ec);
+DB_FTJ_CraftingBooks(ITEMGUID_CMP_CO_RCP_Weapon_Boost_A_000_6898f771-2803-4504-a0fb-0785a421b100);
+KBSECTION
+// Clear book ownership ==========================================
+IF
+	RegionStarted(_)
+	AND DB_FTJ_CraftingBooks(_Book)
+THEN
+	ItemClearOwner((ITEMGUID)_Book);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "FortJoy"

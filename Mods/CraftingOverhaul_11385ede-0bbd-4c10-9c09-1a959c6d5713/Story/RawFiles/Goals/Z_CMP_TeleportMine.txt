@@ -1,0 +1,34 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_CMP_TeleportImmunityStatuses("PETRIFIED");
+DB_CMP_TeleportImmunityStatuses("FORTIFIED");
+DB_CMP_TeleportImmunityStatuses("GROUNDED");
+DB_CMP_TeleportImmunityStatuses("WEB");
+DB_CMP_TeleportImmunityStatuses("ENTANGLED");
+KBSECTION
+//doo
+IF
+StoryEvent(_Item, "CMP_LaunchTeleportMineIterator")
+THEN
+CharacterLaunchIteratorAroundObject(_Item, 4.0, "CMP_TeleportToRandomLocation");
+
+IF
+StoryEvent(_Char, "CMP_TeleportToRandomLocation")
+AND
+NOT QRY_CMP_IsImmuneToTeleport(_Char)
+THEN
+TeleportToRandomPosition((CHARACTERGUID)_Char, 6.0, "");
+
+QRY
+QRY_CMP_IsImmuneToTeleport((GUIDSTRING)_Char)
+AND
+DB_CMP_TeleportImmunityStatuses(_Status)
+AND
+HasActiveStatus(_Char, _Status, 1)
+THEN
+DB_NOOP(1);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Start"

@@ -1,0 +1,106 @@
+new equipment "Class_Umbra_Start"
+add equipmentgroup
+add equipment entry "ARM_Purge_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_Purge_LowerBody"
+add equipmentgroup
+add equipment entry "WPN_CraftedDagger"
+add equipmentgroup
+add equipment entry "WPN_CraftedDagger"
+add equipmentgroup
+add equipment entry "POTION_Minor_Healing_Potion"
+add equipmentgroup
+add equipment entry "SCROLL_Resurrect"
+add equipmentgroup
+add equipment entry "CONT_Backpack_A_SourceHunter"
+add equipmentgroup
+add equipment entry "GRN_Grenade_PoisonFlask_A"
+
+new equipment "Class_Umbra_Start_Undead"
+add equipmentgroup
+add equipment entry "ARM_Purge_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_Purge_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Purge_Helmet"
+add equipmentgroup
+add equipment entry "ARM_Purge_Boots"
+add equipmentgroup
+add equipment entry "ARM_Purge_Gloves"
+add equipmentgroup
+add equipment entry "WPN_CraftedDagger"
+add equipmentgroup
+add equipment entry "WPN_CraftedDagger"
+add equipmentgroup
+add equipment entry "CON_Potion_Poison_A"
+add equipmentgroup
+add equipment entry "SCROLL_Resurrect"
+add equipmentgroup
+add equipment entry "CONT_Backpack_A_SourceHunter"
+add equipmentgroup
+add equipment entry "GRN_Grenade_PoisonFlask_A"
+
+new equipment "Class_Umbra_Lizards"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Helmet"
+add equipmentgroup
+add equipment entry "ARM_Umbra_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Boots"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Lizards"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Lizards"
+
+new equipment "Class_Umbra_Elves"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Helmet"
+add equipmentgroup
+add equipment entry "ARM_Umbra_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Boots"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Elves"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Elves"
+
+new equipment "Class_Umbra_Dwarves"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Helmet"
+add equipmentgroup
+add equipment entry "ARM_Umbra_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Boots"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Dwarves"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Dwarves"
+
+new equipment "Class_Umbra_Humans"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Helmet"
+add equipmentgroup
+add equipment entry "ARM_Umbra_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Umbra_Boots"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Humans"
+add equipmentgroup
+add equipment entry "WPN_Rogue_Dagger_Humans"
+

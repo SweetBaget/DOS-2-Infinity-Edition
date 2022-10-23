@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="0" build="4" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Character is invisible until the end of the turn." type="28" handle="haebfc791g04f6g4c2fga0fbge9f1edf1fc25" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="SHADE_INVISIBLE_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

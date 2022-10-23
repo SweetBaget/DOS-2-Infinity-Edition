@@ -1,0 +1,85 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_FTJ_MirrorBeingUsed(0);
+KBSECTION
+// Only one player can use the mirror at a tim
+PROC
+ProcBlockUseOfItem(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18)
+AND
+DB_Illusionist(_,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18)
+AND
+NOT DB_Illusionist(_Player, ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18)
+THEN
+DB_CustomUseItemResponse(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18,0);
+
+PROC
+ProcBlockUseOfItem(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18)
+AND
+NOT DB_Illusionist(_,_)
+AND
+DB_IsPlayer(_Player)
+AND
+NOT DB_CombatCharacters(_Player,_)
+THEN
+DB_Illusionist(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18);
+
+// Do not allow to use in combat
+PROC
+ProcBlockUseOfItem(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18)
+AND
+DB_IsPlayer(_Player)
+AND
+DB_CombatCharacters(_Player,_)
+THEN
+DB_CustomUseItemResponse(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18,0);
+Proc_StartDialog(1,"GLO_AD_CannotUseNow",_Player);
+
+IF
+TimerFinished("CharacterCreation")
+THEN
+ItemSetCanInteract(ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18,1);
+
+//Unequip collar for render
+IF
+CharacterItemEvent(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18,"GEN_Homestead_CharCreationMirror")
+AND
+GetItemForItemTemplateInInventory(_Player,"RC_FTJ_Amulet_SourceCollar_8bf8b97c-556e-4e69-8fc7-39241783dcc1",_Item)
+AND
+DB_FTJ_MirrorBeingUsed(0)
+THEN
+NOT DB_FTJ_MirrorBeingUsed(0);
+DB_FTJ_MirrorBeingUsed(1);
+DB_FTJ_Mirror_CollarForPlayer(_Player, _Item);
+ItemLockUnEquip(_Item,0);
+CharacterUnequipItem(_Player,_Item);
+ItemLockUnEquip(_Item,1);
+
+IF
+ItemAddedToCharacter(_Item, _Char)
+AND
+DB_FTJ_Mirror_CollarForPlayer(_Player, _Item)
+AND
+_Player != _Char
+THEN
+ItemToInventory(_Item, _Player, 1, 0, 0);
+
+//equip when finished
+IF
+CharacterCreationFinished(_Player)
+AND
+DB_FTJ_MirrorBeingUsed(1)
+AND
+DB_FTJ_Mirror_CollarForPlayer(_Player, _Item)
+THEN
+NOT DB_FTJ_MirrorBeingUsed(1);
+DB_FTJ_MirrorBeingUsed(0);
+ItemToInventory(_Item, _Player, 1, 0);
+ItemLockUnEquip(_Item,0);
+CharacterEquipItem(_Player,_Item);
+ItemLockUnEquip(_Item,1);
+NOT DB_FTJ_Mirror_CollarForPlayer(_Player, _Item);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Start"

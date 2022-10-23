@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="6" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [2]" type="28" handle="h816fedb5gb707g4590g8a37gc4055d0f7123" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Projectile_SHADEKnifeTest_Human_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [2]" type="28" handle="h7d617331g21f0g4df8gae32ga46853d8fc7a" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Projectile_SHADEKnifeTest_Shade_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Range: [2]" type="28" handle="h8aa03972g7fc6g4012gab50g3667ae00ed7c" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Projectile_SHADEKnifeTestDummy_Human_StatsDescription" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

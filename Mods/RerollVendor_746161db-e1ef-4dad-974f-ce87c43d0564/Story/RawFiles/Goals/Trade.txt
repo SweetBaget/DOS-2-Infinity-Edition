@@ -1,0 +1,38 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+RequestTrade(_Character, _Trader)
+THEN
+DB_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character);
+TimerLaunch("TradeTimer", 50);
+
+IF
+TimerFinished("TradeTimer")
+AND
+NRD_CheckPress("Whatever", 1)
+AND
+DB_Trade(_Trader, _Character)
+THEN 
+CharacterClearTradeGeneratedItems(_Trader);
+GenerateItems(_Character, _Trader);
+TimerLaunch("TradeTimer", 50);
+
+IF
+TimerFinished("TradeTimer")
+AND
+NRD_CheckPress("Whatever", 0)
+THEN
+TimerLaunch("TradeTimer", 50);
+
+IF
+TradeEnds(_Character, _Trader)
+THEN
+NOT DB_Trade(_Trader, _Character);
+TimerCancel("TradeTimer");
+
+//END_REGION
+EXITSECTION
+ENDEXITSECTION

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <LastUsed>
+    <ResourceBank Type="LSFrameworkPlugin.SoundResource">
+      <Resource Id="350a9bc2-8229-4fd8-832f-f8ab3986d289" />
+      <Resource Id="e9306bec-4ad0-40c9-85e3-2701978e98b8" />
+      <Resource Id="c40b754f-af62-4cb1-b463-9720eff1eb9b" />
+      <Resource Id="a74d6214-4fd8-4711-9825-b166d05500f6" />
+      <Resource Id="9f36b2bf-8a95-41dc-9f8b-e2d167485f68" />
+    </ResourceBank>
+    <ResourceBank Type="LSFrameworkPlugin.VisualResource">
+      <Resource Id="8227f144-adca-4b24-89ba-e5cfd9cde83d" />
+    </ResourceBank>
+  </LastUsed>
+  <Favorite>
+    <ResourceBank Type="LSFrameworkPlugin.SoundResource" />
+    <ResourceBank Type="LSFrameworkPlugin.VisualResource" />
+  </Favorite>
+</Root>

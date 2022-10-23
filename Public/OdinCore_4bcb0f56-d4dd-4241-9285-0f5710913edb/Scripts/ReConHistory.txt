@@ -1,0 +1,12 @@
+peace
+maxout
+addSkill Target_OdinAERO_ThroatSlash 
+peace
+maxout
+addSkill Target_OdinAERO_ThroatSlash 
+levelup 5
+addSkill Target_OdinAERO_ThroatSlash 
+levelup 14
+levelup 2
+levelup 1
+[HistoryLimit]30

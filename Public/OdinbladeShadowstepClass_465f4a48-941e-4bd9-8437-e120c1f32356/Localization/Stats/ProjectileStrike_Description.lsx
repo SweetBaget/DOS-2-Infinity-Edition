@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="1" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Daggers fall in the area, each dealing [1] and setting &lt;font color='#c80030'&gt;Bleeding&lt;/font&gt;, dealing [2] each turn. &lt;br&gt;&lt;br&gt;Each hit applies &lt;font color='#ff8a00'&gt;Exposed&lt;/font&gt;, reducing &lt;font color='#a8a8a8'&gt;Physical Resistance by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Chaos Crash&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill which applies Peril.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h15d0c98bgb972g4338ga2e9g61cfb62fe4c7" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEDaggerfall_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Daggers fall in the area, each dealing [1] and setting &lt;font color='#c80030'&gt;Bleeding&lt;/font&gt;, dealing [2] each turn. &lt;br&gt;&lt;br&gt;Each hit applies &lt;font color='#ff8a00'&gt;Exposed&lt;/font&gt;, reducing &lt;font color='#a8a8a8'&gt;Physical Resistance by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#c80030'&gt;Chaos Crash&lt;/font&gt;, a &lt;font color='#c80030'&gt;Chaos&lt;/font&gt; version of this skill which applies Peril.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h4652163eg045fg47eag921dge0fc5cf6ca53" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEDaggerfallDummy_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Daggers fall in the area, each dealing [1]&lt;font color=&quot;#c80030&quot;&gt;chaos damage&lt;/font&gt; and setting &lt;font color=&quot;#c80030&quot;&gt;Fading&lt;/font&gt;, dealing [2]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; each turn. &lt;br&gt;&lt;br&gt;Each hit applies &lt;font color='#c80030'&gt;Peril&lt;/font&gt;, reducing &lt;font color='#c80030'&gt;Elemental Resistances by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Daggerfall&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; version of this skill which sets Exposed.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hff5077adgdcd7g4ac0g92d7gd5cf79132a5f" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEChaosCrash_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Chaotic daggers unleash havoc, dealing a total of [1]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; with each hit having a chance to apply &lt;font color=&quot;#7d71d9&quot;&gt;Stunned&lt;/font&gt;, &lt;font color='#65C900'&gt;Poisoned&lt;/font&gt;, or &lt;font color='#c80030'&gt;Fading&lt;/font&gt;. &lt;br&gt;&lt;br&gt;The daggers instantly &lt;font color='#639594'&gt;execute&lt;/font&gt; targets if their &lt;font color=&quot;#97fbff&quot;&gt;Vitality falls below 20%&lt;/font&gt;. &lt;br&gt;&lt;br&gt;The caster then becomes &lt;font color='#639594'&gt;Invisible&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Master of Order&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which slices through and executes a target.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h8c0beb25gd808g48b8g8116g1ad4accb4798" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEMasterOfChaos_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Chaotic daggers unleash havoc, dealing a total of [1]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; with each hit having a chance to apply &lt;font color=&quot;#7d71d9&quot;&gt;Stunned&lt;/font&gt;, &lt;font color='#65C900'&gt;Poisoned&lt;/font&gt;, or &lt;font color='#c80030'&gt;Fading&lt;/font&gt;. &lt;br&gt;&lt;br&gt;The daggers instantly &lt;font color='#639594'&gt;execute&lt;/font&gt; targets if their &lt;font color=&quot;#97fbff&quot;&gt;Vitality falls below 20%&lt;/font&gt;. &lt;br&gt;&lt;br&gt;The caster then becomes &lt;font color='#639594'&gt;Invisible&lt;/font&gt;. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Master of Order&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; skill which slices through and executes a target.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="h94b19fd6g41cbg41e5gb730gc4b43696a03d" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEMasterOfChaosDUMMY_Description" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Daggers fall in the area, each dealing [1]&lt;font color=&quot;#c80030&quot;&gt;chaos damage&lt;/font&gt; and setting &lt;font color=&quot;#c80030&quot;&gt;Fading&lt;/font&gt;, dealing [2]&lt;font color='#c80030'&gt;chaos damage&lt;/font&gt; each turn. &lt;br&gt;&lt;br&gt;Each hit applies &lt;font color='#c80030'&gt;Peril&lt;/font&gt;, reducing &lt;font color='#c80030'&gt;Elemental Resistances by -10%&lt;/font&gt;. Stacks up to 3 times. &lt;font size='16'&gt;&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;font color='#ff00a8'&gt;Way of the Umbra&lt;/font&gt; switches this skill to &lt;font color='#A8A8A8'&gt;Daggerfall&lt;/font&gt;, an &lt;font color='#A8A8A8'&gt;Order&lt;/font&gt; version of this skill which sets Exposed.&lt;br&gt;---------------------------------------------------------------------&lt;br&gt;&lt;/font&gt;" type="28" handle="hde5dc9cbg3271g4055g8d22g91fc87184e57" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="ProjectileStrike_SHADEChaosCrashDummy_Description" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

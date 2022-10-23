@@ -1,0 +1,376 @@
+<contentList>
+	<content contentuid="hac61dbacg00c6g4d6fg9732gddb3c2b62956" Source="a8c50c46-2fec-44c4-be17-7971f92ed3fb.lsf">The book is brimming with &lt;font color=&apos;#00FFFF&apos;&gt;arcane energy&lt;/font&gt;. &lt;br&gt;Using it will summon &lt;font color=&apos;#00FFFF&apos;&gt;Odinblade&apos;s Illusion&lt;/font&gt;, where you can configure settings for Odinblade mods.</content>
+	<content contentuid="hed063ba0g7e58g4dd4g9a8fg39eeca8601e7" Source="a8c50c46-2fec-44c4-be17-7971f92ed3fb.lsf">The Odinomicon</content>
+	<content contentuid="hfeccb8bbgf99fg4028gb187g607c18c2cbaa" Source="a8c50c46-2fec-44c4-be17-7971f92ed3fb.lsf"></content>
+	<content contentuid="h26adc0b6gfb3bg4f05gb289g0d96ced4b22e" Source="b1e3a419-4a5e-4ae4-b37a-22e5f5ebe810.lsf">Odinblade&apos;s Illusion</content>
+	<content contentuid="he64fab83g7756g4f76g80bbgb4565bfc1524" Source="OdinCORE_CustomVendor_Test.lsj">Bye</content>
+	<content contentuid="hcf572822g78b2g4bf6g9c71gbb837feb57a2" Source="OdinCORE_CustomVendor_Test.lsj">Hello there!</content>
+	<content contentuid="he9fffda3gee59g4401g9cf5g04a54dd546ec" Source="OdinCORE_OdinNPC_01.lsj">Tell me a joke.</content>
+	<content contentuid="ha836ea01g51e8g49bdga815gb493f3eb4768" Source="OdinCORE_OdinNPC_01.lsj">Don&apos;t forget to support modders for any games and mods that you play. We put a lot of effort into creating content, and a little support goes a long way! &lt;br&gt;&lt;br&gt;If you wish to tip me, head to ko-fi.com/odinblade. Thank you!</content>
+	<content contentuid="h5fd930edg8903g40b9gaaceg545ee38f28d0" Source="OdinCORE_OdinNPC_01.lsj">That&apos;ll be all for now.</content>
+	<content contentuid="ha6da3109g9059g45degadefg59cc268ab0e6" Source="OdinCORE_OdinNPC_01.lsj">Consider it done, friend!</content>
+	<content contentuid="ha1853645gd545g4abeg8ccag97429d983415" Source="OdinCORE_OdinNPC_01.lsj">Why are you speaking through an illusion?</content>
+	<content contentuid="hb312d460g1ba9g437fgb9e8g11c563ba1562" Source="OdinCORE_OdinNPC_01.lsj">I&apos;m cooking up some more mods and enhancements in my study, so it wouldn&apos;t exactly be efficient to travel wherever you call me to now, would it?</content>
+	<content contentuid="he6b5ceb7ga8efg4869g8a88gf9945e9b0f20" Source="OdinCORE_OdinNPC_01.lsj">Consider it done, friend!</content>
+	<content contentuid="h384332f7gc88eg42ddgae80g364a1f40154c" Source="OdinCORE_OdinNPC_01.lsj">Ah there we go I can see you now. I really ought to invest in better arcane bandwidth...</content>
+	<content contentuid="h01deca88g0e93g40fbg8949gba4dfe912940" Source="OdinCORE_OdinNPC_01.lsj">&lt;b&gt;[OFF]&lt;/b&gt; I do not want enemy Summons to utilise the Boon effects.</content>
+	<content contentuid="h9916bbf2gd4e8g4e9fg95dbg4070cb1f6745" Source="OdinCORE_OdinNPC_01.lsj">&lt;b&gt;[ON]&lt;/b&gt; I would like enemies to be able to use Odinblade skills.</content>
+	<content contentuid="h1debaca0g2b31g48f1gb9dcg1bd0d8bf7a0e" Source="OdinCORE_OdinNPC_01.lsj">Consider it done, friend!</content>
+	<content contentuid="hc6f0214bg2526g47fag8a46gce88a2c73d40" Source="OdinCORE_OdinNPC_01.lsj">&lt;b&gt;[ON]&lt;/b&gt; I would like Odinblade Overhaul vendors to be present in the world.</content>
+	<content contentuid="hdb3e2c49g2f93g44ddgb98cgec52e70b26eb" Source="OdinCORE_OdinNPC_01.lsj">I don&apos;t want to make changes at this time.</content>
+	<content contentuid="h2d3f0182g3dd2g421dga7f1gbf2fdfdad3aa" Source="OdinCORE_OdinNPC_01.lsj">I don&apos;t know. What do you call a successful mirage?</content>
+	<content contentuid="h7de87378g6c35g4b5ag9895gc8a946039174" Source="OdinCORE_OdinNPC_01.lsj">I want to change my &lt;b&gt;Enhanced Summon Scaling &lt;/b&gt;settings.</content>
+	<content contentuid="h817cd066g13ecg4fc0g91c0g1d7e592f740e" Source="OdinCORE_OdinNPC_01.lsj">...</content>
+	<content contentuid="h6747468egfc04g46eeg8de8g462aa0cf5c37" Source="OdinCORE_OdinNPC_01.lsj">*&lt;i&gt;crackling&lt;/i&gt;* Is this thing on?</content>
+	<content contentuid="hc8b8f2a1g203cg4f9aga28agd165af0382a8" Source="OdinCORE_OdinNPC_01.lsj">&lt;b&gt;[ON]&lt;/b&gt; I would like enemy Summons to utilise the Boon effects.</content>
+	<content contentuid="h7f14f0fag4df4g4b11g8c1cg14e6c7292481" Source="OdinCORE_OdinNPC_01.lsj">An &lt;i&gt;optimal &lt;/i&gt;illusion!</content>
+	<content contentuid="h832786d7g6893g4399gaa4dg7459f64e76ee" Source="OdinCORE_OdinNPC_01.lsj">Excellent! Then I shall continue creating more content for you to enjoy.</content>
+	<content contentuid="h32825bcegaacag42dcgbee7g6f5a46aab9d7" Source="OdinCORE_OdinNPC_01.lsj">Current status: [OdinCORE_CustomVendors_Value_5df00af8-4e59-4a8c-82a8-094aba487ad2]&lt;br&gt;Vendors are included with Odinblade&apos;s Overhaul mods, as well as having their weapons and skills available to vanilla vendors. Would you like the new Overhaul vendors to be &lt;b&gt;ON &lt;/b&gt;or &lt;b&gt;OFF&lt;/b&gt;?</content>
+	<content contentuid="h50f9bb90gf7f6g4ddbg9aecg2ce5acb54bd5" Source="OdinCORE_OdinNPC_01.lsj">&lt;b&gt;[OFF]&lt;/b&gt; I would not like Odinblade Overhaul vendors to be present in the world.</content>
+	<content contentuid="he5a83d41g4f4cg4b66g95bfg5690c62eb35d" Source="OdinCORE_OdinNPC_01.lsj">Current status: [OdinCORE_EnemySkills_Value_51846049-ce6a-40ba-8ede-816cd3457fe0]&lt;br&gt;Enemies can use Odinblade skills and effects should you wish. Would you like this feature to be &lt;b&gt;ON &lt;/b&gt;or &lt;b&gt;OFF&lt;/b&gt;?&lt;br&gt;</content>
+	<content contentuid="h03a37d2dg938fg454bgb779g5ced4400e04b" Source="OdinCORE_OdinNPC_01.lsj">Current status: [OdinCORE_BSS_Value_3f4cfb42-3e70-4105-a7f2-52e3eea0576a]&lt;br&gt;Enemies can utilise the Boons added in my Enhanced Summon Scaling mod on their own Summons. Would you like this feature to be &lt;b&gt;ON &lt;/b&gt;or &lt;b&gt;OFF&lt;/b&gt;?&lt;br&gt;</content>
+	<content contentuid="hcc8b8034g7b17g49cbg9582g17badf20001e" Source="OdinCORE_OdinNPC_01.lsj">I want to change my &lt;b&gt;Custom Vendor&lt;/b&gt; settings.&lt;br&gt;</content>
+	<content contentuid="h247c0404g1143g4f68g88d6ga318b3a0791c" Source="OdinCORE_OdinNPC_01.lsj">&lt;b&gt;[OFF] &lt;/b&gt;I would not like enemies to be able to use Odinblade skills.</content>
+	<content contentuid="h5225a464ge63eg455fga19cg4fa73aa8e0a1" Source="OdinCORE_OdinNPC_01.lsj">What do you call a successful mirage?</content>
+	<content contentuid="h439869cfg691fg49b4g9120g0f179fd695c8" Source="OdinCORE_OdinNPC_01.lsj">I don&apos;t want to make changes at this time.</content>
+	<content contentuid="h0bc09ca3g2dcag41c1gb868g73fe43b267d7" Source="OdinCORE_OdinNPC_01.lsj">I don&apos;t want to make changes at this time.</content>
+	<content contentuid="hcfddd6a9g5192g4590ga7f3ga3625b5ab512" Source="OdinCORE_OdinNPC_01.lsj">My, you are a curious one aren&apos;t you?</content>
+	<content contentuid="h064bf4d2g24dag40c0g9d81gc8949b07b2b3" Source="OdinCORE_OdinNPC_01.lsj">I want to change my &lt;b&gt;Enemy Skills&lt;/b&gt; settings.</content>
+	<content contentuid="h087352a2g6ee4g496dg93a4g9b1fbc61ef75" Source="OdinCORE_OdinNPC_01.lsj">Can I help you with anything?</content>
+	<content contentuid="h868aa550g537eg42afgba65g2f2510f0dbf7" Source="Status_ACTIVE_DEFENSE_DisplayName.lsb" Key="OdinPyro_INCADESCENCE_DisplayName">Incadescence</content>
+	<content contentuid="hddd442e5g8a59g4929ga88fg8684384f9c99" Source="Status_CHALLENGE_DisplayName.lsb" Key="SHADE_BladeChallenge">Blade Challenged</content>
+	<content contentuid="h5ee44de9gd6f4g45c0gb14eg1be66446b075" Source="Status_CHALLENGE_DisplayName.lsb" Key="SHADE_BladeChallenge_DisplayName">Blade Challenged</content>
+	<content contentuid="h3af32f55g0c1eg42fag8f26g945785f74921" Source="Status_CHALLENGE_DisplayName.lsb" Key="SHADE_ShadeChallenge">Shade Challenged</content>
+	<content contentuid="h28f33783g0712g4ca1g9db3gc703bd55a1ae" Source="Status_CHALLENGE_DisplayName.lsb" Key="SHADE_ShadeChallenge_DisplayName">Shade Challenged</content>
+	<content contentuid="hc41c1032geb9ag455bg8206g8842d4d34e52" Source="Status_CONSUME_Description.lsb" Key="OdinAERO_CONDUCTIVE_Description">Character is a conduit for electrical skills.</content>
+	<content contentuid="h983d1d53g2e50g45cagb9d2g279287a2d584" Source="Status_CONSUME_Description.lsb" Key="OdinAERO_HAWKEYE_Description">Character has increased range. &lt;br&gt;&lt;br&gt;&lt;font color=&apos;#40b606&apos;&gt;Range +2m&lt;/font&gt;</content>
+	<content contentuid="hdbb864f4ge143g4228gbe4dgce0c8a97a237" Source="Status_CONSUME_Description.lsb" Key="OdinCORE_LOSTFOOTING_Description">Character will become Knocked Down if their footing is lost again.</content>
+	<content contentuid="hc18533c6g8b26g4690g8f81g054863c4b195" Source="Status_CONSUME_Description.lsb" Key="OdinGEO_Corruption_Description">Character will take damage from &lt;font color=&apos;#65C900&apos;&gt;poison&lt;/font&gt; attacks, surfaces, and statuses.</content>
+	<content contentuid="hd140ade9g4dd2g4606g93cbg54cc90891d67" Source="Status_CONSUME_Description.lsb" Key="OdinGEO_GranitePlating_Description">Maximum Physical Armor increased.</content>
+	<content contentuid="hfea90250gf0f5g4630g83b1g58677b2d2f2f" Source="Status_CONSUME_Description.lsb" Key="OdinGEO_Ironbark_Description">Character is taking reduced damage.</content>
+	<content contentuid="hc9222de4gbcd8g4875g923dg563ab404a1fd" Source="Status_CONSUME_Description.lsb" Key="OdinGEO_Oiled_Description">Character is covered in &lt;font color=&apos;#7f3d00&apos;&gt;oil&lt;/font&gt;.</content>
+	<content contentuid="hd0336e18geddbg4bccgb8d3g7635ce4ec280" Source="Status_CONSUME_Description.lsb" Key="OdinGEO_ParasiticAffliction_Description">Character is infected with parasites.</content>
+	<content contentuid="h36f6628eg845dg43ccg9475g84ab3a45dc06" Source="Status_CONSUME_Description.lsb" Key="OdinGEO_Spored_Description">Character is currently affected by debilitating &lt;font color=&apos;#65C900&apos;&gt;spores&lt;/font&gt;.</content>
+	<content contentuid="h30d29794g8bc6g4ca4gbbdeg3390eefb4386" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_ARCANEPUNISHMENT_Description">Character will take damage each time they cast a skill.</content>
+	<content contentuid="hf24b9796g52c9g42abg96b2gfdc5f301fc45" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_BLOODARMOUR_Description">Each time you &lt;font color=&apos;#B823CB&apos;&gt;sacrifice Vitality&lt;/font&gt; for a &lt;font color=&apos;#D7001F&apos;&gt;Bloodtide&lt;/font&gt; spell, you restore &lt;font color=&quot;#a8a8a8&quot;&gt;Physical Armour&lt;/font&gt; equal to the sacrifice percentage.</content>
+	<content contentuid="hb01d619dg6c10g4c07ga77cgb36dc2b68f4c" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_DESECRATE_Description">Temporarily stripped of &lt;font color=&quot;#97fbff&quot;&gt;Magic Armour&lt;/font&gt;.</content>
+	<content contentuid="h06082ca4gbd2bg48d4gb2e8gde1643248356" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_FRENZIED_Description">Each time you &lt;font color=&apos;#B823CB&apos;&gt;sacrifice Vitality&lt;/font&gt; for a &lt;font color=&apos;#D7001F&apos;&gt;Bloodtide&lt;/font&gt; spell, you restore &lt;font color=&quot;#a8a8a8&quot;&gt;Physical Armour&lt;/font&gt; equal to the sacrifice percentage.</content>
+	<content contentuid="hb9288d2dgc3b9g4950gbc77ga255ec3cab26" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_INFECTED_Description">Nearby &lt;font color=&apos;#88a25b&apos;&gt;allied&lt;/font&gt; characters without &lt;font color=&apos;#a8a8a8&apos;&gt;Physical Armour&lt;/font&gt; within 5m become &lt;font color=&quot;#c9aa58&quot;&gt;Diseased&lt;/font&gt;, getting the same debuffs as &lt;font color=&quot;#c9aa58&quot;&gt;Infected&lt;/font&gt;.</content>
+	<content contentuid="h5a77f310gd049g4d9dg86e9g2267e5241227" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_OATHOFDESECRATION_Description">Character has been embued with power.</content>
+	<content contentuid="hf5690ef8g271bg47ddg91b6g3a0a5b1740a0" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_OVERLORD_Description">Character has &lt;font color=&apos;#7F25D4&apos;&gt;+3 Summon Count&lt;/font&gt;. &lt;br&gt;This status dissipates upon conjuring a &lt;font color=&apos;#88a25b&apos;&gt;Non-Undead&lt;/font&gt; &lt;font color=&apos;#7F25D4&apos;&gt;Summon&lt;/font&gt;.</content>
+	<content contentuid="h08a5f37bg92b7g4b28g8acag7c1da2ef5242" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_OVERLORD_INTERIM_Description">Character has &lt;font color=&apos;#7F25D4&apos;&gt;+3 Summon Count&lt;/font&gt;. &lt;br&gt;This status dissipates upon conjuring a &lt;font color=&apos;#88a25b&apos;&gt;Non-Undead&lt;/font&gt; &lt;font color=&apos;#7F25D4&apos;&gt;Summon&lt;/font&gt;.</content>
+	<content contentuid="ha65edc04gf98ag4efcg9a4fg67078023f12a" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_REANIMATOR_Description">The next time you kill a &lt;font color=&apos;#88a25b&apos;&gt;non-allied&lt;/font&gt; character, raise a &lt;font color=&apos;#7F25D4&apos;&gt;Totemic Zombie&lt;/font&gt;.</content>
+	<content contentuid="hd31fbb24geb83g41fbg9632g49d87832ec84" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_RUPTURE_Description">Resistances are lowered.</content>
+	<content contentuid="h4b028b02g45cdg40dagaddbg045af6565820" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_TRANSFIXED_IMMUNITY_Description">Character is immune to the &lt;font color=&apos;#C7A758&apos;&gt;Terrified&lt;/font&gt; and &lt;font color=&apos;#C7A758&apos;&gt;Transfixed&lt;/font&gt; statuses.</content>
+	<content contentuid="h49f83ec4g62b5g4a45g9e43g246427ad34c7" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_Weapon_Overlay_Staves_Description">                                                                                                                                                             </content>
+	<content contentuid="hb0448e85gd8c5g4353gbb68gf7f93d970a92" Source="Status_CONSUME_Description.lsb" Key="OdinNECRO_Weapon_Overlay_Wands_Description">                                                                                                                                                             </content>
+	<content contentuid="heeac5fd6g5b68g4a22g9d56g8379ec80f5a2" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_BLAZING_Description">Mastery of flames at a cost of water weakness.</content>
+	<content contentuid="he8c3d1e6ga41bg41f3gb57fgabc4755e5a8c" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_FLAMEBELLY_Description">Flames course through your veins.</content>
+	<content contentuid="h8fa01f6cgd411g4ed3gaa00gfbbdab4cbb66" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_PHOENIXIANFURY_Description">Upon death the character will explode, dealing devastating fire damage to nearby enemies.</content>
+	<content contentuid="h034fc38cg7995g4605g9a66g45ae9016edb6" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_PHOENIXIANREVIVAL_Description">Resurrect upon death to 25% Vitality.</content>
+	<content contentuid="ha48e0777ga8b6g44ddg854cge028022d9c96" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_SMOLDER_AURA_Description">Cursed by flames.</content>
+	<content contentuid="hde34b321g421cg429ag808fg670b829a22e7" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_SMOLDER_Description">Cursed by flames.</content>
+	<content contentuid="h7152df60g93d2g426agb65bgd584e78ce768" Source="Status_CONSUME_Description.lsb" Key="OdinPyro_SNARED_Description">Unable to move or dodge. Can not be targeted by teleportation skills.</content>
+	<content contentuid="hc6f92d49gba11g4008ga444g7769593903ab" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_ASCENDED_Description">Rise above life and death...</content>
+	<content contentuid="h42a94b3eg8dcfg4374g8125g642bb7529ead" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_CURSE_INEPT_AURA_Description">A target may be afflicted by a maximum of one curse at a time. &lt;br&gt;Enemies within 6m are also cursed.</content>
+	<content contentuid="h4945550fg01c0g4381ga7b2gb4d9b894cc15" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_CURSE_INEPT_Description">A target may be afflicted by a maximum of one curse at a time.</content>
+	<content contentuid="h82f49e6eg033fg49c9gbb9dgfb73dda97a9d" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_CURSE_VULNERABLE_AURA_Description">A target may be afflicted by a maximum of one curse at a time. &lt;br&gt;Enemies within 6m are also cursed.</content>
+	<content contentuid="hdb7f7e56geb6eg4542ga363gf11baa49a831" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_CURSE_VULNERABLE_Description">A target may be afflicted by a maximum of one curse at a time.</content>
+	<content contentuid="ha1c77c70gf61bg4d81g910fgd2a4a2825e9a" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_CURSE_WEAKNESS_AURA_Description">A target may be afflicted by a maximum of one curse at a time. &lt;br&gt;Enemies within 6m are also cursed.</content>
+	<content contentuid="he4e78918ge099g478dg9a7dgf2d6f953e0b4" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_CURSE_WEAKNESS_Description">A target may be afflicted by a maximum of one curse at a time.</content>
+	<content contentuid="h483baab4g313eg4a5ag9c1bg95a35196932d" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_DREAD_Description">Scared? You should be...</content>
+	<content contentuid="he06f4ba3gd362g4348gb509gff59e337737b" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_EXALTED_Description">The river speaks to me...</content>
+	<content contentuid="h3b38712bg79beg4fc4g8180g9dc85bd6babb" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_LAMENTED_Description">The river calls you...</content>
+	<content contentuid="hfce26d5fgd1a5g4605g9456ga68637d95160" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_MORDANT_Description">Mild afflication to bestow torment; a worthy sacrifice.</content>
+	<content contentuid="h2d444520g02c7g4899ga80ag584e13fcbad8" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_PACT_ARTILLERY_Description">You may have a maximum of one pact at a time.&lt;br&gt;&lt;font color=&quot;#40b606&quot;&gt;Range: +4m&lt;/font&gt;</content>
+	<content contentuid="hd715d6cag1620g484ega50ag61a13f1ed864" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_PACT_BRUTALITY_Description">You may have a maximum of one pact at a time.</content>
+	<content contentuid="hd5016234g8669g4ad6gb12bgfa130d92bbfd" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_PACT_IMMORTALITY_Description">You may have a maximum of one pact at a time.&lt;br&gt;&lt;font color=&quot;#40b606&quot;&gt;Vitality cannot fall below 1HP&lt;/font&gt;</content>
+	<content contentuid="h79b01a03gf50cg470cg8593ga5049d3c1396" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_PERISH_Description">The end is nigh; this is just the beginning...</content>
+	<content contentuid="h94200ddag9e74g4766g9046g256e433a8256" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_SEEDOFMALICE_Description">Upon removal or expiry, the character will explode, dealing massive &lt;font color=&quot;#c80030&quot;&gt;piercing damage&lt;/font&gt; and applying &lt;font color=&quot;#67ffdd&quot;&gt;Agony&lt;/font&gt; to nearby targets.</content>
+	<content contentuid="h376fccb6g0111g416bgb9bag9cb68638a97c" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_UNDERHANDEDBARGAIN_Description">It&apos;s so easy to exploit stupidity...</content>
+	<content contentuid="h7614471dg6fbcg480eg979fgc3137cdb7308" Source="Status_CONSUME_Description.lsb" Key="OdinSpectre_WITHER_Description">Why fight death? Embrace it...</content>
+	<content contentuid="h90bd7233gddebg4f59gaa01g3f247969ac85" Source="Status_CONSUME_Description.lsb" Key="OdinWater_CHILLED_AURA_Description">Nearby enemies become Chilled.</content>
+	<content contentuid="h87d94fabg89dcg4e64g8259gce79cba9b576" Source="Status_CONSUME_Description.lsb" Key="OdinWater_DAMPENED_Description">Your waves crash no more.</content>
+	<content contentuid="h865051aeg1e86g493cgb773g3727169e500a" Source="Status_CONSUME_Description.lsb" Key="OdinWater_FROZENBULWARK_Description">Maximum Magic Armor increased.</content>
+	<content contentuid="hab5984a0gfdfdg408bg8afdgf8d6aca4d7c0" Source="Status_CONSUME_Description.lsb" Key="OdinWater_ICEARMOUR_Description">Ice forms a protective barrier around you.</content>
+	<content contentuid="h6331f91dg83d0g477eg81ddgdf04af4564b4" Source="Status_CONSUME_Description.lsb" Key="OdinWater_ICYVEINS_Description">Allows you to apply &lt;font color=&quot;#cfecff&quot;&gt;Hypothermia&lt;/font&gt; regardless of whether your targets are &lt;font color=&quot;#cfecff&quot;&gt;Chilled&lt;/font&gt;, &lt;font color=&quot;#cfecff&quot;&gt;Frozen&lt;/font&gt;, or have &lt;font color=&quot;#188ede&quot;&gt;Magic Armour&lt;/font&gt;.</content>
+	<content contentuid="hc663e605gaad9g42c2g8b2eg02aa95790b3c" Source="Status_CONSUME_Description.lsb" Key="OdinWater_ROOTED_Description">You are rooted in place and cannot move.</content>
+	<content contentuid="h4cd85465gc393g4f7cg8b64g37771b48f222" Source="Status_CONSUME_Description.lsb" Key="OdinWater_SWIFTCURRENT_Description">&lt;font color=&quot;#88a25b&quot;&gt;Movement Speed: 30% &lt;br&gt;Dodging: 15%&lt;/font&gt;</content>
+	<content contentuid="h257a92c6ge904g4438gb188g4e100bde967e" Source="Status_CONSUME_Description.lsb" Key="SHADE_BladeChallenged_Loss_Description">|Character suffers consequences of loosing a Challenge.|</content>
+	<content contentuid="hbb1a729cg78bag4d46ga8d6ga098bcd0d40a" Source="Status_CONSUME_Description.lsb" Key="SHADE_BladeChallenged_Win_Description">|Character was victorious in a recent Challenge.|</content>
+	<content contentuid="hbc0a5c0eg653ag4193g852fge79258ec20a9" Source="Status_CONSUME_Description.lsb" Key="SHADE_Exposed1_Description">&quot;The Umbra will restore Order to the world...&quot;</content>
+	<content contentuid="hbcf99911g182cg46eeg8dc2g65aa74b777de" Source="Status_CONSUME_Description.lsb" Key="SHADE_Exposed2_Description">&quot;The Umbra will restore Order to the world...&quot;</content>
+	<content contentuid="h05347242g33b9g4992g85f6g7a0ee53cdb9a" Source="Status_CONSUME_Description.lsb" Key="SHADE_Exposed3_Description">&quot;The Umbra will restore Order to the world...&quot;</content>
+	<content contentuid="hdb29070dgbdffg4e77g9270gba9faa27cfc8" Source="Status_CONSUME_Description.lsb" Key="SHADE_HUMAPReturn_Description">&quot;A skillful display...&quot;</content>
+	<content contentuid="h755f1e0eg4c59g462cg8de6g6a2666a743f7" Source="Status_CONSUME_Description.lsb" Key="SHADE_HUMSourceAP_Description">&quot;Why make a big display when you can just kill your target instead?&quot;</content>
+	<content contentuid="h252af9eeg0452g437egad5dgfc088920430b" Source="Status_CONSUME_Description.lsb" Key="SHADE_Peril1_Description">&quot;The Umbra will plunge the world into Chaos...&quot;</content>
+	<content contentuid="h6e16a3a2gd459g4d5bg98ccg196107d12429" Source="Status_CONSUME_Description.lsb" Key="SHADE_Peril2_Description">&quot;The Umbra will plunge the world into Chaos...&quot;</content>
+	<content contentuid="h82de44cdg1deeg4c04g9a26gfa064ee3f367" Source="Status_CONSUME_Description.lsb" Key="SHADE_Peril3_Description">&quot;The Umbra will plunge the world into Chaos...&quot;</content>
+	<content contentuid="h9d96e08dg6e08g448aga124g9f04ff634bcd" Source="Status_CONSUME_Description.lsb" Key="SHADE_PreemptiveTactics_Description">&quot;I&apos;m going in for the kill...&quot;</content>
+	<content contentuid="hc666c238gd3fag483cgbfb9g95f60c72db7f" Source="Status_CONSUME_Description.lsb" Key="SHADE_RetreatIntoShadow_Description">&quot;I&apos;ll get &apos;em next time...&quot;</content>
+	<content contentuid="h19d16a2age1cag4a40g856cg1ab52a317bbd" Source="Status_CONSUME_Description.lsb" Key="SHADE_RetreatIntoShadowUndead_Description">&quot;I&apos;ll get &apos;em next time...&quot;</content>
+	<content contentuid="h58f4cef7g6d52g439dg8a90ge1d25e797d33" Source="Status_CONSUME_Description.lsb" Key="SHADE_SHADEAPReturn_Description">&quot;A skillful display...&quot;</content>
+	<content contentuid="h605c25ecg9505g4711gb897g468d9e3db8c2" Source="Status_CONSUME_Description.lsb" Key="SHADE_ShadeChallenged_Loss_Description">|Character suffers consequences of loosing a Challenge.|</content>
+	<content contentuid="h1ff13c22gf139g44e9ga2fcg5be4e5f3dbfe" Source="Status_CONSUME_Description.lsb" Key="SHADE_ShadeChallenged_Win_Description">|Character was victorious in a recent Challenge.|</content>
+	<content contentuid="hcb3fa610g1a42g48ffgb440g9a7e068c8114" Source="Status_CONSUME_Description.lsb" Key="SHADE_SHADESourceAP_Description">&quot;Why make a big display when you can just kill your target instead?&quot;</content>
+	<content contentuid="hd55ed911gbb73g4043ga9adg3db84e25a57c" Source="Status_CONSUME_Description.lsb" Key="SHADE_UmbralExpertise_Description">&quot;We have mastered aiming for the weak-spot...&quot;</content>
+	<content contentuid="h3f8fca84g946ag4e23g90e3geb59c6e87822" Source="Status_CONSUME_DisplayName.lsb" Key="FIREBLOOD_DisplayName">Fireblood</content>
+	<content contentuid="hea9def94g11dfg42acgac48g0c76bb2d9396" Source="Status_CONSUME_DisplayName.lsb" Key="OdinAERO_CONDUCTIVE_DisplayName">Conductive</content>
+	<content contentuid="h119778bag079cg4995g994cg7d308fdc374d" Source="Status_CONSUME_DisplayName.lsb" Key="OdinAERO_GRAVITY_DisplayName">Gravity</content>
+	<content contentuid="hdbe88f12g6038g4fcegad21g8df288a16a1a" Source="Status_CONSUME_DisplayName.lsb" Key="OdinAERO_HAWKEYE_DisplayName">Hawkeye</content>
+	<content contentuid="hf8f70911g4620g47b1ga5e5g84985616d32c" Source="Status_CONSUME_DisplayName.lsb" Key="OdinAERO_HAZED_DisplayName">Hazed</content>
+	<content contentuid="h13ed12e1gec76g4817gae5cg800518d13e5f" Source="Status_CONSUME_DisplayName.lsb" Key="OdinAERO_INSULATIONSHIELD_DisplayName">Insulation Shield</content>
+	<content contentuid="hefbad2d8gf0c3g4ffeg8fa5gc0fa59319f15" Source="Status_CONSUME_DisplayName.lsb" Key="OdinAERO_THUNDERBRAND_DisplayName">Thunderbrand</content>
+	<content contentuid="h493a2384gf9bdg4881g8ed9ge12701264c92" Source="Status_CONSUME_DisplayName.lsb" Key="OdinCORE_LOSTFOOTING_DisplayName">Lost Footing</content>
+	<content contentuid="h0c262306ga868g41bega7fag1a8d860b9dc9" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_Corruption_DisplayName">Corrupted</content>
+	<content contentuid="h3f0e1cbfg71bdg4285g8f6dg796ede6580f5" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_Earthbrand_DisplayName">Earthbrand</content>
+	<content contentuid="h9b39e23fg5d8bg4107g8141gccf8c1af1861" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_GranitePlating_DisplayName">Granite Plating</content>
+	<content contentuid="h82cfd4d0g574bg4e53gade6g153d00485cf3" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_Ironbark_DisplayName">Ironbark</content>
+	<content contentuid="h2946424ag8c24g4598g86d9g7d754296cf6b" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_Oiled_DisplayName">Oiled</content>
+	<content contentuid="h368cb114gb2c3g4c13g9f78g84535276e071" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_ParasiticAffliction_DisplayName">Parasitic Affliction</content>
+	<content contentuid="ha2ffea5dg1c33g411agb626g20e97558db5e" Source="Status_CONSUME_DisplayName.lsb" Key="OdinGEO_Spored_DisplayName">Spored</content>
+	<content contentuid="h7b74ad2dg448ag48e2g9a5agb36b6f3a3c56" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_ARCANEPUNISHMENT_DisplayName">Arcane Punishment</content>
+	<content contentuid="hae3d458egcaa2g4841gbdfcg04a8473567e3" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_BLOODARMOUR_DisplayName">Blood Armour</content>
+	<content contentuid="h7bf8b2ebg53ceg4c92g8e70g020d9621cb10" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_DESECRATE_DisplayName">Desecrated</content>
+	<content contentuid="hfda9a351g9bc8g403bg8212gfeed909f9ce6" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_FRENZIED_DisplayName">Frenzied</content>
+	<content contentuid="heb067c73gf06dg4bb2gb310gbe318dbd9ecb" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_HEXSKILL_ARCANEVOLLEY_DisplayName">Hex</content>
+	<content contentuid="h06a0b3b0ge526g44d3ga9c2gf9b830d7c704" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_HEXSKILL_BLACKSHROUD_DisplayName">Hex</content>
+	<content contentuid="hd4bf0d96g7dc9g46c1gbcd1gff84c41bcdf1" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_HEXSKILL_HORRIFICSCREAM_DisplayName">Hex</content>
+	<content contentuid="h915216bbgd117g4096g9eabg0db986bb1b2f" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_HEXSKILL_MUTE_DisplayName">Hex</content>
+	<content contentuid="h6494d050g8082g49a2ga672gb363a07b9ae5" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_HEXSKILL_OPHIDIANGLARE_DisplayName">Hex</content>
+	<content contentuid="h044be3d0g5a70g4d9dg8bbfg60c7fbeebf76" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_HEXSKILL_WITCHESBREW_DisplayName">Hex</content>
+	<content contentuid="hc0ca3110gba22g4e92ga774ga7dd4d22507e" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_INFECTED_DisplayName">Infected</content>
+	<content contentuid="hac17bd50g6b01g4bdcg9d7dg49942f1619de" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_OATHOFDESECRATION_DisplayName">Oath of Desecration</content>
+	<content contentuid="h485f00f9gf776g46a1gbe6egd3b6dac0589d" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_OVERLORD_DisplayName">Overlord</content>
+	<content contentuid="h12639b01gf927g4647ga68bgc5ba99c888ce" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_OVERLORD_INTERIM_DisplayName">Overlord</content>
+	<content contentuid="h8bd5a442gdeecg42f2g9ff9g066ca6f9fb6b" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_OVERLORD_SUMMON_DisplayName">Overlord Minion</content>
+	<content contentuid="h80709682g220ag4db0g85ecgfdd97e9c4395" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_REANIMATOR_DisplayName">Reanimator</content>
+	<content contentuid="h1f4b6f6fgd180g43e3g860ag0f54a2d372e7" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_RUPTURE_DisplayName">Ruptured</content>
+	<content contentuid="h0b1269dfg1776g4236g97d0g3ad47aeeca49" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_TRANSFIXED_IMMUNITY_DisplayName">Fearless</content>
+	<content contentuid="hc2d693f4g2864g4f4egadbeg78ecba869eb1" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_Weapon_Overlay_Staves_DisplayName">Bloodthirsty (+5% Life Steal)</content>
+	<content contentuid="h08fc696cgc5c4g4487gb7c5g1a435c86809b" Source="Status_CONSUME_DisplayName.lsb" Key="OdinNECRO_Weapon_Overlay_Wands_DisplayName">Bloodthirsty (+5% Life Steal)</content>
+	<content contentuid="h19fa2d2ag1e29g476eg99d3ge459ea03b109" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_BLAZING_DisplayName">Blazing</content>
+	<content contentuid="hea7f5efbg9e88g4474g864fgd11a5adaed35" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_FLAMEBELLY_DisplayName">Flamebelly</content>
+	<content contentuid="h21321aa4gae94g4de9gb761gbb3440334a29" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_INCINERATEPROC_DisplayName">Incinerate</content>
+	<content contentuid="ha2ff6a2bg6941g4f0fga1b4gbd129a191b4a" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_PHOENIXIANFURY_DisplayName">Phoenixian Fury</content>
+	<content contentuid="h2a435581ga0dcg4f15g82f2g808fc6e520b2" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_PHOENIXIANREVIVAL_DisplayName">Phoenixian Revival</content>
+	<content contentuid="hbc1bd716g76f4g4244gb92bg3c0e5574c28c" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_PURIFYINGFIRE_DisplayName">Purifying Fire</content>
+	<content contentuid="h575a53fcgef8ag4effg8373g87eb7f08e811" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_PURIFYINGFIRE_ENEMY_DisplayName">Purifying Fire</content>
+	<content contentuid="hb64dcc91g4240g411ega6a6g1eb4c546e0bb" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_SMOLDER_AURA_DisplayName">Smoldered Aura</content>
+	<content contentuid="h86408bbdgaf17g4a49gb25ag95832567ad2c" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_SMOLDER_DisplayName">Smoldered</content>
+	<content contentuid="h89c67c54g6ef0g4bd8g98b0g4e33241c5d76" Source="Status_CONSUME_DisplayName.lsb" Key="OdinPyro_SNARED_DisplayName">Snared</content>
+	<content contentuid="h31eff275g2d2ag474dgb175g6f96b29a86c1" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_ASCENDED_DisplayName">Ascended</content>
+	<content contentuid="hb0803ed6g2417g4925g9f86gf6758d9ab269" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_CURSE_INEPT_AURA_DisplayName">Curse Aura: Inept</content>
+	<content contentuid="h3406f3d4gfa2ag4148gb6e9gf04b5007ab43" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_CURSE_INEPT_DisplayName">Curse: Inept</content>
+	<content contentuid="h87e9c862g8c17g4420ga9ebga515bbdaa57f" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_CURSE_VULNERABLE_AURA_DisplayName">Curse Aura: Vulnerable</content>
+	<content contentuid="hb3e25282g99afg4e31gb9fdg10239e742e8b" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_CURSE_VULNERABLE_DisplayName">Curse: Vulnerable</content>
+	<content contentuid="ha5027616g0d49g4932g93eag50d362500cdd" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_CURSE_WEAKNESS_AURA_DisplayName">Curse Aura: Weakness</content>
+	<content contentuid="hc89416f7g22feg4aabg973eg4bed8f717bf8" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_CURSE_WEAKNESS_DisplayName">Curse: Weakness</content>
+	<content contentuid="h2f23cc94g16b7g44a9gb96dg1349b6ef5362" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_DREAD_DisplayName">Dread</content>
+	<content contentuid="he46e46cfg8879g414bg929dg386b3a1ef2ad" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_EXALTED_DisplayName">Exalted</content>
+	<content contentuid="h7d106369gd971g4653gbd84g88a362fe2f43" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_LAMENTED_DisplayName">Lamented</content>
+	<content contentuid="h8b6c2b28g2f8eg4a10g80f3gc7f217922492" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_MORDANT_DisplayName">Mordant</content>
+	<content contentuid="hed023b5agdcc3g4834gbe6cg05ef64ef36fa" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_PACT_ARTILLERY_DisplayName">Pact: Artillery</content>
+	<content contentuid="heddacf97g1627g44ccg97a6ge0fd0ea87611" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_PACT_BRUTALITY_DisplayName">Pact: Brutality</content>
+	<content contentuid="hb50b226dgb248g41a4g888fg9edcff608d14" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_PACT_IMMORTALITY_DisplayName">Pact: Immortality</content>
+	<content contentuid="h4d508ec8g7a2bg4e6aga1ceg2345f3026636" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_PERISH_DisplayName">Perish</content>
+	<content contentuid="he98604ccg1736g4284ga6a1g35d11d1f9b97" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_PROC_BANSHEEDEAF_DisplayName">Deaf</content>
+	<content contentuid="hed2dcb12g7b25g4c61ga28dg8ff1b1813aeb" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_SEEDOFMALICE_DisplayName">Seed of Malice</content>
+	<content contentuid="ha4967e9dgdd92g45dfgb4c3g2e6b392cc31c" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_UNDERHANDEDBARGAIN_DisplayName">Underhanded Bargain</content>
+	<content contentuid="h98568793g870bg4e9cgb70ag08eb010f4e0f" Source="Status_CONSUME_DisplayName.lsb" Key="OdinSpectre_WITHER_DisplayName">Wither</content>
+	<content contentuid="h298e2b14g260ag49f4g802dg3bb54e800790" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_CHILLED_AURA_DisplayName">Chilled Aura</content>
+	<content contentuid="haa92cba7g7259g46a3gb9b9g823598c41e0f" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_DAMPENED_DisplayName">Dampened</content>
+	<content contentuid="hd17eca5ag425dg4fcdgb059g33ecf0c38fe4" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_FROSTBLADE_DisplayName">Hydrobrand</content>
+	<content contentuid="h345c2fcdg5eb1g4371ga0edg45e65e4454ef" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_FROZENBULWARK_DisplayName">Frozen Bulwark</content>
+	<content contentuid="h304a49cege608g4c01gb6adgf17b2cc43ade" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_ICEARMOUR_DisplayName">Ice Barrier</content>
+	<content contentuid="hc0e46033g1e44g40f5ga7a8gc7118fd2eb46" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_ICYVEINS_DisplayName">Icy Veins</content>
+	<content contentuid="h3de3eed9g9bf8g4e3eg9755gca19b2d890ec" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_RIDETIDE_1_DisplayName">Low Tide</content>
+	<content contentuid="h951f5630g8305g46f0gaa1bg1d9e32d5ff97" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_RIDETIDE_2_DisplayName">High Tide</content>
+	<content contentuid="hae0a37a9gb6f9g407agbe24g7de03441f179" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_RIDETIDE_3_DisplayName">Low Tide</content>
+	<content contentuid="h50e6aba6gbf08g4ebbg891cga2538172f9db" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_ROOTED_DisplayName">Rooted</content>
+	<content contentuid="h33439c12g539ag484bga6c7gf94804dc431c" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_SLOWCURRENT_DisplayName">Slow Current</content>
+	<content contentuid="hd93bcf68g172dg400fga13fg6ba535cd116a" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_SWIFTCURRENT_DisplayName">Swift Current</content>
+	<content contentuid="hd9ac4758g025fg4c4dg96a1geeb93ed0699b" Source="Status_CONSUME_DisplayName.lsb" Key="OdinWater_WATERSOFLIFE_DisplayName">Waters Of Life</content>
+	<content contentuid="h53aeb2beg3d68g447cg9fb8g73b031caf4a9" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_BladeChallenged_Loss_DisplayName">Blade Challenge Lost</content>
+	<content contentuid="h3bcf2d0cg2678g4598g816dgcbed69e2f71b" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_BladeChallenged_Win_DisplayName">Blade Challenge Won</content>
+	<content contentuid="h0cd4be25gb572g4be1gba32g792b2b2800fc" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_Exposed1_DisplayName">Exposed</content>
+	<content contentuid="hdb8a8efeg71c9g4248g9104g7fca691b4c11" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_Exposed2_DisplayName">Exposed</content>
+	<content contentuid="h59829552g6d43g4d52g8b93gcc44dfee90cb" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_Exposed3_DisplayName">Exposed</content>
+	<content contentuid="h5b3760e8g7efag428bgb148g1ec91a60033b" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_HUMAPReturn_DisplayName">Focus</content>
+	<content contentuid="h9287d649g4ddeg40ccg9397g9e15f4013fb9" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_HUMSourceAP_DisplayName">Resourceful</content>
+	<content contentuid="h0b13bdf2gf930g42e8g970bgd9300ad485a8" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_OrderForm_DisplayName">Order Form</content>
+	<content contentuid="hb70c62ffg5465g4074g95e0gba38e0fdd4e1" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_Peril1_DisplayName">Peril</content>
+	<content contentuid="h5aaed219ged88g440cgbc43gc36b3cb86297" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_Peril2_DisplayName">Peril</content>
+	<content contentuid="h042c1bd2ge074g4859g898ega6a16fbf7d4c" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_Peril3_DisplayName">Peril</content>
+	<content contentuid="hda1462b4g2577g44e6g8d47g6fee99fde64a" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_PreemptiveTactics_DisplayName">Preemptive Tactics</content>
+	<content contentuid="h54452063g362fg4f0cg9805g91e5d0d16ffc" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_RetreatIntoShadow_DisplayName">Retreat Into Shadow</content>
+	<content contentuid="h89f895e7ge401g499bg80deg7602a7230527" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_RetreatIntoShadowUndead_DisplayName">Retreat Into Shadow</content>
+	<content contentuid="hc9a702e7g657fg4e1dg9728g8d739ab11845" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_SHADEAPReturn_DisplayName">Determined</content>
+	<content contentuid="hcf549a6agcf5cg4caaga864gd84a817d0b4b" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_ShadeChallenged_Loss_DisplayName">Shade Challenge Lost</content>
+	<content contentuid="h6e0f9a3cg7be4g44b9g987fg0f9ba6deef14" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_ShadeChallenged_Win_DisplayName">Shade Challenge Won</content>
+	<content contentuid="hda66e941gd124g469fgad86gd6832ce93c84" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_ShadeForm_DisplayName">Chaos Form</content>
+	<content contentuid="h63db7acagf820g4754g9f98g5c3968655dbd" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_SHADESourceAP_DisplayName">Resourceful</content>
+	<content contentuid="h15a3adccgaf9eg4cf5g8708ga3524f760b03" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_ShadeToggle_DisplayName">TEST</content>
+	<content contentuid="hc76f4359g980dg4f65g956dg4611a365ab11" Source="Status_CONSUME_DisplayName.lsb" Key="SHADE_UmbralExpertise_DisplayName">Umbral Expertise</content>
+	<content contentuid="h15c4085eg0bb4g4f8agaea7g17f589c8b799" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_BladeChallenge_Loss">Blade Challenge Lost</content>
+	<content contentuid="h4b8c22aagb414g41b4g8897gabb27dd6ad04" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_BladeChallenge_Win">Blade Challenge Won</content>
+	<content contentuid="h39ce6740g26c1g4daagbe2bg855c714fbedd" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_Conductive">Conductive</content>
+	<content contentuid="h123fa0cbgbab6g47c8g9837g54d06df97023" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_Gravity">Gravity</content>
+	<content contentuid="hf38f2621g70e0g4729g8a37gebc56fb0e209" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_Hawkeye">Hawkeye</content>
+	<content contentuid="h1ce9d905g28ddg4515g9314ga0af964f6b38" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_Hazed">Hazed</content>
+	<content contentuid="h1e2a7e5agf88fg4d9fga915gf7ea56e5f563" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_InsulationShield">Insulation Shield</content>
+	<content contentuid="h90fcdf4fgbd26g47f1gb1a7g75d2c34db89d" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_Thunderbrand">Thunderbrand</content>
+	<content contentuid="h76333541g82b5g490bg8be7gb321d3ba0a71" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinAERO_VoltSwings">Volt Swings</content>
+	<content contentuid="h702fc2ccgba35g4653g8b94g823841f5822e" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinCORE_LostFooting">Lost Footing</content>
+	<content contentuid="h8c72e37bg97feg4cafg85aeg63dc4d7219e1" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_Corruption">Corrupted</content>
+	<content contentuid="hf8436281ga63bg4f16gaab2g93b94e0b296a" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_DecreePoly">Nature&apos;s Decree</content>
+	<content contentuid="hf980566ag5f92g4029ga6fbgdd19bcfc7d86" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_Earthbrand">Earthbrand</content>
+	<content contentuid="hd4e2ad7dg5815g439dgaec1g9c0eadccbd38" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_GranitePlating">Granite Plating</content>
+	<content contentuid="hfd1734b0gcc5ag4599g82b4gaeef6a99a23a" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_Ironbark">Ironbark</content>
+	<content contentuid="h95e631e6g8873g4728g93dcg867db9eb90bd" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_Oiled">Oiled</content>
+	<content contentuid="hc8fee71cg2e00g4cfdg9545ge8ab515c40c6" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_Spored">Spored</content>
+	<content contentuid="h048e9023g1a1eg4a90gbc3age05631a5b5e0" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinGEO_TitanForm">Shapeshift: Clay Sentinel</content>
+	<content contentuid="h8202852cge394g45f7g8073gef49ffbbd00c" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_ARCANEPUNISHMENT">Arcane Punishment</content>
+	<content contentuid="h9ad8ac91ge0f6g4f8dg943age953da90142f" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_BLOODARMOUR">Blood Armour</content>
+	<content contentuid="h9d4dabc5gf05dg4239g9ef7gbd9a9aa99288" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_DESECRATE">Desecrated</content>
+	<content contentuid="ha4c72125g02e6g460bgb35fg41e6363c7f59" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_FRENZIED">Frenzied</content>
+	<content contentuid="hf4ca61e3g7bd3g4575g8950geca5c5f48807" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_OATHOFDESECRATION">Oath of Desecration</content>
+	<content contentuid="h63fd2d01g28c9g40a6ga527g18c710c10cbc" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_OVERLORD">Overlord</content>
+	<content contentuid="h87ab0534g04cdg4979g8e1dgdf6e18e30da8" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_OVERLORD_SUMMON">Overlord Minion</content>
+	<content contentuid="h3de082d2gc01cg49d3gadcag87262370589e" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_REANIMATOR">Reanimator</content>
+	<content contentuid="h8069346dg19b1g476dgafe9gf6f3a5657e50" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_RUPTURE">Ruptured</content>
+	<content contentuid="he7cf1788ge1d9g40e4g9e62g0a494871aeb3" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_TRANSFIXED">Transfixed</content>
+	<content contentuid="h162e94bag2347g442dg87fdgbef550342d0f" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_TRANSFIXED_IMMUNITY">Fearless</content>
+	<content contentuid="h7fc28f01g9cb8g4120g954bg2dc3eb9c52a9" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_WEAPON_VAMPIRISM">Bloodthirsty (+5% Life Steal)</content>
+	<content contentuid="hd0ab8244g56e7g4773g8ef8ga92767bc9705" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinNECRO_WITCHESBREW">Witches Brew</content>
+	<content contentuid="hf774fbbbg87aag4461g8ea2gdc0e6a3052d2" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroBlazing">Blazing</content>
+	<content contentuid="h442b4437ga2efg4911g93d5geccc0545ed87" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroFlamebelly">Flamebelly</content>
+	<content contentuid="h2ffc6d2ag9d2fg43a1g8672ga19b50550a9a" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroIncinerate">Incinerate</content>
+	<content contentuid="h82c865f8g9d2cg47a2g8b75ga0d73ff1f3b9" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroPhoenixianFury">Phoenixian Fury</content>
+	<content contentuid="hd8f2ef87g0934g4a86g9841gd9c8e93173a7" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroPhoenixianRevival">Phoenixian Revival</content>
+	<content contentuid="h14dc02ecgaefeg40d6g8fbag519ed19dd1e4" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroPurifyingFire">Purifying Fire</content>
+	<content contentuid="hcbbcef2ag33b0g4968gab9cg7c4184154592" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroPurifyingFire_Enemy">Purifying Fire</content>
+	<content contentuid="hf0c94e3fg6749g47a2gb9b9g786a78504826" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroSmolder">Smoldered</content>
+	<content contentuid="h6ef221d7g0d70g4534g9d38g5d633c8f3ec8" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroSmolder_Aura">Smolder Aura</content>
+	<content contentuid="h7e828971g9210g4dbcg99ffgd8a1c2437248" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinPyroSnared">Snared</content>
+	<content contentuid="hcb47edf7g6ea1g4613ga2b9g2f51d1384227" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Ascended">Ascended</content>
+	<content contentuid="hcd1696f2g77f4g47f7ga509g5b9e63e3d051" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Curse_Inept">Curse: Inept</content>
+	<content contentuid="h2b97dfe6gbfa0g43ffg9060g87d2326790da" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Curse_Vulnerable">Curse: Vulnerable</content>
+	<content contentuid="ha63c2a4ag8508g4e52g9ec3gc29f7fc50a9e" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Curse_Weakness">Curse: Weakness</content>
+	<content contentuid="hdf17e950gba53g48b1gbe7cgae656a9256c9" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Dread">Dread</content>
+	<content contentuid="h1d11c16agc393g416ag8da2g6e02ec3d18a0" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Exalted">Exalted</content>
+	<content contentuid="h9fee6474g4a02g4ccbg90e7ge6b429540727" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Lamented">Lamented</content>
+	<content contentuid="he051c044ge82ag487dgbb31ge7dda106b40d" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Mordant">Mordant</content>
+	<content contentuid="hbb7a8393g6f4ag4d53g9b9eg0bc5020fa9c9" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Pact_Artillery">Pact: Artillery</content>
+	<content contentuid="h3688ec79gb08bg4e24gaa93g3b8fee9f4844" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Pact_Brutality">Pact: Brutality</content>
+	<content contentuid="h285d6395g0202g4edaga484g920035d846d5" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Pact_Immortality">Pact: Immortality</content>
+	<content contentuid="h07696840g5462g4463gb3bdg430fd0e0beac" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Perish">Perish</content>
+	<content contentuid="h6a3dc3abg8fb4g4be4g9777g85c9a8225394" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_SeedOfMalice">Seed of Malice</content>
+	<content contentuid="h8c57d099g6ee0g45c0gab5bg835bcca28cf8" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_UnderhandedBargain">Underhanded Bargain</content>
+	<content contentuid="h129d9bd3g3cb8g4294gb1eeg995e32fe7056" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinSpectre_Wither">Wither</content>
+	<content contentuid="h673b75b0gbff7g478dgb861g10ba90d08baf" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_Chilled_Aura">Chilled Aura</content>
+	<content contentuid="h56d23e12g5b12g49a2gbc75g4424f7ebbf00" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_Dampened">Dampened</content>
+	<content contentuid="h300eac9dg3f6eg4faeg899eg2ab619d4e9d2" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_Frostblade">Hydrobrand</content>
+	<content contentuid="h6d2a2c62gec89g4aa1g9c25gbb02545cb402" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_FrozenBulwark">Frozen Bulwark</content>
+	<content contentuid="hd0d0733ege892g4c9ag916cg733540a23d8c" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_IceArmour">Ice Barrier</content>
+	<content contentuid="hba633dc2gf918g4127g9046ge34e9c8acb6f" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_IcyVeins">Icy Veins</content>
+	<content contentuid="hd54cc1f0g2ff5g4ef1g943bgec55c13b398b" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_RideTide_1">Low Tide</content>
+	<content contentuid="hc6343707gb93dg4c5aga016g5c1acba893a5" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_RideTide_2">High Tide</content>
+	<content contentuid="hbb62761bg51bdg4614g8cfdgaf5ebd744d7a" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_Rooted">Rooted</content>
+	<content contentuid="h3b0eb33eg6f12g4900g8d61g2d68cfc6127c" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_SlowCurrent">Slow Current</content>
+	<content contentuid="h9dc851e0g211cg407aga7c6gaca21ae8d8f0" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_OdinWater_SwiftCurrent">Swift Current</content>
+	<content contentuid="h731cf646g6936g453cga6e2g1a2106ae44e4" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_ShadeChallenge_Loss">Shade Challenge Lost</content>
+	<content contentuid="h74c394b4gf7bag4eebgadacg0563afcff8c6" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_ShadeChallenge_Win">Shade Challenge Won</content>
+	<content contentuid="h266938f8g03f7g4726gae5cg9b44dd0c30f7" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEExposed1">Exposed</content>
+	<content contentuid="h483ca429g1c82g463eg8c82g388a5c4d64bc" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEExposed2">Exposed</content>
+	<content contentuid="hf11e6584gccc5g4e06ga44bg04ea71773a45" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEExposed3">Exposed</content>
+	<content contentuid="h04c9bf28g498cg469ega764gce114a1b31a6" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEHUMAPReturn">Focus</content>
+	<content contentuid="h5ed7f3b2g3d1dg4b4aga6d4g5bdaba28fb08" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEHUMSourceAP">Resourceful</content>
+	<content contentuid="hd9a0ed1egd97bg4396g8513g7e2ad8ef426c" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEOrderForm">Order Form</content>
+	<content contentuid="h5d335660g74adg4157gb6d9g5ab6c40f5b03" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEPeril1">Peril</content>
+	<content contentuid="h105850ebg556ag472bg8814g8effb63ecb46" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEPeril2">Peril</content>
+	<content contentuid="h4b745661gec14g4399g9f3ega12dd8f71de6" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEPeril3">Peril</content>
+	<content contentuid="h8304a52ag27e8g4aa7gba9ag966773233f1c" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_ShadePreemptiveTactics">Preemptive Tactics</content>
+	<content contentuid="h0f81f4d1g7de5g497eg9351g0216915ba6a2" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_ShadeRetreatIntoShadow">Retreat Into Shadow</content>
+	<content contentuid="h5654390bgeb2cg4e82ga234ga314f800035e" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADESHADEAPReturn">Determined</content>
+	<content contentuid="h3cc69656g48f3g44f9g9711gf584126e68e4" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADEShadeForm">Chaos Form</content>
+	<content contentuid="hf4f7210ag9f78g4a14g8cdbg25478ec9d67d" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_SHADESHADESourceAP">Resourceful</content>
+	<content contentuid="heb76c583g3696g4cb0g81f4g091c1ed090a5" Source="Status_CONSUME_DisplayName.lsb" Key="Stats_ShadeUmbralExpertise">Umbral Expertise</content>
+	<content contentuid="hb6805e88g7626g4333g998bgab2b959cfdfd" Source="Status_DAMAGE_Description.lsb" Key="OdinAERO_PROC_CONDUCTIVE_DAZE_ZAP_Description">Deals [1] damage per turn.</content>
+	<content contentuid="h2360d455g2b41g4a3dgbae4g5ab0e181c191" Source="Status_DAMAGE_Description.lsb" Key="OdinAERO_PROC_CONDUCTIVE_LOW_ZAP_Description">Deals [1] damage per turn.</content>
+	<content contentuid="h91bf73bfgac51g4f2ag91a6ge22faaebbed0" Source="Status_DAMAGE_Description.lsb" Key="OdinAERO_PROC_CONDUCTIVE_ZAP_Description">Deals [1] damage per turn.</content>
+	<content contentuid="hec506c20gc037g457dg9ed1g7cc026ba70f2" Source="Status_DAMAGE_Description.lsb" Key="OdinPyro_BURNING1_Description">Deals [1] damage at the start of each turn. &lt;br&gt;&lt;br&gt;Removed by &lt;font color=&apos;#4197e2&apos;&gt;Wet&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Chilled&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Frozen&lt;/font&gt;, and &lt;font color=&apos;#cfecff&apos;&gt;Hypothermia&lt;/font&gt;.</content>
+	<content contentuid="h129b1b48g90d3g442bgb69cge30f2205c461" Source="Status_DAMAGE_Description.lsb" Key="OdinPyro_BURNING2_Description">Deals [1] damage on apply and at the start of each turn. &lt;br&gt;&lt;br&gt;Removed by &lt;font color=&apos;#4197e2&apos;&gt;Wet&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Chilled&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Frozen&lt;/font&gt;, and &lt;font color=&apos;#cfecff&apos;&gt;Hypothermia&lt;/font&gt;.</content>
+	<content contentuid="h6b8e0523g93f6g4b6bga720ge6f783390795" Source="Status_DAMAGE_Description.lsb" Key="OdinPyro_BURNING3_Description">Deals [1] damage on apply and at the start of each turn. &lt;br&gt;&lt;br&gt;Removed by &lt;font color=&apos;#4197e2&apos;&gt;Wet&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Chilled&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Frozen&lt;/font&gt;, and &lt;font color=&apos;#cfecff&apos;&gt;Hypothermia&lt;/font&gt;.</content>
+	<content contentuid="hfbe52fc7g4b1eg49d9g8462gfe2bcdf78f41" Source="Status_DAMAGE_Description.lsb" Key="OdinPyro_BURNING4_Description">Deals [1] damage on apply and at the start of each turn. &lt;br&gt;&lt;br&gt;Removed by &lt;font color=&apos;#4197e2&apos;&gt;Wet&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Chilled&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Frozen&lt;/font&gt;, and &lt;font color=&apos;#cfecff&apos;&gt;Hypothermia&lt;/font&gt;.</content>
+	<content contentuid="he89bfdfag22aeg436agae0cg7e24722ff178" Source="Status_DAMAGE_Description.lsb" Key="OdinPyro_BURNING5_Description">Deals [1] damage on apply and at the start of each turn. &lt;br&gt;&lt;br&gt;Removed by &lt;font color=&apos;#4197e2&apos;&gt;Wet&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Chilled&lt;/font&gt;, &lt;font color=&apos;#cfecff&apos;&gt;Frozen&lt;/font&gt;, and &lt;font color=&apos;#cfecff&apos;&gt;Hypothermia&lt;/font&gt;.</content>
+	<content contentuid="h3ec29127g07f0g43e6gb4fcg4dcf9731358e" Source="Status_DAMAGE_Description.lsb" Key="OdinSpectre_AGONY1_Description">Deals [1] damage on apply and at the start of each turn.</content>
+	<content contentuid="h9313dc3eg69e0g4f76g83efgb9b9be012167" Source="Status_DAMAGE_Description.lsb" Key="OdinSpectre_AGONY2_Description">Deals [1] damage on apply and at the start of each turn.</content>
+	<content contentuid="he07e95adg3f2bg4061g9c10g0b7481eedb28" Source="Status_DAMAGE_Description.lsb" Key="OdinSpectre_AGONY3_Description">Deals [1] damage on apply and at the start of each turn.</content>
+	<content contentuid="h016ebce8g6853g4a88ga7aagc0ea0fb03092" Source="Status_DAMAGE_Description.lsb" Key="OdinSpectre_AGONY4_Description">Deals [1] damage on apply and at the start of each turn.</content>
+	<content contentuid="ha19794f6g04d7g4546ga862g0194c9bbf12b" Source="Status_DAMAGE_Description.lsb" Key="OdinSpectre_AGONY5_Description">Deals [1] damage on apply and at the start of each turn.</content>
+	<content contentuid="he027ca53gd105g4cf4g9347g148d74088d5e" Source="Status_DAMAGE_Description.lsb" Key="OdinWater_DROWNING_Description">Deals [1] damage per turn.</content>
+	<content contentuid="h443c92d2gf511g4bceg9d7bgbca2b01bf3ed" Source="Status_DAMAGE_Description.lsb" Key="OdinWater_HYPOTHERMIA_Description">Deals [1] damage per turn. &lt;br&gt;&lt;br&gt;Removed by &lt;font color=&apos;#fe6e27&apos;&gt;Warm&lt;/font&gt;, &lt;font color=&apos;#fe6e27&apos;&gt;Burning&lt;/font&gt;, &lt;font color=&apos;#fe6e27&apos;&gt;Necrofire&lt;/font&gt;, and &lt;font color=&apos;#fe6e27&apos;&gt;Scorch&lt;/font&gt;.</content>
+	<content contentuid="hca1c10a1g2102g4b57g9f4bgcc1ff57785aa" Source="Status_DAMAGE_Description.lsb" Key="OdinWater_SCALDED_Description">Deals [1] damage per turn.</content>
+	<content contentuid="h120439b0gaebbg4227gb67fgd3f193da9049" Source="Status_DAMAGE_Description.lsb" Key="SHADE_Fading_Description">Deals [1]&lt;font color=&quot;#c80030&quot;&gt;chaos damage&lt;/font&gt; per turn.</content>
+	<content contentuid="h13395834g6ad3g4a25ga47cg0e2a2d4397ba" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinAERO_PROC_CONDUCTIVE_DAZE_ZAP_DisplayName">Zap</content>
+	<content contentuid="hc83f296egcf01g4d56g8cd9g7053f50092b9" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinAERO_PROC_CONDUCTIVE_LOW_ZAP_DisplayName">Zap</content>
+	<content contentuid="hb898eb8fgaf64g4f6eg93bcg72d3660ec723" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinAERO_PROC_CONDUCTIVE_ZAP_DisplayName">Zap</content>
+	<content contentuid="h4941633eg069ag4492g9616gc87ce2734b52" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinPyro_BURNING1_DisplayName">Scorched</content>
+	<content contentuid="h9615610fg8a98g4ce0gbdd8g1b34245e73ca" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinPyro_BURNING2_DisplayName">Scorched II</content>
+	<content contentuid="h099794e5g11ceg4b1fgaacaga298179d1d47" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinPyro_BURNING3_DisplayName">Scorched III</content>
+	<content contentuid="h9f7b9aabgb765g4ec7g82e7g7b687164bd2c" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinPyro_BURNING4_DisplayName">Scorched IV</content>
+	<content contentuid="h7306644fgeb90g470fg90f0g9207265f031a" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinPyro_BURNING5_DisplayName">Scorched V</content>
+	<content contentuid="h8e0535d2ga2a8g41b5g8f19g56706256a1e5" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_AGONY1_DisplayName">Agony</content>
+	<content contentuid="h4b1b675dg71ceg4682g89cbg673fa1e04922" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_AGONY2_DisplayName">Agony II</content>
+	<content contentuid="h995cdf17gc9ddg4ba7g951aga8d2d17b060f" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_AGONY3_DisplayName">Agony III</content>
+	<content contentuid="h4c341ae1g4f14g4de9gb8b9g3c79023ee06b" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_AGONY4_DisplayName">Agony IV</content>
+	<content contentuid="hb9df3c1fg50adg4a4eg8496g043245cf50fa" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_AGONY5_DisplayName">Agony V</content>
+	<content contentuid="h785f47e6ga434g402eg9907g95867619a4ba" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_PURGED1_DisplayName">Purged</content>
+	<content contentuid="h34e95d43g1bc1g4780gb48eg6227d127cd97" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_PURGED2_DisplayName">Purged</content>
+	<content contentuid="ha070728dgffdfg40e5ga942ged4a1a005d58" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_PURGED3_DisplayName">Purged</content>
+	<content contentuid="h54c6656ag6197g4257g9d2eg951ed9bad03f" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_PURGED4_DisplayName">Purged</content>
+	<content contentuid="he3d5e794g934bg4a76gb083gbb909f0286e6" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinSpectre_PURGED5_DisplayName">Purged</content>
+	<content contentuid="h9fd67395gc3bcg4c87g8dd1g94b5c0b1fadd" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinWater_DROWNING_DisplayName">Drowning</content>
+	<content contentuid="h736df4f2gc32cg4cf7ga04bg9e8184b38dae" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinWater_HYPOTHERMIA_DisplayName">Hypothermia</content>
+	<content contentuid="h0b89d82dgd243g473fg88daga0f40fdf86b8" Source="Status_DAMAGE_DisplayName.lsb" Key="OdinWater_SCALDED_DisplayName">Scalded</content>
+	<content contentuid="h2f19ac35g40f6g4a2eg9920g8d2eb0500150" Source="Status_DAMAGE_DisplayName.lsb" Key="SHADE_Fading_DisplayName">Fading</content>
+	<content contentuid="h64e5b564gc8aag4b0cg97b6gd21a0fbdcae2" Source="Status_FLOATING_Description.lsb" Key="OdinSpectre_GHOSTWALK_Description">Character ignores surfaces whilst moving.</content>
+	<content contentuid="h4ce841e5g6126g47f1gb7a3ga1d546924603" Source="Status_FLOATING_DisplayName.lsb" Key="OdinSpectre_GHOSTWALK_DisplayName">Ghostwalk</content>
+	<content contentuid="h1e64a403gddeag4d5ega287g2a15c062769a" Source="Status_FLOATING_DisplayName.lsb" Key="Stats_OdinSpectre_Ghostwalk">Ghostwalk</content>
+	<content contentuid="ha4024dbcg4d98g47ccga968g0dab7f6d30bf" Source="Status_HEAL_Description.lsb" Key="OdinPyro_DEVOURFLAMES_Description">Devours fire surfaces to restore Vitality.</content>
+	<content contentuid="h9a349608g7b88g4d43gb22agb59d606a0a0b" Source="Status_HEAL_DisplayName.lsb" Key="CLEANSE_WOUNDS_DisplayName">Cleanse Wounds</content>
+	<content contentuid="h75034b63gc54cg417eg835dge53494c628e1" Source="Status_HEAL_DisplayName.lsb" Key="CRYOTHERAPY_DisplayName">Cryotherapy</content>
+	<content contentuid="h11031fd4g7a80g4cebgbe83gdc7ea5e6fa22" Source="Status_HEAL_DisplayName.lsb" Key="OdinGEO_SIPHONPOISON_DisplayName">Siphon Poison</content>
+	<content contentuid="h3fd80f4fg80beg493cgad4fg9a0241a1efab" Source="Status_HEAL_DisplayName.lsb" Key="OdinNECRO_HEAL_VAMP_10_DisplayName">Vampiric Touch</content>
+	<content contentuid="h861e2319g3334g4612g96c4ge054cb31555e" Source="Status_HEAL_DisplayName.lsb" Key="OdinNECRO_HEAL_VAMP_20_DisplayName">Vampiric Touch</content>
+	<content contentuid="h772fb36ag1331g44f6ga6f5g75ee56bc140f" Source="Status_HEAL_DisplayName.lsb" Key="OdinPyro_DEVOURFLAMES_DisplayName">Devour Flames</content>
+	<content contentuid="h20e87a42g723fg4c1bg8829g0b153972cb5e" Source="Status_HEAL_DisplayName.lsb" Key="OdinWater_AQUATHERAPY_DisplayName">Cryotherapy</content>
+	<content contentuid="h8bce021age05cg41a9gb6a4g59af762d0dae" Source="Status_HEAL_DisplayName.lsb" Key="OdinWater_EMINENCEHEAL_DisplayName">Eminence</content>
+	<content contentuid="hc1a4800bgf09ag4548gaac5g583650231ce5" Source="Status_HEAL_DisplayName.lsb" Key="OdinWater_MASS_CLEANSE_WOUNDS_DisplayName">Cleanse Wounds</content>
+	<content contentuid="h75e9e2d7gaabbg48c9g8f5cg93a070b0d7dc" Source="Status_HEALING_Description.lsb" Key="OdinPyro_PHOENIXFIRE_HEALING_Description">Heals [1] health points each turn.</content>
+	<content contentuid="h80ae2923gbf32g44d2gb968g1b826542c7b9" Source="Status_HEALING_Description.lsb" Key="OdinWater_UNDEAD_HEALING_Description">Heals [1] health points per turn.</content>
+	<content contentuid="h92c2f032g9672g459ag818cg1f8c5e132ce2" Source="Status_HEALING_Description.lsb" Key="OdinWater_WATERSOFLIFE_PROC_Description">Heals [1] health points per turn.</content>
+	<content contentuid="h1aa4a2fbgf7eag4694g9c37gf3454e8454c9" Source="Status_HEALING_DisplayName.lsb" Key="OdinPyro_PHOENIXFIRE_HEALING_DisplayName">Cauterize</content>
+	<content contentuid="haa20c9bcgbfbdg48f7g9135g35a3cd19ad69" Source="Status_HEALING_DisplayName.lsb" Key="OdinWater_UNDEAD_HEALING_DisplayName">Healing</content>
+	<content contentuid="h9d859054g7690g44e6g878dgf26d3006b138" Source="Status_HEALING_DisplayName.lsb" Key="OdinWater_WATERSOFLIFE_PROC_DisplayName">Healing Waters</content>
+	<content contentuid="h14520081g6ea5g4cbaga26eg7f1f6f9a194b" Source="Status_INCAPACITATED_Description.lsb" Key="OdinNECRO_TRANSFIXED_Description">Character is paralysed with fear and is unable to perform actions.</content>
+	<content contentuid="h524c0cdfgd076g483egbaf9gba68fff9a34b" Source="Status_INCAPACITATED_Description.lsb" Key="OdinWater_DEEPFREEZE_Description">A shroud of ice freezes them in places and renders them invulnerable to damage.</content>
+	<content contentuid="h1e4b405dg7a00g4db7gb7c4g118dec31f7da" Source="Status_INCAPACITATED_DisplayName.lsb" Key="OdinNECRO_TRANSFIXED_DisplayName">Transfixed</content>
+	<content contentuid="hcd6bf20bgdb95g40f5g8446gf6012c50e13b" Source="Status_INCAPACITATED_DisplayName.lsb" Key="OdinWater_DEEPFREEZE_DisplayName">Frozen Tomb</content>
+	<content contentuid="h533a219cgdf08g4f6dg88bbg770f73a857e3" Source="Status_INCAPACITATED_DisplayName.lsb" Key="Stats_OdinWater_DeepFreeze">Frozen Tomb</content>
+	<content contentuid="h79126c82g4189g447cga5deg1279b88c63a4" Source="Status_INVISIBLE_Description.lsb" Key="SHADE_INVISIBLE_Description">Character is invisible until the end of the turn.</content>
+	<content contentuid="h5a6911e0g7113g4a2fg8206g3baabf2070cc" Source="Status_INVISIBLE_DisplayName.lsb" Key="SHADE_INVISIBLE_DisplayName">Invisible</content>
+	<content contentuid="he8de65abg81eag4bffgb03fgf63e09df6e87" Source="Status_POLYMORPHED_Description.lsb" Key="OdinGEO_Rabbit_Description">Can&apos;t attack, cast or interact with objects.</content>
+	<content contentuid="h9e3d2935gcb1cg4521gb748gfa3afdcc8e03" Source="Status_POLYMORPHED_Description.lsb" Key="OdinGEO_Squirrel_Description">Can&apos;t attack, cast or interact with objects.</content>
+	<content contentuid="h660d0e7fgc80cg4788g99f7g5c433a87d0e0" Source="Status_POLYMORPHED_Description.lsb" Key="OdinGEO_TitanForm_Description">Character is temporarily &lt;font color=&apos;#F7BA14&apos;&gt;Shapeshifted&lt;/font&gt;.</content>
+	<content contentuid="h704a5c56g1962g4039g9c52g872b60d44526" Source="Status_POLYMORPHED_Description.lsb" Key="OdinNECRO_Frog_Description">Can&apos;t attack, cast or interact with objects.</content>
+	<content contentuid="hd8af45efg7c30g4819ga156g3c9a673396d1" Source="Status_POLYMORPHED_DisplayName.lsb" Key="OdinGEO_Rabbit_DisplayName">Nature&apos;s Decree</content>
+	<content contentuid="hc5d25f93gc762g4418gacd8g3ecacd300b79" Source="Status_POLYMORPHED_DisplayName.lsb" Key="OdinGEO_Squirrel_DisplayName">Nature&apos;s Decree</content>
+	<content contentuid="h76b0127bgc5bfg4a49g810egab287a04d3d8" Source="Status_POLYMORPHED_DisplayName.lsb" Key="OdinGEO_TitanForm_DisplayName">Shapeshift: Clay Sentinel</content>
+	<content contentuid="hb96fab97g14d3g44dfgb4e7g77bebef65d23" Source="Status_POLYMORPHED_DisplayName.lsb" Key="OdinNECRO_Frog_DisplayName">Witches Brew</content>
+	<content contentuid="h8258cb52g4dcbg441bgb39fg153841cd6051" Source="Status_SPARK_Description.lsb" Key="OdinAERO_VOLTMASTER_Description">Hitting enemies with melee hits will cause shocking volts to be striken off at nearby enemies. Volts can fork up to 2 times.</content>
+	<content contentuid="h78b774c2g1ff8g41ccg9df9gfed0fd0b1326" Source="Status_SPARK_Description.lsb" Key="OdinAERO_VOLTSWINGS_Description">Hitting enemies with melee hits will cause shocking volts to be striken off at nearby enemies.</content>
+	<content contentuid="h2ff3ccffg11d1g4811gae94g710861570111" Source="Status_SPARK_DisplayName.lsb" Key="OdinAERO_VOLTMASTER_DisplayName">Voltmaster</content>
+	<content contentuid="h18b2b820gf92ag4fc2gad6dgdbe1fe72cc85" Source="Status_SPARK_DisplayName.lsb" Key="OdinAERO_VOLTSWINGS_DisplayName">Voltstriker</content>
+</contentList>

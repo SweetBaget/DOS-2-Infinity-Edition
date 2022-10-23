@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<header version="2" time="0" />
+	<version major="3" minor="6" revision="6" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="h6bfeb188g6eceg4751gaff2g4bc0b86b128f" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEShadowstep_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="hb264dfaeg4326g4df8gae0bgcb6ccda8a8b7" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEResourcefulness_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="h5967af31gcfeeg47cfg82c6gba87aee47fd1" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEResourcefulnessDummy_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="ha1c86541ge273g48eeg8446g30b6facf851a" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADESourceOfFerocity_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="hc967b1fbg8c0cg4631gba06gf1b7a289be57" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEPreemptiveTactics_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="h2731d311g0ec3g43bfg9b6bg6faf72d58702" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEPreemptiveTacticsDummy_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="h3a777dd8g87c9g4a74ga50eg4adf6f981386" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADERetreatIntoShadow_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="hf67e2011gac51g45c3g9e8dg0b2df469a244" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralCloak_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="h38ab1b71g480eg43f6g9573g56e124254f1f" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralBlood_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="hcc75cdaeg9172g4a22gaf58ge2e4022eb50c" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralExpertise_StatsDescription" type="22" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" value="Breaks when casting or attacking." type="28" handle="ha0a55406g02f6g4933g8718g9b4b7e8bb8ea" />
+					<attribute id="ExtraData" value="" type="23" />
+					<attribute id="Speaker" value="" type="22" />
+					<attribute id="Stub" value="True" type="19" />
+					<attribute id="UUID" value="Shout_SHADEUmbralLeech_StatsDescription" type="22" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
