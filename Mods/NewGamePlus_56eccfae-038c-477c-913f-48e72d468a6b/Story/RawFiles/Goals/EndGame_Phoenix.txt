@@ -1,0 +1,28 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+SetOnStage(CHARACTERGUID_S_EG_Epilogue_Phoenix_6d76874e-deb8-41a5-b852-b1f26a053472,0);
+DB_Dialogs(CHARACTERGUID_S_EG_Epilogue_Phoenix_6d76874e-deb8-41a5-b852-b1f26a053472,"EG_Epilogue_Phoenix");
+KBSECTION
+PROC
+PROC_EG_Epilogue_Start()
+AND
+DB_IsPlayer(_Player)
+AND
+ItemTemplateIsInCharacterInventory(_Player,"QUEST_Stone_Egg_4566bfcd-c0b7-4496-94bb-518b42db1e75",_Count)
+AND
+_Count > 0
+THEN
+Proc_RemoveItemFromTemplate(_Player,"QUEST_Stone_Egg_4566bfcd-c0b7-4496-94bb-518b42db1e75","");
+ObjectSetFlag(_Player,"EG_Phoenix_YouAreAMommy");
+SetOnStage(CHARACTERGUID_S_EG_Epilogue_Phoenix_6d76874e-deb8-41a5-b852-b1f26a053472,1);
+
+IF
+ObjectFlagSet("EG_Phoenix_FoundMommy",(CHARACTERGUID)_Player,_)
+THEN
+CharacterChangeToSummon(6d76874e-deb8-41a5-b852-b1f26a053472, _Player);
+ProcCharacterFollowCharacter(CHARACTERGUID_S_EG_Epilogue_Phoenix_6d76874e-deb8-41a5-b852-b1f26a053472,_Player);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "EndGame"

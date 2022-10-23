@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="3" minor="6" revision="3" build="0" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="22" value="5a402bf5-c971-829e-18d8-889ecafd6f47" />
+					<attribute id="Name" type="23" value="Animals_Rat_A_002__000" />
+					<attribute id="LevelName" type="22" value="CMP_FTJ_CC" />
+					<attribute id="Type" type="22" value="character" />
+					<attribute id="TemplateName" type="22" value="df0ad7e0-55a2-425b-afc0-b21c9248a01d" />
+					<children>
+						<node id="Transform">
+							<attribute id="Scale" type="6" value="1" />
+							<attribute id="Position" type="12" value="140.6037 11.74544 66.44724" />
+							<attribute id="RotationQuat" type="13" value="0 0 0 1" />
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="CMP_FTJ_CC" />
+											<children>
+												<node id="MapValue" />
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="SYS_CC_LV_Template_Full_A" />
+											<children>
+												<node id="MapValue" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

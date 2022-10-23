@@ -1,0 +1,176 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_CharToPlayerInfo((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+DB_AlreadyUsedCharsForStats((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+DB_NGP_CharacterToRaceChange((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "");
+KBSECTION
+
+//Добавляет в базу данных персонажа который сейчас должен быть в зеркале
+PROC
+Proc_NGP_MirrorCreate((CHARACTERGUID)_Character)
+THEN
+DB_NGP_MirrorChars((CHARACTERGUID)_Character);
+
+//После возврата из меню создания персонажа позволяет игре понять что в зеркале никого нет
+PROC
+Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+AND
+_Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+THEN
+ItemRemove(b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18);
+GlobalClearFlag("NGP_CharInMirror");
+
+//Запускает таймеры инициализирующих процессов
+PROC
+PROC_NGP_GoMirror()
+THEN
+TimerLaunch("NGP_ForProc", 500);
+TimerLaunch("NGP_ForProc2", 1300);
+TimerLaunch("NGP_RespecChar", 2000);
+
+//Применяет пересет расы на персонажа, который не входит в список исторических
+IF
+TimerFinished("NGP_ForProc")
+AND
+QueryOnlyOnce("NGP_CHANGE_RACES")
+AND
+DB_NGP_CharacterToRaceChange(_playerGUID, _playerRace)
+THEN
+CharacterApplyRacePreset(_playerGUID, _playerRace);
+
+//Переносит статы персонажей
+IF
+TimerFinished("NGP_ForProc2")
+AND
+DB_CharToPlayerInfo(_Player, _PlayerTemplate, _)
+AND
+NOT DB_AlreadyUsedCharsForStats(_Player)
+THEN
+DB_AlreadyUsedCharsForStats(_Player);
+NGP_GiveStatsForChar(_Player, _PlayerTemplate);
+
+//Запускает все процессы, необходимые для правильной инициализации персонажа
+IF
+TimerFinished("NGP_RespecChar")
+AND
+DB_NGP_MirrorChars((CHARACTERGUID)_Character)
+AND
+GlobalGetFlag("NGP_CharInMirror", _YesOrNo)
+AND
+_YesOrNo == 0
+THEN
+GlobalSetFlag("NGP_CharInMirror");
+ItemTemplateAddTo("b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18", _Character, 1, 0);
+SetVarObject(b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18, "PlayerPositionAfterCreation", 06873976-bf3c-8249-2074-1733c88957ff);
+CharacterUseItem(_Character, b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18, "");
+ProcMarkUndeadOrigin(_Character);
+SetTag(_Character, "IGNORE_UNDEAD_CRIME");
+PROC_DOS_CharacterCreation_ClearOriginalRaceTags(_Character);
+PROC_GLO_SetOriginalRaceTag(_Character);
+ProcFixPlayerAlignments();
+TimerLaunch("NGP_ResetCharacterMenu", 500);
+
+//Меняет параметры в меню создания персонажа, чтобы избежать поломанных текстур и инициализирует голос у неисторических персонажей
+IF
+TimerFinished("NGP_ResetCharacterMenu")
+THEN
+NGP_ResetCharacterMenu();
+
+//После возврата из меню создания персонажа удаляет предмет зеркала в инвентаре и переустанавливает его триггер возврата
+PROC
+Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+AND
+_Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+THEN
+SetVarObject(_Mirror, "PlayerPositionAfterCreation", 8b7deeb8-5b50-481e-8686-22688b0324ac);
+
+//Проверяет есть ли персонаж в зеркале
+PROC
+PROC_NGP_QRY()
+AND
+DB_IsPlayer(_Player)
+AND
+DB_NGP_MirrorChars(_Player)
+THEN
+GlobalClearFlag("CharsNOTInMirrorDB");
+
+//Проверяет есть ли персонаж в зеркале
+QRY
+QRY_NGP_CheckCharMirror()
+AND
+DB_IsPlayer(_Player)
+AND
+NOT DB_NGP_MirrorChars(_Player)
+THEN
+GlobalSetFlag("CharsNOTInMirrorDB");
+PROC_NGP_QRY();
+
+//После возврата из меню создания персонажа всех персонажей запускает стартовую сцену игры
+PROC
+Proc_NGP_StartScene()
+AND
+QRY_NGP_CheckCharMirror()
+AND
+GlobalGetFlag("CharsNOTInMirrorDB", _YesOrNo)
+AND
+_YesOrNo == 1
+AND
+DB_GlobalCounter("TUT_PlayersWokenUp", _playerwokenup)
+AND
+DB_GlobalCounter("TUT_CargoDeck_PlayerSpeakerIndex", _PlayerSpeakerIndex)
+THEN
+GlobalSetFlag("NewGamePlus_Finish");
+CharacterSetCanTrade(9d17cf06-6fad-49a8-82de-54518a9bf5df, 0);
+ObjectClearFlag(9d17cf06-6fad-49a8-82de-54518a9bf5df, "TUT_CargoDeck_CollaringRoom_ReleasePlayers");
+DB_TUT_CargoDeck_StartDialogPlayerSpeakers(0, NULL_00000000-0000-0000-0000-000000000000);
+DB_TUT_CargoDeck_StartDialogPlayerSpeakers(1 ,NULL_00000000-0000-0000-0000-000000000000);
+DB_TUT_CargoDeck_StartDialogPlayerSpeakers(2, NULL_00000000-0000-0000-0000-000000000000);
+DB_TUT_CargoDeck_StartDialogPlayerSpeakers(3, NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_GlobalCounter("TUT_PlayersWokenUp", _playerwokenup);
+DB_GlobalCounter("TUT_PlayersWokenUp", 0);
+NOT DB_GlobalCounter("TUT_CargoDeck_PlayerSpeakerIndex", _PlayerSpeakerIndex);
+DB_GlobalCounter("TUT_CargoDeck_PlayerSpeakerIndex", 0);
+SetOnStage(2437feb1-d09c-4418-9930-e1793b140e64, 1);
+DB_DialogName("TUT_CargoDeck_Siwan", 1);
+NOT DB_TUT_SiwanReadyToLeaveCargo(1);
+NOT DB_TUT_SiwanReadyToLeaveCargo(2);
+Proc_TUT_StartAlarm(0);
+PROC_NGP_GiveItemsToChars();
+NGP_LevelUpRegion();
+
+//Выдает соответствующие персонажу предметы
+PROC
+PROC_NGP_GiveItemsToChars()
+AND
+DB_CharToPlayerInfo(_CurrentPlayer, _, _PlayerPastGame)
+THEN
+NGP_GiveItemsToChar(_CurrentPlayer, _PlayerPastGame);
+
+//После возврата из меню создания персонажа перемещаю других персонажей в меню создания персонажа
+PROC
+Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+AND
+_Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+THEN
+NOT DB_NGP_MirrorChars(_Player);
+PROC_NGP_GoMirror2();
+
+//Запускает пересоздание следующего персонажа, таймер нужен для инициализации меню создания
+PROC
+PROC_NGP_GoMirror2()
+THEN
+TimerLaunch("NGP_RespecChar", 400);
+
+//После возврата из меню создания персонажа если не осталось персонажей которых нужно респекнуть то запускаю стартовую сцену
+PROC
+Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+AND
+_Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+AND
+NOT DB_NGP_MirrorChars(_)
+THEN
+Proc_NGP_StartScene();
+
+EXITSECTION
+ENDEXITSECTION

@@ -1,0 +1,20 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+KBSECTION
+
+IF
+NRD_OnPrepareHit((CHARACTERGUID)_Target, (CHARACTERGUID)_Initiator, (INTEGER)_Damage, (INTEGER64)_HitHandle)
+AND
+NRD_HitGetInt(_HitHandle, "HitType", (INTEGER)_HitValue)
+AND
+_HitValue == 1
+AND
+CharacterHasTalent(_Initiator, "WildMag", _CharTalent)
+AND
+_CharTalent == 1
+THEN
+DTU_WildMag_Projectile((CHARACTERGUID)_Initiator);
+
+EXITSECTION
+ENDEXITSECTION

@@ -1,0 +1,36 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_OdinUMBRA_PositionTraders(UmbraTrader1_001_1cc246a6-000a-489f-bbe6-808ef73956d6, 462.81, -9.67, 18.08);
+DB_OdinUMBRA_PositionTraders(UmbraTrader1_000_29cc2223-8d61-4f6b-9255-ee5937ef0d84, 182.71, -10.15, 205.38);
+DB_OdinUMBRA_PositionTraders(UmbraTrader1_000_5da57d2b-d9c9-408c-8fa9-47950d6dd268, 272.43, 7.91, 292.30);
+DB_OdinUMBRA_PositionTraders(UmbraTrader1_000_ee3947f7-8970-478f-8f94-926d56c4bb6a, 253.98, 16.98, -41.96);
+DB_OdinUMBRA_PositionTraders(UmbraTrader1_001_c9ce3e61-1e1c-4570-9f17-d90be997ac19, 377.12, 2.83, 148.36);
+DB_OdinUMBRA_PositionTraders(UmbraTrader1_000_73753c3c-dcdd-44cb-adea-013301c930cd, -3.88, 16.66, 653.39);
+DB_OdinUMBRA_EscapedTraders(NULL_00000000-0000-0000-0000-000000000000);
+KBSECTION
+
+IF
+ObjectEnteredCombat(_Obj, _)
+AND
+GetTemplate(_Obj, _RootObj)
+AND
+_RootObj == "UmbraTrader1_6a0ccaaf-aca4-4b0a-a1a8-9c932dc90a05"
+THEN
+DB_OdinUMBRA_EscapedTraders(_Obj);
+CharacterFleeOutOfSight((CHARACTERGUID)_Obj, "");
+
+IF
+CombatEnded((INTEGER)_CombatID)
+AND
+DB_OdinUMBRA_EscapedTraders(_Obj)
+AND
+DB_OdinUMBRA_PositionTraders(_Obj, _X, _Y, _Z)
+THEN
+TeleportToPosition(_Obj, _X, _Y, _Z, "", 0, 0);
+SetOnStage(_Obj, 1);
+NOT DB_OdinUMBRA_EscapedTraders(_Obj);
+
+EXITSECTION
+
+ENDEXITSECTION

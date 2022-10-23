@@ -1,0 +1,323 @@
+// Version 1
+// SubGoalCombiner SGC_AND
+// INITSECTION
+// DB_NGP_RegionLeveledUP(0, "TUT_Turorial_A");
+// DB_CharToPlayerInfo((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+// DB_AlreadyUsedCharsForStats((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+// DB_NGP_PlayersEndGame((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+// DB_NGP_CharacterToRaceChange((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "");
+// DB_NGP_LevelToLevelUp(0);
+// KBSECTION
+
+// IF
+// CharacterEnteredTrigger((CHARACTERGUID)_Character, 1e515f82-bab7-4b8a-9fbd-e9c58387b95a)
+// AND
+// GlobalGetFlag("NewGamePlus_Finish", _State)
+// AND
+// _State == 1
+// THEN
+// NGP_SubscribeRawInput();
+
+// // IF
+// // CharacterUsedItem(_Player, c0761fa0-9e7c-4f2f-833d-14c78fa54a96)
+// // THEN
+// // TeleportTo(_Player, f88f4c12-c025-4431-8ec8-079db01a16a8, "CS_INTRO", 1, 1, 1);
+
+// // IF
+// // CharacterUsedItem(_Player, 43e99719-0c72-494e-bbfe-fe42ceb85611)
+// // THEN
+// // TeleportTo(_Player, 3d169f84-9562-47a5-9618-1c30f7e120ca, "CS_INTRO", 1, 1, 1);
+
+// // IF
+// // CharacterUsedItem(_Player, 479c72ff-d7ca-4140-b14b-e95c0c581d9d)
+// // THEN
+// // TeleportTo(_Player, 78cc9c00-467f-8fda-07e8-cae0a8c041fb, "CS_INTRO", 1, 1, 1);
+
+// // IF
+// // CharacterUsedItem(_Player, 50383ea0-e7ef-85bd-3140-f7f8e76032c3)
+// // THEN
+// // TeleportTo(_Player, 862be247-b90f-4ef7-b434-9b15000f5e56, "CS_INTRO", 1, 1, 1);
+
+// IF
+// ReadyCheckPassed("ARX_EndGame")
+// AND
+// DB_IsPlayer(_Player)
+// THEN
+// DB_NGP_PlayersEndGame(_Player);
+
+// IF
+// GlobalFlagSet("NGP_GoToNewGamePlus")
+// THEN
+// NGP_BeforeLoadGame();
+
+// IF
+// SavegameLoaded(_, _, _, _)
+// AND
+// GlobalGetFlag("NewGamePlus", _State)
+// AND
+// _State == 1
+// AND
+// GlobalGetFlag("NewGamePlus_Finish", _State2)
+// AND
+// _State2 == 0
+// THEN
+// NGP_AfterSaveGameLoaded();
+
+// // IF
+// // // StoryEvent(_Obj, _Event)
+// // CharacterStartAttackPosition(_, _, _, _, _)
+// // // AND
+// // // _Event == "LOL"
+// // THEN
+// // NGP_BeforeLoadGame();
+
+// IF
+// RegionStarted(_Level)
+// AND
+// _Level != "TUT_Tutorial_A"
+// AND
+// GlobalGetFlag("NewGamePlus", _State)
+// AND
+// _State == 1
+// AND
+// NOT DB_NGP_RegionLeveledUP(1, _Level)
+// THEN
+// DB_NGP_RegionLeveledUP(1, _Level);
+// NGP_LevelUpRegion();
+
+// PROC
+// Proc_TUT_CheckPlayersWokenUp((CHARACTERGUID)_Player)
+// THEN
+// Proc_TUT_UnfreezePlayers();
+
+// PROC
+// Proc_NGP_MirrorCreate((CHARACTERGUID)_Character)
+// THEN
+// DB_NGP_MirrorChars((CHARACTERGUID)_Character);
+// // TimerLaunch("WaitForMusic", 2500);
+
+// PROC
+// Proc_NGP_LevelUP((CHARACTERGUID)_Character, (INTEGER)_LevelToIncrease)
+// THEN
+// ObjectSetFlag(_Character, "NGP_LeveledUp", 0);
+// TimerLaunch("NGP_LevelUP", 1000);
+// DB_NGP_LevelUP(_Character, _LevelToIncrease);
+
+// IF
+// TimerFinished("NGP_LevelUP")
+// AND
+// DB_NGP_LevelUP(_Character, _LevelToIncrease)
+// AND 
+// _LevelToIncrease <= 20
+// THEN
+// CharacterLevelUpTo(_Character, _LevelToIncrease);
+// TimerLaunch("NGP_LevelUP_After", 2000);
+
+// IF
+// TimerFinished("NGP_LevelUP")
+// AND
+// DB_NGP_LevelUP(_Character, _LevelToIncrease)
+// AND 
+// _LevelToIncrease > 20
+// THEN
+// CharacterLevelUpTo(_Character, 20);
+// PROC_NGP_LevelUP_MoreThan20(_Character, _LevelToIncrease);
+// TimerLaunch("NGP_LevelUP_After", 2000);
+
+// PROC
+// PROC_NGP_LevelUP_MoreThan20((CHARACTERGUID)_Character, (INTEGER)_LevelToIncrease)
+// AND
+// CharacterGetLevel(_Character, _CurrentLevel)
+// AND
+// _LevelToIncrease > _CurrentLevel
+// THEN
+// CharacterLevelUp(_Character);
+// PROC_NGP_LevelUP_MoreThan20((CHARACTERGUID)_Character, (INTEGER)_LevelToIncrease);
+
+// //После возврата из меню создания персонажа позволяет игре понять что в зеркале никого нет
+// PROC
+// Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+// AND
+// _Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+// THEN
+// ItemRemove(b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18);
+// GlobalClearFlag("NGP_CharInMirror");
+
+// PROC
+// PROC_NGP_ApplyRaceToChar()
+// AND
+// QueryOnlyOnce("NGP_CHANGE_RACES")
+// AND
+// DB_NGP_CharacterToRaceChange(_playerGUID, _playerRace)
+// THEN
+// CharacterApplyRacePreset(_playerGUID, _playerRace);
+
+// IF
+// TimerFinished("NGP_ForProc")
+// THEN
+// PROC_NGP_ApplyRaceToChar();
+
+// IF
+// TimerFinished("NGP_ForProc2")
+// AND
+// DB_CharToPlayerInfo(_Player, _PlayerTemplate, _)
+// AND
+// NOT DB_AlreadyUsedCharsForStats(_Player)
+// THEN
+// DB_AlreadyUsedCharsForStats(_Player);
+// NGP_GiveStatsForChar(_Player, _PlayerTemplate);
+
+// PROC
+// PROC_NGP_GoMirror()
+// THEN
+// TimerLaunch("NGP_ForProc", 500);
+// TimerLaunch("NGP_ForProc2", 1500);
+// TimerLaunch("NGP_Timeout", 2000);
+
+// PROC
+// PROC_NGP_GoMirror2()
+// THEN
+// TimerLaunch("NGP_Timeout", 400);
+
+// IF
+// TimerFinished("NGP_Timeout")
+// AND
+// DB_NGP_MirrorChars((CHARACTERGUID)_Character)
+// AND
+// GlobalGetFlag("NGP_CharInMirror", _YesOrNo)
+// AND
+// _YesOrNo == 0
+// THEN
+// GlobalSetFlag("NGP_CharInMirror");
+// ItemTemplateAddTo("b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18", _Character, 1, 0);
+// SetVarObject(b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18, "PlayerPositionAfterCreation", 06873976-bf3c-8249-2074-1733c88957ff);
+// CharacterUseItem(_Character, b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18, "");
+// ProcMarkUndeadOrigin(_Character);
+// SetTag(_Character, "IGNORE_UNDEAD_CRIME");
+// PROC_DOS_CharacterCreation_ClearOriginalRaceTags(_Character);
+// PROC_GLO_SetOriginalRaceTag(_Character);
+// ProcFixPlayerAlignments();
+// TimerLaunch("NGP_ResetCharacterMenu", 500);
+
+// IF
+// TimerFinished("NGP_ResetCharacterMenu")
+// THEN
+// NGP_ResetCharacterMenu();
+
+// //После возврата из меню создания персонажа удаляет предмет зеркала в инвентаре и переустанавливает его триггер возврата
+// PROC
+// Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+// AND
+// _Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+// THEN
+// SetVarObject(_Mirror, "PlayerPositionAfterCreation", 8b7deeb8-5b50-481e-8686-22688b0324ac);
+
+// PROC
+// PROC_NGP_QRY()
+// AND
+// DB_IsPlayer(_Player)
+// AND
+// DB_NGP_MirrorChars(_Player)
+// THEN
+// GlobalClearFlag("CharsNOTInMirrorDB");
+
+// QRY
+// QRY_NGP_CheckCharMirror()
+// AND
+// DB_IsPlayer(_Player)
+// AND
+// NOT DB_NGP_MirrorChars(_Player)
+// THEN
+// GlobalSetFlag("CharsNOTInMirrorDB");
+// PROC_NGP_QRY();
+
+// //После возврата из меню создания персонажа запускает стартовую сцену игры
+// PROC
+// Proc_NGP_StartScene()
+// AND
+// QRY_NGP_CheckCharMirror()
+// AND
+// GlobalGetFlag("CharsNOTInMirrorDB", _YesOrNo)
+// AND
+// _YesOrNo == 1
+// AND
+// DB_GlobalCounter("TUT_PlayersWokenUp", _playerwokenup)
+// AND
+// DB_GlobalCounter("TUT_CargoDeck_PlayerSpeakerIndex", _PlayerSpeakerIndex)
+// THEN
+// GlobalSetFlag("NewGamePlus_Finish");
+// CharacterSetCanTrade(9d17cf06-6fad-49a8-82de-54518a9bf5df, 0);
+// ObjectClearFlag(9d17cf06-6fad-49a8-82de-54518a9bf5df, "TUT_CargoDeck_CollaringRoom_ReleasePlayers");
+// DB_TUT_CargoDeck_StartDialogPlayerSpeakers(0, NULL_00000000-0000-0000-0000-000000000000);
+// DB_TUT_CargoDeck_StartDialogPlayerSpeakers(1 ,NULL_00000000-0000-0000-0000-000000000000);
+// DB_TUT_CargoDeck_StartDialogPlayerSpeakers(2, NULL_00000000-0000-0000-0000-000000000000);
+// DB_TUT_CargoDeck_StartDialogPlayerSpeakers(3, NULL_00000000-0000-0000-0000-000000000000);
+// NOT DB_GlobalCounter("TUT_PlayersWokenUp", _playerwokenup);
+// DB_GlobalCounter("TUT_PlayersWokenUp", 0);
+// NOT DB_GlobalCounter("TUT_CargoDeck_PlayerSpeakerIndex", _PlayerSpeakerIndex);
+// DB_GlobalCounter("TUT_CargoDeck_PlayerSpeakerIndex", 0);
+// SetOnStage(2437feb1-d09c-4418-9930-e1793b140e64, 1);
+// DB_DialogName("TUT_CargoDeck_Siwan", 1);
+// NOT DB_TUT_SiwanReadyToLeaveCargo(1);
+// NOT DB_TUT_SiwanReadyToLeaveCargo(2);
+// Proc_TUT_StartAlarm(0);
+// PROC_NGP_GiveItemsToChars();
+// NGP_LevelUpRegion();
+
+// PROC
+// PROC_NGP_GiveItemsToChars()
+// AND
+// DB_CharToPlayerInfo(_CurrentPlayer, _, _PlayerPastGame)
+// THEN
+// NGP_GiveItemsToChar(_CurrentPlayer, _PlayerPastGame);
+
+// //После возврата из меню создания персонажа перемещаю других персонажей в меню создания персонажа
+// PROC
+// Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+// AND
+// _Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+// THEN
+// NOT DB_NGP_MirrorChars(_Player);
+// PROC_NGP_GoMirror2();
+
+// //После возврата из меню создания персонажа если не осталось персонажей которых нужно респекнуть то запускаю стартовую сцену
+// PROC
+// Proc_HomesteadTeleportAfterMirror((CHARACTERGUID)_Player,(ITEMGUID)_Mirror,(TRIGGERGUID)_Trigger)
+// AND
+// _Trigger == 06873976-bf3c-8249-2074-1733c88957ff
+// AND
+// NOT DB_NGP_MirrorChars(_)
+// THEN
+// Proc_NGP_StartScene();
+
+// PROC
+// PROC_NGP_LevelUpSummons((CHARACTERGUID)_Summon, (CHARACTERGUID)_SummonOwner, (INTEGER)_LifeTime)
+// THEN
+// DB_NGP_LevelUpSummons(_Summon, _SummonOwner, _LifeTime);
+
+// PROC
+// PROC_NGP_LevelUpPets((CHARACTERGUID)_Summon, (CHARACTERGUID)_SummonOwner)
+// THEN
+// DB_NGP_LevelUpPets(_Summon, _SummonOwner);
+
+// IF
+// TimerFinished("NGP_LevelUP_After")
+// AND
+// DB_NGP_LevelUpPets(_Summon, _SummonOwner)
+// THEN
+// CharacterMakePlayer(_Summon, _SummonOwner);
+// CharacterAddToPlayerCharacter(_Summon, _SummonOwner);
+// ObjectSetFlag(_Summon, "NGP_LeveledUp", 0);
+
+// IF
+// TimerFinished("NGP_LevelUP_After")
+// AND
+// DB_NGP_LevelUpSummons(_Summon, _SummonOwner, _LifeTime)
+// THEN
+// CharacterMakePlayer(_Summon, _SummonOwner);
+// CharacterChangeToSummon(_Summon, _SummonOwner);
+// CharacterSetSummonLifetime(_Summon, _LifeTime);
+// ObjectSetFlag(_Summon, "NGP_LeveledUp", 0);
+
+// EXITSECTION
+// ENDEXITSECTION

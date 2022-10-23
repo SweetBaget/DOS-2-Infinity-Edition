@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="Module" value="8c8963a8-a2d9-4574-8db2-df0adeb521f6" type="23" />
+            <attribute id="Name" value="Divinity Talents Unleashed" type="23" />
+            <attribute id="Type" value="Add-on" type="23" />
+            <attribute id="UUID" value="8c8963a8-a2d9-4574-8db2-df0adeb521f6" type="23" />
+        </node>
+    </region>
+</save>

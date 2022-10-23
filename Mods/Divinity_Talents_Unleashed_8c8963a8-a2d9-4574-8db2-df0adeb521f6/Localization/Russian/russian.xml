@@ -1,5 +1,8 @@
 <contentList>
+	<content contentuid="h219f555eg2017g4a5egbe12g2eb35b86f095">Нанеся урон противнику заклинанием, вы создаете небольшой заряд случайной стихии, который выстреливает в ближайшего противника в радиусе 6м.</content>
 	<content contentuid="h3f059078g65efg4ea9g8514g7175404a276e">Само пройдет</content>
+	<content contentuid="h42bc6d05g85f4g4315gaa8bg5ec6073f74ea">Маг хаоса</content>
+	<content contentuid="h0e2dc6e9g5a11g45bagbde6gaa8a03fd1667">[1] повышает шанс уклониться от удара на [2]%.</content>
 	<content contentuid="hbaf5c48eg86eeg4947gb884g6508d4dbd1fe">Дает +[2] макс. ОД, +[3] к восстановлению ОД, +[4]% к здоровью, +[5]% к физической броне, +[6]% к магической броне и удваивает очки, вложенные в качества и боевые умения. Если в вашей группе оказывается больше двух персонажей, действие временно приостанавливается.</content>
 	<content contentuid="ha4c23394ge3d0g42d1ga894g577379e4e6f9">Дает вам иммунитет к оглушению.</content>
 	<content contentuid="h2e80f302g3024g48bcg8ffegabba5ce7a14b">Дает вам +[2] к знанию легенд.</content>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="Module" value="a690b374-ef37-4597-859c-652cb3e4c980" type="23" />
+            <attribute id="Name" value="EnchancedArmourAndStatuses" type="23" />
+            <attribute id="Type" value="Add-on" type="23" />
+            <attribute id="UUID" value="f30faeb8-0906-4561-bed0-686ffa762fc8" type="23" />
+        </node>
+    </region>
+</save>

@@ -42,7 +42,7 @@ ItemSetCanInteract(ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c1
 
 //Unequip collar for render
 IF
-CharacterItemEvent(_Player,ITEMGUID_S_CMP_FTJ_Mirror_b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18,"GEN_Homestead_CharCreationMirror")
+CharacterItemEvent(_Player, _Mirror, "GEN_Homestead_CharCreationMirror")
 AND
 GetItemForItemTemplateInInventory(_Player,"RC_FTJ_Amulet_SourceCollar_8bf8b97c-556e-4e69-8fc7-39241783dcc1",_Item)
 AND

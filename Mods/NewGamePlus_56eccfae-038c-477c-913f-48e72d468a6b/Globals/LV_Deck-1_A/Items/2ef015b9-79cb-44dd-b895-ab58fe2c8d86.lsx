@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="3" minor="6" revision="6" build="0" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="22" value="2ef015b9-79cb-44dd-b895-ab58fe2c8d86" />
+					<attribute id="Name" type="23" value="S_LVHub_PlayerChest_003" />
+					<attribute id="LevelName" type="22" value="LV_Deck-1_A" />
+					<attribute id="HasParentModRelation" type="19" value="True" />
+					<attribute id="IsGlobal" type="19" value="True" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="TemplateName" type="22" value="af0d4f12-a180-4ce2-bb4f-4c363beac03c" />
+					<attribute id="BloodSurfaceType" type="22" value="SurfaceNone" />
+					<children>
+						<node id="Transform">
+							<attribute id="Scale" type="6" value="1" />
+							<attribute id="Position" type="12" value="13.92207 11.06285 -10.00479" />
+							<attribute id="RotationQuat" type="13" value="0 1 0 -1.589326E-08" />
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="LV_Deck-1_A" />
+											<children>
+												<node id="MapValue" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

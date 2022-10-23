@@ -1,0 +1,10 @@
+{
+    "RequiredExtensionVersion": 56,
+    "ModTable" : "NewGamePluss",
+    "FeatureFlags": [
+        "OsirisExtensions",
+        "Lua",
+	    "Preprocessor",
+        "DisableFolding"
+    ]
+}

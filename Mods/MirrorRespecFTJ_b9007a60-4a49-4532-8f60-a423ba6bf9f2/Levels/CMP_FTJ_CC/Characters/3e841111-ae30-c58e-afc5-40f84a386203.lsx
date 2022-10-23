@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="3" minor="6" revision="3" build="0" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="22" value="3e841111-ae30-c58e-afc5-40f84a386203" />
+					<attribute id="Name" type="23" value="Humans_Male_Armor_005__000__000" />
+					<attribute id="LevelName" type="22" value="CMP_FTJ_CC" />
+					<attribute id="Type" type="22" value="character" />
+					<attribute id="TemplateName" type="22" value="b9896fd0-ef3a-4af4-9145-29d72bb6d641" />
+					<attribute id="Icon" type="22" value="cf9208c8-e209-4996-a02a-b9143f5fbf7a_9948598919475004449-GEN_Brutes_Axe_2H_(Icon_Dwarf_Male)" />
+					<attribute id="Random" type="24" value="9948598919475004449" />
+					<children>
+						<node id="Transform">
+							<attribute id="Scale" type="6" value="1" />
+							<attribute id="Position" type="12" value="157.172 9.749323 63.81443" />
+							<attribute id="RotationQuat" type="13" value="0 -0.24804 0 0.9687498" />
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="CMP_FTJ_CC" />
+											<children>
+												<node id="MapValue">
+													<children>
+														<node id="Layer">
+															<attribute id="Object" type="31" value="33248211-c353-03ca-f477-a2d375bf656f" />
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="SYS_CC_LV_Template_Full_A" />
+											<children>
+												<node id="MapValue">
+													<children>
+														<node id="Layer">
+															<attribute id="Object" type="31" value="33248211-c353-03ca-f477-a2d375bf656f" />
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="SYS_CC_Template_A" />
+											<children>
+												<node id="MapValue">
+													<children>
+														<node id="Layer">
+															<attribute id="Object" type="31" value="33248211-c353-03ca-f477-a2d375bf656f" />
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Treasures">
+							<attribute id="TreasureItem" type="22" value="Empty" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

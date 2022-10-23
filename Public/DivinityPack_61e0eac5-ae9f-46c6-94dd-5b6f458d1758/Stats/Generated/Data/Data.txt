@@ -444,7 +444,7 @@ key "PriceRoundToFiveAfterAmount","100"
 
 key "PriceRoundToTenAfterAmount","1000"
 
-key "LevelCap","35"
+key "LevelCap","36"
 
 key "GMCharacterAttributeCap","100"
 
@@ -472,7 +472,7 @@ key "GMItemResistanceMax","1000"
 
 key "LoneWolfMaxAPBonus","2"
 
-key "LoneWolfAPBonus","2"
+key "LoneWolfAPBonus","1"
 
 key "LoneWolfMagicArmorBoostPercentage","30"
 

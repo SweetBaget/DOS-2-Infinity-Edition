@@ -1,0 +1,4 @@
+<contentList>
+	<content contentuid="h7bff6614g652ag4174g8c2cg7afc64f5981f" Source="RV_RerollButtonTranslate.lsb" Key="RV_RerollButtonTranslate">Request supply\nPrice:</content>
+	<content contentuid="h06d24f60ga616g453cg8922g4fe8b4b924b0" Source="RV_RerollErrorGoldTranslate.lsb" Key="RV_RerollErrorGoldTranslate">Not enough gold for a new supply</content>
+</contentList>

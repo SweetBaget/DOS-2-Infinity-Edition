@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="Module" value="b9007a60-4a49-4532-8f60-a423ba6bf9f2" type="23" />
+            <attribute id="Name" value="MirrorRespecFTJ" type="23" />
+            <attribute id="Type" value="Add-on" type="23" />
+            <attribute id="UUID" value="596faa5e-7114-4267-a84d-fa8ce8d6c58a" type="23" />
+        </node>
+    </region>
+</save>

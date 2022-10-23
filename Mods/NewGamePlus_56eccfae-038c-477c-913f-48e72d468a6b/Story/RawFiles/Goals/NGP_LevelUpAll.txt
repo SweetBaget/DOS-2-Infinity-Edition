@@ -1,0 +1,99 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_NGP_RegionLeveledUP(0, "TUT_Turorial_A");
+DB_NGP_LevelToLevelUp(0);
+KBSECTION
+
+//После загрузки нового региона, повышает уровень всех персонажей и предметов
+IF
+RegionStarted(_Level)
+AND
+_Level != "TUT_Tutorial_A"
+AND
+GlobalGetFlag("NewGamePlus", _State)
+AND
+_State == 1
+AND
+NOT DB_NGP_RegionLeveledUP(1, _Level)
+THEN
+DB_NGP_RegionLeveledUP(1, _Level);
+NGP_LevelUpRegion();
+
+//Повышает уровень нового игрового персонажа
+PROC
+Proc_NGP_LevelUP((CHARACTERGUID)_Character, (INTEGER)_LevelToIncrease)
+THEN
+ObjectSetFlag(_Character, "NGP_LeveledUp", 0);
+TimerLaunch("NGP_LevelUP", 1000);
+DB_NGP_LevelUP(_Character, _LevelToIncrease);
+
+//Повышает уровень нового игрового персонажа, если нужный уровень меньше 20
+IF
+TimerFinished("NGP_LevelUP")
+AND
+DB_NGP_LevelUP(_Character, _LevelToIncrease)
+AND 
+_LevelToIncrease <= 20
+THEN
+CharacterLevelUpTo(_Character, _LevelToIncrease);
+TimerLaunch("NGP_LevelUP_After", 2000);
+
+//Повышает уровень нового игрового персонажа, если нужный уровень больше 20
+IF
+TimerFinished("NGP_LevelUP")
+AND
+DB_NGP_LevelUP(_Character, _LevelToIncrease)
+AND 
+_LevelToIncrease > 20
+THEN
+CharacterLevelUpTo(_Character, 20);
+PROC_NGP_LevelUP_MoreThan20(_Character, _LevelToIncrease);
+TimerLaunch("NGP_LevelUP_After", 2000);
+
+//Повышает уровень нового игрового персонажа, если нужный уровень больше 20
+PROC
+PROC_NGP_LevelUP_MoreThan20((CHARACTERGUID)_Character, (INTEGER)_LevelToIncrease)
+AND
+CharacterGetLevel(_Character, _CurrentLevel)
+AND
+_LevelToIncrease > _CurrentLevel
+THEN
+CharacterLevelUp(_Character);
+PROC_NGP_LevelUP_MoreThan20((CHARACTERGUID)_Character, (INTEGER)_LevelToIncrease);
+
+//Добавляет в базу данных лвлапа всех суммонов игрока
+PROC
+PROC_NGP_LevelUpSummons((CHARACTERGUID)_Summon, (CHARACTERGUID)_SummonOwner, (INTEGER)_LifeTime)
+THEN
+DB_NGP_LevelUpSummons(_Summon, _SummonOwner, _LifeTime);
+
+//Добавляет в базу данных лвлапа всех питомцев игрока
+PROC
+PROC_NGP_LevelUpPets((CHARACTERGUID)_Summon, (CHARACTERGUID)_SummonOwner)
+THEN
+DB_NGP_LevelUpPets(_Summon, _SummonOwner);
+
+//Добавляет игроку его питомцев
+IF
+TimerFinished("NGP_LevelUP_After")
+AND
+DB_NGP_LevelUpPets(_Pet, _SummonOwner)
+THEN
+CharacterMakePlayer(_Pet, _SummonOwner);
+CharacterAddToPlayerCharacter(_Pet, _SummonOwner);
+ObjectSetFlag(_Pet, "NGP_LeveledUp", 0);
+
+//Добавляет игроку его суммонов
+IF
+TimerFinished("NGP_LevelUP_After")
+AND
+DB_NGP_LevelUpSummons(_Summon, _SummonOwner, _LifeTime)
+THEN
+CharacterMakePlayer(_Summon, _SummonOwner);
+CharacterChangeToSummon(_Summon, _SummonOwner);
+CharacterSetSummonLifetime(_Summon, _LifeTime);
+ObjectSetFlag(_Summon, "NGP_LeveledUp", 0);
+
+EXITSECTION
+ENDEXITSECTION

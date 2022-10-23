@@ -1,0 +1,346 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+ProcDeclareCounter("GLO_DallisDefeatedCounter");
+CharacterSetImmortal(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,1);
+KBSECTION
+//REGION Dallis Defeated in Fort Joy
+
+IF
+GlobalFlagSet("FTJ_DallisDefeatedInGhetto")
+AND
+DB_IsPlayer((CHARACTERGUID)_Player)
+THEN
+ObjectSetFlag(_Player,"QuestUpdate_FTJ_Escape_DallisDefeatedInGhetto");
+
+IF
+GlobalFlagSet("FTJ_DallisGhettoEventEnd")
+THEN
+CrimeAreaSetTensionModifier(TRIGGERGUID_S_FTJ_CrimeRegion_DallsScene_6e23e5d6-4dae-405f-9364-0fe332e9d440,0);
+
+
+IF
+GlobalFlagSet("FTJ_DallisDefeatedInGhetto")
+AND
+GetPosition(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_X,_Y,_Z)
+THEN
+Proc_DallisTransformAndLeave();
+
+//Loot
+IF
+DB_DallisDefeatedItemDrop((ITEMGUID)_DallisLoot)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+GetPosition(_DallisLoot,_X,_Y,_Z)
+AND
+_Region == "FJ_FortJoy_Main"
+AND
+CharacterGetHostCharacter(_Player)
+AND
+CharacterGetLevel(_Player, _LevelPlayer)
+AND
+IntegerSum(_LevelPlayer, 4, _DallisItemLevel)
+THEN
+ItemLevelUpTo(_DallisLoot, _DallisItemLevel);
+NOT DB_DallisDefeatedItemDrop(_DallisLoot);
+ItemScatterAt(_DallisLoot,_X,_Y,_Z);
+
+IF
+CharacterStatusApplied(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"DALLISDRAGON",_)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "FJ_FortJoy_Main"
+THEN
+GlobalSetFlag("FTJ_DallisDefeatedInGhetto");
+//ClearScriptframe(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572);
+
+//END_REGION
+
+//REGION Dallis Defeated in LV_HoE
+//First Time defeating
+IF
+GlobalFlagSet("LV_HoE_DallisTransformation")
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",0)
+AND
+DB_IsPlayer((CHARACTERGUID)_Player)
+THEN
+ObjectSetFlag(_Player,"QuestUpdate_LV_Main_DefeatedDallisLV");
+
+IF
+GlobalFlagSet("LV_HoE_DallisTransformation")
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",1)
+AND
+DB_IsPlayer((CHARACTERGUID)_Player)
+THEN
+ObjectSetFlag(_Player,"QuestUpdate_LV_Main_DefeatedDallisFTJLV");
+
+
+IF
+GlobalFlagSet("LV_HoE_DallisTransformation")
+THEN
+Proc_DallisTransformAndLeave();
+
+IF
+StoryEvent(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"GEN_GoOffStage")
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "LV_HoE_Main"
+THEN
+Proc_LV_FinishAssaultEarly();
+
+//Loot
+IF
+DB_DallisDefeatedItemDrop((ITEMGUID)_DallisLoot)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "LV_HoE_Main"
+AND
+GetPosition(TRIGGERGUID_S_LV_HoE_DallisItemDrop_Point_97ef63e5-2f0a-4c4a-aba6-438e2f092be6,_X,_Y,_Z)
+AND
+CharacterGetHostCharacter(_Player)
+AND
+CharacterGetLevel(_Player, _LevelPlayer)
+AND
+IntegerSum(_LevelPlayer, 8, _DallisItemLevel)
+THEN
+ItemLevelUpTo(_DallisLoot,_DallisItemLevel);
+ItemToTransform(_DallisLoot,_X,_Y,_Z,0.0,0.0,0.0,1,NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_DallisDefeatedItemDrop(_DallisLoot);
+ItemScatterAt(_DallisLoot,_X,_Y,_Z);
+
+
+IF
+CharacterStatusApplied(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"DALLISDRAGON",_)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "LV_HoE_Main"
+THEN
+GlobalSetFlag("LV_HoE_DallisTransformation");
+
+
+
+//END_REGION
+
+//REGION Dallis defeated in the Endgame
+IF
+DB_DallisDefeatedItemDrop(_DallisLoot)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+GetPosition(_DallisLoot,_X,_Y,_Z)
+AND
+_Region == "ARX_EndGame"
+AND
+CharacterIsDead(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,0)
+AND
+CharacterGetHostCharacter(_Player)
+AND
+CharacterGetLevel(_Player, _LevelPlayer)
+AND
+IntegerSum(_LevelPlayer, 19, _DallisItemLevel)
+THEN
+ItemLevelUpTo(_DallisLoot,_DallisItemLevel);
+NOT DB_DallisDefeatedItemDrop(_DallisLoot);
+ItemScatterAt(_DallisLoot,_X,_Y,_Z);
+
+//Dallis in Dragon Form, send to inventory
+IF
+DB_DallisDefeatedItemDrop(_DallisLoot)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "ARX_EndGame"
+AND
+CharacterIsDead(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,1)
+AND
+CharacterGetHostCharacter(_Player)
+AND
+CharacterGetLevel(_Player, _LevelPlayer)
+AND
+IntegerSum(_LevelPlayer, 19, _DallisItemLevel)
+THEN
+ItemLevelUpTo(_DallisLoot,_DallisItemLevel);
+NOT DB_DallisDefeatedItemDrop(_DallisLoot);
+ItemToInventory(_DallisLoot,CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572);
+
+//END_REGION
+
+//REGION Dallis Drops
+
+IF
+CharacterStatusApplied(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"UNCONSCIOUS",_)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "ARX_EndGame"
+AND
+QueryOnlyOnce("EG_DallisLootInstantiate_Once")
+THEN
+Proc_DallisLootInstantiate();
+Proc_RemoveWeapons(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572);
+
+IF
+CharacterDying(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region == "ARX_EndGame"
+AND
+QueryOnlyOnce("EG_DallisLootInstantiate_Once")
+THEN
+Proc_DallisLootInstantiate();
+Proc_RemoveWeapons(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572);
+
+PROC
+Proc_DallisTransformAndLeave()
+THEN
+Proc_DallisLootInstantiate();
+
+
+//Third Kill
+PROC
+Proc_DallisLootInstantiate()
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",2)
+AND
+GetPosition(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_X,_Y,_Z)
+AND
+RealSum(_Y,0.5,_NewY)
+AND
+RealSum(_Z,1.0,_NewZ_A)
+AND
+RealSubtract(_Z,1.0,_NewZ_B)
+AND
+CreateItemTemplateAtPosition("UNI_Dallis_Stage3_HammerA_d770ec8f-fbe1-4f69-b9fe-23b150053ce4",_X,_NewY,_NewZ_A,_DallisDualHammer_A)
+AND
+CreateItemTemplateAtPosition("UNI_Dallis_Stage3_HammerB_bbdfc369-e556-4497-b82d-cdd0fa1184c6",_X,_NewY,_NewZ_B,_DallisDualHammer_B)
+THEN
+DB_DallisDefeatedItemDrop(_DallisDualHammer_A);
+DB_DallisDefeatedItemDrop(_DallisDualHammer_B);
+ProcIncreaseCounter("GLO_DallisDefeatedCounter");
+
+//Second Kill
+PROC
+Proc_DallisLootInstantiate()
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",1)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region != "ARX_EndGame"
+THEN
+DB_DallisLootInstantiate_QueueEquipmentTransform("UNI_Dallis_Stage3");
+
+PROC
+Proc_DallisLootInstantiate()
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",1)
+AND
+GetPosition(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_X,_Y,_Z)
+AND
+RealSum(_Y,0.5,_NewY)
+AND
+RealSum(_Z,1.0,_NewZ_A)
+AND
+RealSubtract(_Z,1.0,_NewZ_B)
+AND
+CreateItemTemplateAtPosition("UNI_Dallis_Stage2_Hammer_0ed20f88-6b3e-44eb-bef8-b340dbf816c6",_X,_NewY,_NewZ_A,_Dallis1hHammer)
+AND
+CreateItemTemplateAtPosition("UNI_Dallis_Stage2_Shield_14983d61-a34d-46ff-8300-ad4a2f54246e",_X,_NewY,_NewZ_B,_Shield)
+THEN
+DB_DallisDefeatedItemDrop(_Dallis1hHammer);
+DB_DallisDefeatedItemDrop(_Shield);
+ProcIncreaseCounter("GLO_DallisDefeatedCounter");
+
+//First Kill
+PROC
+Proc_DallisLootInstantiate()
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",0)
+AND
+GetRegion(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+_Region != "ARX_EndGame"
+THEN
+DB_DallisLootInstantiate_QueueEquipmentTransform("UNI_Dallis_Stage2");
+
+PROC
+Proc_DallisLootInstantiate()
+AND
+DB_GlobalCounter("GLO_DallisDefeatedCounter",0)
+AND
+GetPosition(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_X,_Y,_Z)
+AND
+RealSum(_Y,0.5,_NewY)
+AND
+CreateItemTemplateAtPosition("QUEST_Dallis_WPN_Hammer_cfc41e62-faf6-48ac-8ac6-91eb4ede70fc",_X,_NewY,_Z,_DallisHammer)
+THEN
+DB_DallisDefeatedItemDrop(_DallisHammer);
+ProcIncreaseCounter("GLO_DallisDefeatedCounter");
+
+IF
+CharacterEnteredRegion(S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_Region)
+AND
+DB_DallisLootInstantiate_QueueEquipmentTransform(_EquipmentSet)
+THEN
+CharacterTransformAppearanceToWithEquipmentSet(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,_EquipmentSet,0);
+NOT DB_DallisLootInstantiate_QueueEquipmentTransform(_EquipmentSet);
+
+//END_REGION
+
+//REGION Dallis Transformation
+
+
+PROC
+Proc_DallisTransformAndLeave()
+THEN
+CharacterLaunchIteratorAroundObject(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,10.0,"DallisDragonFormKnockdown");
+
+
+PROC
+Proc_DallisTransformAndLeave()
+THEN
+PlayAnimation(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"cast_ground_start","FTJ_DallisDragonFormLeave");
+
+IF
+StoryEvent(_Char,"FTJ_DallisDragonFormLeave")
+THEN
+PlayAnimation(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"transform_and_fly","GEN_GoOffStage");
+TeleportTo(ITEMGUID_S_GLO_DallisDragonFormLeave_DragonSoundHelper_592ebc35-693f-44c0-872e-5ccc6a3bbd05,CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572);
+PlaySound(ITEMGUID_S_GLO_DallisDragonFormLeave_DragonSoundHelper_592ebc35-693f-44c0-872e-5ccc6a3bbd05,"Creatures_Dragon_ABC_Custom_Transform_From_Lizard_And_Fly_Out_01");
+
+/*
+IF
+StoryEvent(_Char,"FTJ_DallisDragonFormLeave_01")
+THEN
+PlayAnimation(_Char,"transform_and_fly","GEN_GoOffStage");
+*/
+
+IF
+StoryEvent((CHARACTERGUID)_Char,"DallisDragonFormKnockdown")
+AND
+_Char != NULL_00000000-0000-0000-0000-000000000000
+AND 
+_Char != CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572
+THEN
+ApplyStatus(_Char,"KNOCKED_DOWN",1.0,-1);
+Proc_ShakeCameraForTime(_Char,5000);
+
+IF
+StoryEvent(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"GEN_GoOffStage")
+THEN
+SetStoryEvent(CHARACTERGUID_S_GLO_Dallis_69b951dc-55a4-44b8-a2d5-5efedbd7d572,"ResetDragonForm");
+
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Start"

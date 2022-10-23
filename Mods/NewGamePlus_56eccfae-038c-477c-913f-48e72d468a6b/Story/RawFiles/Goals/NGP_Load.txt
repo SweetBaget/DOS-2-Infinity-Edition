@@ -1,0 +1,66 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_NGP_PlayersEndGame((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+DB_NGP_Trade((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+KBSECTION
+
+IF
+RequestTrade(_Character, _Trader)
+THEN
+PROC_NGP_ClearDB();
+DB_NGP_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character);
+
+PROC
+PROC_NGP_ClearDB()
+AND
+DB_NGP_Trade(_Trader, _Character)
+THEN
+NOT DB_NGP_Trade(_Trader, _Character);
+
+//Перезагружает игру после первого автосохранения для инициализации уровней предметов
+IF
+CharacterEnteredTrigger((CHARACTERGUID)_Character, 1e515f82-bab7-4b8a-9fbd-e9c58387b95a)
+AND
+GlobalGetFlag("NewGamePlus_Finish", _State)
+AND
+_State == 1
+THEN
+NGP_SubscribeRawInput();
+
+//При входе на локацию последнего боя, переносит всех персонажей в базу данных для переноса в следующую игру
+IF
+ReadyCheckPassed("ARX_EndGame")
+AND
+DB_IsPlayer(_Player)
+THEN
+DB_NGP_PlayersEndGame(_Player);
+
+//При выборе варианта перехода в новую игру плюс в последнем диалоге корабля, записывает все данные персонажей и загружает новую игру
+IF
+GlobalFlagSet("NGP_GoToNewGamePlus")
+THEN
+NGP_BeforeLoadGame();
+
+//После загрузки сохранения с тэгом "NewGamePlus", переносит все данные из записанных на новых персонажей (один раз)
+IF
+SavegameLoaded(_, _, _, _)
+AND
+GlobalGetFlag("NewGamePlus", _State)
+AND
+_State == 1
+AND
+GlobalGetFlag("NewGamePlus_Finish", _State2)
+AND
+_State2 == 0
+THEN
+NGP_AfterSaveGameLoaded();
+
+//После пробуждения игроков в стартовой сцене, активирует всех игроков
+PROC
+Proc_TUT_CheckPlayersWokenUp((CHARACTERGUID)_Player)
+THEN
+Proc_TUT_UnfreezePlayers();
+
+EXITSECTION
+ENDEXITSECTION

@@ -1,28 +1,18 @@
-local function CheckPress(bool)
-    Surface = Ext.StatGetAttribute("NRD_Trade", "SurfaceType")
-    rerollPrice = 0 - Ext.StatGetAttribute("NRD_Trade", "ForkLevels")
+Ext.RegisterNetListener("RV_RerollItems", function (channel, payload)
+    local data = Ext.Json.Parse(payload)
 
-    if Surface == "Water" then
-        Ext.StatSetAttribute("NRD_Trade", "SurfaceType", "Fire")
-        characterGold = CharacterGetGold(CharacterGetHostCharacter()) --Количество золота персонажа на данный момент
+    GUIDTradeInitiatorCharacter = Osi.CharacterGetHostCharacter()
+    GUIDSelectedCharacter = data.selectCharacter
 
-        if -characterGold > rerollPrice then --Если золота у персонажа не хватает, то не выполняем программу
-            print("Недостаточно золота для новой поставки")
-            return 0
-        end
-        CharacterAddGold(CharacterGetHostCharacter(), rerollPrice) --Забираем у игрока стоимость прокрута
-        return 1
-    else
+    local rerollPrice = 0 - data.rerollPrice
+    local characterGold = Osi.UserGetGold(GUIDSelectedCharacter) --Количество золота персонажа на данный момент
+
+    if -characterGold > rerollPrice then --Если золота у персонажа не хватает, то не выполняем программу
+        Ext.Net.PostMessageToClient(GUIDTradeInitiatorCharacter, "RV_NotEnoughGoldMessage", "RV_NotEnoughGoldMessage")
         return 0
-
     end
-end
-Ext.NewQuery(CheckPress, "NRD_CheckPress", "[in](STRING)_Surface, [out](INTEGER)_Bool");
+    Osi.UserAddGold(GUIDSelectedCharacter, rerollPrice) --Забираем у игрока стоимость прокрута
+    -- Ext.Net.PostMessageToClient(GUIDTradeInitiatorCharacter, "RV_SortMessage", "RV_SortMessage")
 
-local function SessionLoaded() --ДОБАВИТЬ ЕСЛИ ЭФФЕКТ ЕСТЬ ТО НЕ СРАБАТЫВАЕТ
-	local stat = Ext.CreateStat("NRD_Trade", "SkillData", "Rain_Water")
-    stat.SurfaceType = "Fire"
-    stat.ForkLevels = 1
-    Ext.SyncStat("NRD_Trade")
-end
-Ext.RegisterListener("SessionLoaded", SessionLoaded);
+    Osi.SetStoryEvent(GUIDSelectedCharacter, "RV_GoReroll") --Инициация рероллла
+end)

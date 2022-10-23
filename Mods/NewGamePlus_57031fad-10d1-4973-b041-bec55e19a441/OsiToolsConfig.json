@@ -1,9 +1,0 @@
-{
-    "RequiredExtensionVersion": 55,
-    "ModTable" : "NEWGAMEPLUS",
-    "FeatureFlags": [
-        "OsirisExtensions",
-        "Lua",
-	    "Preprocessor"
-    ]
-}

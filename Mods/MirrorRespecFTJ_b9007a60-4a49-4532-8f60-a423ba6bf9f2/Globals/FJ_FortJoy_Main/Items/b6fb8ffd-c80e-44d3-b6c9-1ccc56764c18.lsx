@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="3" minor="6" revision="6" build="0" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="22" value="b6fb8ffd-c80e-44d3-b6c9-1ccc56764c18" />
+					<attribute id="Name" type="23" value="S_CMP_FTJ_Mirror" />
+					<attribute id="LevelName" type="22" value="FJ_FortJoy_Main" />
+					<attribute id="IsGlobal" type="19" value="True" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="TemplateName" type="22" value="7c378f34-8c3e-4ecc-bcd2-d348eb39126a" />
+					<attribute id="BloodSurfaceType" type="22" value="SurfaceNone" />
+					<children>
+						<node id="Transform">
+							<attribute id="Scale" type="6" value="1" />
+							<attribute id="Position" type="12" value="70.65853 43.81335 601.4109" />
+							<attribute id="RotationQuat" type="13" value="0 0.7071068 0 0.7071067" />
+						</node>
+						<node id="LayerList">
+							<children>
+								<node id="Layers">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="22" value="FJ_FortJoy_Main" />
+											<children>
+												<node id="MapValue" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="8" />
+									<children>
+										<node id="Attributes" />
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="22" value="54f3b3e6-5a00-432a-93a8-3055e922105d" />
+											<attribute id="PlayOnHUD" type="19" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="1c90b06a-d293-476e-81b8-0e3a87aa1a12" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="PlayerPositionAfterCreation" />
+													<attribute id="Type" type="4" value="7" />
+													<attribute id="Value" type="23" value="S_CMP_FTJ_RespecReturn_8b7deeb8-5b50-481e-8686-22688b0324ac" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
