@@ -54,7 +54,6 @@
 	<content contentuid="hb77afffbg7654g48d5g9784g2e08bdaf7650">Повышает эффективность ремонта поврежденных предметов.</content>
 	<content contentuid="hb6ef5200g4cd4g48dag8006gac3dc3e8aa51">Увеличивает урон от атак в скрытном режиме на [2]%. Активация скрытности становится на [3] ОД дешевле.</content>
 	<content contentuid="hb33aa02dgbc3eg4f98g89e4gcf0876c381f5">Увеличивает общий урон на [2]%.</content>
-	<content contentuid="hb02edec5g0dedg4b21gb7b6gaf70873d9143">Повышает инициативу в начале боя на [2].</content>
 	<content contentuid="ha4c23394ge3d0g42d1ga894g577379e4e6f9">Дает вам иммунитет к оглушению.</content>
 	<content contentuid="ha43c6246g7c02g4281g8374g9cb63fbb2abf">Дает [2]% шанс, что ваше снаряжение не будет изнашиваться, когда вы наносите и получаете урон.</content>
 	<content contentuid="ha39edeecg8efbg4f58g970dg5cbbadec6df0">Накладывает эффект &quot;Ускорение&quot;, когда вы стоите на электрической поверхности.</content>
@@ -111,4 +110,6 @@
 	<content contentuid="h9819de28gc33bg4bc1gab21g5abcfe493da9">Дает вам [2] к телосложению.</content>
 	<content contentuid="h1bfdf2e6g55b2g4296gaf68g092d466df657">Дает вам [2] к телосложению и +[3] к силе.</content>
 	<content contentuid="hfb009de5g5552g49b2g8d31g80ca64be659e">Дает вам бонус в [2]% к шансу крит. удара и [3]% к множителю крит. урона.</content>
+	<content contentuid="hb02edec5g0dedg4b21gb7b6gaf70873d9143">Дает право первого хода в каждом бою.</content>
+	<content contentuid="hcbc9bb81g11d0g4297gb2a6g45d1dfb79290">Право первого хода</content>
 </contentList>

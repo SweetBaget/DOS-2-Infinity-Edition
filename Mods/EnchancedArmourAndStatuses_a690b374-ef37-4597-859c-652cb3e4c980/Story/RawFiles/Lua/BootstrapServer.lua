@@ -10,14 +10,19 @@ local ignoreStatuses = Set{
 	"SLEEPING",
 	"TAUNTED",
 	"CHARMED",
-	"MADNESS"
+	"MADNESS",
+	"PETRIFIED",
+	"DRAIN",
+	"SHACKLES_OF_PAIN"
 }
 
 local function CustomGetStatusChance_KCE(params)
 	local status = params.Status
 	if ignoreStatuses[status.StatusId] then return end
 	Ext.StatSetAttribute(status.StatusId, "SavingThrow", "None")
-	if status.CanEnterChance == 100 then status.ForceStatus = true end
+	if status.CanEnterChance == 100 then 
+		status.ForceStatus = true 
+	end
 	local isEnterCheck = params.IsEnterCheck
     local target = Ext.Entity.GetGameObject(status.TargetHandle)
     if target ~= nil and not target.Dead and not target:HasTag("GHOST") then
@@ -115,3 +120,20 @@ local function KCE_CalculateDamage(Character, origDamage, DamageHandle, DamageTy
 	return FinishArmor, FinishHealth
 end
 Ext.Osiris.NewQuery(KCE_CalculateDamage,"KCE_CalculateDamage","[in](CHARACTERGUID)_Character, [in](INTEGER)_Damage, [in](INTEGER64)_Handle, [in](STRING)_DamageType, [out](INTEGER)_FinishArmor, [out](INTEGER)_FinishHealth")
+
+
+local replaceStatuses = Set{
+	"KNOCKED_DOWN",
+	"STUNNED",
+	"FROZEN"
+}
+local function KCE_ApplyNewStatuses(target, statusName, handle, source)
+	if replaceStatuses[statusName] then
+		local status = Ext.GetStatus(target, handle)
+		local forceStatus = status.ForceStatus
+		local durationStatus = status.LifeTime
+		print("KCE_" .. statusName)
+		Osi.ApplyStatus(target, "KCE_" .. statusName, durationStatus, forceStatus, source)
+	end
+end
+Ext.Osiris.NewCall(KCE_ApplyNewStatuses,"KCE_ApplyNewStatuses","(CHARACTERGUID)_Target, (STRING)_StatusName, (INTEGER64)_Handle, (CHARACTERGUID)_Source")

@@ -39,6 +39,13 @@
 					<attribute id="Stub" type="19" value="True" />
 					<attribute id="UUID" type="22" value="Stats_Cycle_Earth_Air" />
 				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="28" handle="ls::TranslatedStringRepository::s_HandleUnknown" value="Right of first turn" />
+					<attribute id="ExtraData" type="23" value="" />
+					<attribute id="Speaker" type="22" value="" />
+					<attribute id="Stub" type="19" value="True" />
+					<attribute id="UUID" type="22" value="Stats_TALENT_Initiative" />
+				</node>
 			</children>
 		</node>
 	</region>

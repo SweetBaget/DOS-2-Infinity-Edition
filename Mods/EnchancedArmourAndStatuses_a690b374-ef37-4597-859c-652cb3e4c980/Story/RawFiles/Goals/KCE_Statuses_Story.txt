@@ -1,39 +1,32 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
+DB_KCE_FreezingChars();
 KBSECTION
 
 // ----------------------------
 // KnockedDown
 // ----------------------------
 IF //COMBAT
-NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KNOCKED_DOWN",_Handle,(CHARACTERGUID)_Causee)
+NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KCE_KNOCKED_DOWN",_Handle,(CHARACTERGUID)_Causee)
 AND
-CharacterIsInCombat(_Char, _Bool)
+CharacterIsInCombat(_Char, 1)
 AND
-_Bool == 1 //Персонаж в бою
-AND
-ObjectGetFlag(_Char, "TURNSTARTED", _FlagState)
-AND
-_FlagState < 1 //Сейчас не ход персонажа к которому применяется нокдаун
+ObjectGetFlag(_Char, "TURNSTARTED", 0) //Сейчас не ход персонажа к которому применяется нокдаун
 THEN
 ObjectSetFlag(_Char, "KNOCKED", 0);
 CharacterSetAnimationOverride(_Char, "knockdown_fall");
 PlayAnimation(_Char,"knockdown_loop", "KCE_TestEvent");
 
 IF
-NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KNOCKED_DOWN",_Handle,(CHARACTERGUID)_Causee)
+NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KCE_KNOCKED_DOWN",_Handle,(CHARACTERGUID)_Causee)
 AND
-CharacterIsInCombat(_Char, _Bool)
+CharacterIsInCombat(_Char, 1)
 AND
-_Bool == 1 //Персонаж в бою
-AND
-ObjectGetFlag(_Char, "TURNSTARTED", _FlagState)
-AND
-_FlagState > 0 //Сейчас ход персонажа к которому применяется нокдаун
+ObjectGetFlag(_Char, "TURNSTARTED", 1) //Сейчас ход персонажа к которому применяется нокдаун
 THEN
 CharacterSetAnimationOverride(_Char, "knockdown_fall");
-PlayAnimation(_Char,"knockdown_loop", "KCE_KNOCK_NONCOMBAT");
+PlayAnimation(_Char,"knockdown_loop", "");
 
 IF 
 ObjectTurnStarted((CHARACTERGUID)_Char)
@@ -48,7 +41,7 @@ AND
 _FlagState == 1
 THEN
 CharacterSetAnimationOverride(_Char, "knockdown_getup");
-PlayAnimation(_Char,"knockdown_getup","KCE_KD_Getup");
+PlayAnimation(_Char,"knockdown_getup","");
 CharacterSetAnimationOverride(_Char, "");
 ObjectClearFlag(_Char, "KNOCKED", 0);
 
@@ -58,26 +51,55 @@ THEN
 ObjectClearFlag(_Char, "TURNSTARTED", 0);
 
 IF //NON-COMBAT
-NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KNOCKED_DOWN",_Handle,(CHARACTERGUID)_Causee)
+NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KCE_KNOCKED_DOWN",_Handle,(CHARACTERGUID)_Causee)
 AND
-CharacterIsInCombat(_Char, _Bool)
+CharacterIsInCombat(_Char, 0)
 AND
-_Bool == 0
+String(_Char, _NameForTimer)
 THEN
+CharacterFreeze(_Char);
 CharacterSetAnimationOverride(_Char, "knockdown_fall");
-PlayAnimation(_Char,"knockdown_loop", "KCE_KNOCK_NONCOMBAT");
+PlayAnimation(_Char,"knockdown_loop", "");
+DB_KCE_FreezingChars((CHARACTERGUID)_Char, (STRING)_NameForTimer);
+TimerLaunch(_NameForTimer, 6000);
 
 IF
-CharacterStatusRemoved((CHARACTERGUID)_Char, "KNOCKED_DOWN", _)
+CharacterStatusRemoved((CHARACTERGUID)_Char, "KCE_KNOCKED_DOWN", _)
 AND
-CharacterIsInCombat(_Char, _Bool)
-AND
-_Bool == 0
+CharacterIsInCombat(_Char, 0)
 THEN
 CharacterSetAnimationOverride(_Char, "knockdown_getup");
-PlayAnimation(_Char,"knockdown_getup","KCE_1212");
+PlayAnimation(_Char,"knockdown_getup","");
 CharacterSetAnimationOverride(_Char, "");
 ObjectClearFlag(_Char, "KNOCKED", 0);
+
+
+IF
+NRD_OnStatusAttempt((CHARACTERGUID)_Char,"KCE_KNOCKED_DOWN",_,_)
+AND
+CharacterHasTalent((CHARACTERGUID)_Char, "TALENT_AttackOfOpportunity", 1)
+THEN
+NRD_CharacterDisableTalent((CHARACTERGUID)_Char, "TALENT_AttackOfOpportunity", 1);
+
+IF
+CharacterStatusRemoved((CHARACTERGUID)_Char, "KCE_KNOCKED_DOWN", _)
+AND
+CharacterHasTalent((CHARACTERGUID)_Char, "TALENT_AttackOfOpportunity", 1)
+THEN
+NRD_CharacterDisableTalent((CHARACTERGUID)_Char, "TALENT_AttackOfOpportunity", 0);
+
+IF
+TimerFinished(_FinishedTimerName)
+AND
+DB_KCE_FreezingChars((CHARACTERGUID)_Char, _FinishedTimerName)
+THEN
+NOT DB_KCE_FreezingChars(_Char, _FinishedTimerName);
+CharacterUnfreeze(_Char);
+
+IF
+NRD_OnStatusAttempt((CHARACTERGUID)_Char,_StatusName,_Handle,(CHARACTERGUID)_Causee)
+THEN
+KCE_ApplyNewStatuses((CHARACTERGUID)_Char,_StatusName,_Handle,(CHARACTERGUID)_Causee);
 
 EXITSECTION
 ENDEXITSECTION

@@ -1,29 +1,32 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_RV_Trade((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+DB_RV_Trade();
 KBSECTION
 
 IF
 StoryEvent(_Char, "RV_GoReroll")
 AND
-DB_RV_Trade(_Trader, _Character)
+DB_RV_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character)
 THEN
-CharacterClearTradeGeneratedItems(_Trader);
-GenerateItems(_Character, _Trader);
+DoGenTradeItems(_Character, _Trader);
 
 IF
 RequestTrade(_Character, _Trader)
 THEN
-PROC_RV_ClearDB();
 DB_RV_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character);
 
-PROC
-PROC_RV_ClearDB()
+IF
+ObjectFlagSet("StartTrade",(CHARACTERGUID)_Character,_Instance)
 AND
-DB_RV_Trade(_Trader, _Character)
+DB_DialogNPCs(_Instance, _Trader, 1)
 THEN
-NOT DB_RV_Trade(_Trader, _Character);
+DB_RV_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character);
+
+IF
+TradeEnds(_Character, _Trader)
+THEN
+NOT DB_RV_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character);
 
 EXITSECTION
 ENDEXITSECTION

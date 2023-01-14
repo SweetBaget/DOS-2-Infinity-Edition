@@ -74,3 +74,14 @@ data "DescriptionRef" "Raised as a zombie until status expires or character is r
 data "Icon" "CMP_Talents_Soulcatcher"
 data "FormatColor" "Green"
 
+new entry "TALENT_INITIATIVE"
+type "StatusData"
+data "StatusType" "CONSUME"
+data "ForGameMaster" "No"
+data "InitiateCombat" "No"
+data "DisplayName" "CYCLE_EARTH_AIR_DisplayName"
+data "DisplayNameRef" "Cycle of Earth and Air"
+data "FormatColor" "Green"
+data "StatsId" "Stats_TALENT_Initiative"
+data "StackId" "Stats_TALENT_Initiative"
+

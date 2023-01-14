@@ -6,11 +6,18 @@
         <node id="root">
             <children>
                 <node id="IconUV">
-                    <attribute id="MapKey" value="Talent_WildMage" type="22" />
-                    <attribute id="U1" value="0.000976563" type="6" />
-                    <attribute id="U2" value="0.249023" type="6" />
-                    <attribute id="V1" value="0.000976563" type="6" />
-                    <attribute id="V2" value="0.249023" type="6" />
+                    <attribute id="MapKey" value="TALENT_WildMag" type="22" />
+                    <attribute id="U1" value="0" type="6" />
+                    <attribute id="U2" value="0.25" type="6" />
+                    <attribute id="V1" value="0" type="6" />
+                    <attribute id="V2" value="0.25" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="TALENT_Initiative" type="22" />
+                    <attribute id="U1" value="0.25" type="6" />
+                    <attribute id="U2" value="0.5" type="6" />
+                    <attribute id="V1" value="0.25" type="6" />
+                    <attribute id="V2" value="0.5" type="6" />
                 </node>
             </children>
         </node>

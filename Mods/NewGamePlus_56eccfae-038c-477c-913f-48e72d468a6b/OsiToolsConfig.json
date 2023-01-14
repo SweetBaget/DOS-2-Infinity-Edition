@@ -1,6 +1,6 @@
 {
     "RequiredExtensionVersion": 56,
-    "ModTable" : "NewGamePluss",
+    "ModTable" : "NewGamePlus",
     "FeatureFlags": [
         "OsirisExtensions",
         "Lua",

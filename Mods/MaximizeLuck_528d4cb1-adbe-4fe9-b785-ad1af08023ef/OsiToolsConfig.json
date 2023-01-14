@@ -1,6 +1,6 @@
 {
-    "RequiredExtensionVersion": 56,
-    "ModTable": "EnchancedArmourAndStatuses",
+    "RequiredExtensionVersion": 57,
+    "ModTable": "MaximizeLuck",
     "FeatureFlags": [
         "OsirisExtensions",
         "Lua",

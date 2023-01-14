@@ -1,0 +1,3 @@
+new entry "KNOCKED_DOWN"
+type "StatusData"
+data "StatusType" "KNOCKED_DOWN"

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="3" minor="6" revision="6" build="0" />
+	<region id="TranslatedStringKeys">
+		<node id="root">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="28" handle="hdfa48bb0g5f7dg4756gb6c8g8835b5d8950c" value="Knocked Down" />
+					<attribute id="ExtraData" type="23" value="" />
+					<attribute id="Speaker" type="22" value="" />
+					<attribute id="Stub" type="19" value="True" />
+					<attribute id="UUID" type="22" value="Stats_KCE_KnockedDown" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="28" handle="hfb372aebg67b5g4336gb939g2c43d1ba610d" value="Stunned" />
+					<attribute id="ExtraData" type="23" value="" />
+					<attribute id="Speaker" type="22" value="" />
+					<attribute id="Stub" type="19" value="True" />
+					<attribute id="UUID" type="22" value="Stats_KCE_Stunned" />
+				</node>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="28" handle="h07a85ff5g0167g4189g9033gf91fd00071aa" value="Frozen" />
+					<attribute id="ExtraData" type="23" value="" />
+					<attribute id="Speaker" type="22" value="" />
+					<attribute id="Stub" type="19" value="True" />
+					<attribute id="UUID" type="22" value="Stats_KCE_Frozen" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

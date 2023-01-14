@@ -1,0 +1,8 @@
+new entry "FROZEN"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+
+new entry "STUNNED"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+

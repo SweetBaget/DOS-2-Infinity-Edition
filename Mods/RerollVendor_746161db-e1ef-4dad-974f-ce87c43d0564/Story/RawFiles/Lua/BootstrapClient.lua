@@ -30,7 +30,7 @@ end
 Ext.RegisterNetListener("RV_NotEnoughGoldMessage", function ()
     local GUI_36 = Ext.UI.GetByType(36)
     ErrorMessage = Ext.L10N.GetTranslatedString("h06d24f60ga616g453cg8922g4fe8b4b924b0")
-    GUI_36:Invoke("showCastNot", "<font color=\"#C80030\">".. ErrorMessage ..  "</font>", 1.5, 148)
+    GUI_36:Invoke("showCastNot", "<font color=\"#C80030\">".. ErrorMessage ..  "</font>", 1.5, 148) 
 end)
 
 Ext.RegisterUITypeCall(46, "rerollItems", function(ui)
@@ -65,11 +65,19 @@ Ext.Events.UIObjectCreated:Subscribe(function (e)
 end)
 
 -- Ext.Events.UICall:Subscribe(function (e)
---     if e.Function ~= "registerAnchorId" then return end
+--     if e.Function == "registerAnchorId" then return end
+--     if e.Function == "update" then return end
+--     if e.Function == "updateStatuses" then return end
+--     if e.Function == "removeLabel" then return end
+--     if e.Function == "updateSlotData" then return end
 --     Ext.Utils.Print("Call", e.UI.Type, e.Function, e.Args[1], e.Args[2], e.Args[3], e.Args[4], e.Args[5])
 -- end)
 
 -- Ext.Events.UIInvoke:Subscribe(function (e)
---     if e.Function ~= "registerAnchorId" then return end
+--     if e.Function == "registerAnchorId" then return end
+--     if e.Function == "update" then return end
+--     if e.Function == "updateStatuses" then return end
+--     if e.Function == "removeLabel" then return end
+--     if e.Function == "updateSlotData" then return end
 --     Ext.Utils.Print(e.UI.Type, e.Function, e.Args[1], e.Args[2], e.Args[3], e.Args[4], e.Args[5])
 -- end)

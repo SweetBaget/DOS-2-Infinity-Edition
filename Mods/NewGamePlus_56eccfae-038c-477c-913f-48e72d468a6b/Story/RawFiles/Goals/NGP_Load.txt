@@ -1,8 +1,8 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_NGP_PlayersEndGame((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
-DB_NGP_Trade((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+DB_NGP_PlayersEndGame();
+DB_NGP_Trade();
 KBSECTION
 
 IF
@@ -14,7 +14,7 @@ DB_NGP_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character);
 PROC
 PROC_NGP_ClearDB()
 AND
-DB_NGP_Trade(_Trader, _Character)
+DB_NGP_Trade((CHARACTERGUID)_Trader, (CHARACTERGUID)_Character)
 THEN
 NOT DB_NGP_Trade(_Trader, _Character);
 
@@ -61,6 +61,14 @@ PROC
 Proc_TUT_CheckPlayersWokenUp((CHARACTERGUID)_Player)
 THEN
 Proc_TUT_UnfreezePlayers();
+
+IF
+// StoryEvent(_Obj, _Event)
+CharacterStartAttackPosition(_, _, _, _, _)
+// AND
+// _Event == "LOL"
+THEN
+NGP_BeforeLoadGame();
 
 EXITSECTION
 ENDEXITSECTION

@@ -24,3 +24,10 @@ data "EarthSpecialist" "2"
 data "Duration" "1"
 data "StatusIcon" "Skill_Water_FalseLife"
 
+new entry "Stats_TALENT_Initiative"
+type "Potion"
+data "Act" "1"
+data "Act part" "0"
+data "Initiative" "999"
+data "Duration" "-1"
+

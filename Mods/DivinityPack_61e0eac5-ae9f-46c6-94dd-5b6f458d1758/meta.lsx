@@ -9,7 +9,7 @@
                 <node id="ModuleInfo">
                     <attribute id="Author" value="SweetBaget" type="30" />
                     <attribute id="CharacterCreationLevelName" value="" type="22" />
-                    <attribute id="Description" value="Small game features Небольший игровые изменения, недотягивающие до отдельного мода" type="30" />
+                    <attribute id="Description" value="Баланс игры" type="30" />
                     <attribute id="DescriptionName" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
                     <attribute id="DisplayName" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
                     <attribute id="Folder" value="DivinityPack_61e0eac5-ae9f-46c6-94dd-5b6f458d1758" type="30" />
@@ -34,6 +34,12 @@
                             <children>
                                 <node id="Target">
                                     <attribute id="Object" value="Story" type="22" />
+                                </node>
+                                <node id="Target">
+                                    <attribute id="Object" value="Arena" type="22" />
+                                </node>
+                                <node id="Target">
+                                    <attribute id="Object" value="GM" type="22" />
                                 </node>
                             </children>
                         </node>

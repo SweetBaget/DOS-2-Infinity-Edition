@@ -1,0 +1,25 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+KBSECTION
+
+IF
+ObjectTurnStarted(_Object)
+AND
+ObjectIsCharacter(_Object, 1)
+AND
+CharacterHasTalent((CHARACTERGUID)_Object, "Initiative", 1)
+THEN
+RemoveStatus(_Object, "TALENT_INITIATIVE");
+
+IF
+ObjectEnteredCombat(_Object, _)
+AND
+ObjectIsCharacter(_Object, 1)
+AND
+CharacterHasTalent((CHARACTERGUID)_Object, "Initiative", 1)
+THEN
+ApplyStatus(_Object, "TALENT_INITIATIVE", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+EXITSECTION
+ENDEXITSECTION

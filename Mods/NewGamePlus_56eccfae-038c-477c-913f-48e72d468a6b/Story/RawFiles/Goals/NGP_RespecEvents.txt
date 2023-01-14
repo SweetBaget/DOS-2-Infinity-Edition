@@ -2,8 +2,8 @@ Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
 DB_CharToPlayerInfo((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
-DB_AlreadyUsedCharsForStats((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
-DB_NGP_CharacterToRaceChange((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "");
+DB_AlreadyUsedCharsForStats();
+DB_NGP_CharacterToRaceChange();
 KBSECTION
 
 //Добавляет в базу данных персонажа который сейчас должен быть в зеркале
@@ -35,7 +35,7 @@ TimerFinished("NGP_ForProc")
 AND
 QueryOnlyOnce("NGP_CHANGE_RACES")
 AND
-DB_NGP_CharacterToRaceChange(_playerGUID, _playerRace)
+DB_NGP_CharacterToRaceChange((CHARACTERGUID)_playerGUID, (STRING)_playerRace)
 THEN
 CharacterApplyRacePreset(_playerGUID, _playerRace);
 
@@ -43,7 +43,7 @@ CharacterApplyRacePreset(_playerGUID, _playerRace);
 IF
 TimerFinished("NGP_ForProc2")
 AND
-DB_CharToPlayerInfo(_Player, _PlayerTemplate, _)
+DB_CharToPlayerInfo((CHARACTERGUID)_Player, (CHARACTERGUID)_PlayerTemplate, (CHARACTERGUID)_)
 AND
 NOT DB_AlreadyUsedCharsForStats(_Player)
 THEN
@@ -143,7 +143,7 @@ NGP_LevelUpRegion();
 PROC
 PROC_NGP_GiveItemsToChars()
 AND
-DB_CharToPlayerInfo(_CurrentPlayer, _, _PlayerPastGame)
+DB_CharToPlayerInfo((CHARACTERGUID)_CurrentPlayer, (CHARACTERGUID)_, (CHARACTERGUID)_PlayerPastGame)
 THEN
 NGP_GiveItemsToChar(_CurrentPlayer, _PlayerPastGame);
 

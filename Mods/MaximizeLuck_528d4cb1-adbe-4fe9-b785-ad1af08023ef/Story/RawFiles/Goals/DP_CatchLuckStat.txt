@@ -1,0 +1,15 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_HieghestLuck(1);
+TimerLaunch("DP_CatchLuckStat", 5000);
+KBSECTION
+
+IF
+TimerFinished("DP_CatchLuckStat")
+THEN
+DP_CatchLuckStat();
+TimerLaunch("DP_CatchLuckStat", 5000);
+
+EXITSECTION
+ENDEXITSECTION

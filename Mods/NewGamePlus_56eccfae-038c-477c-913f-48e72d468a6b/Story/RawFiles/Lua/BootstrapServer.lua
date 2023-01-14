@@ -101,11 +101,13 @@ local function checkContainer(itemGUID)
     return GUID_list
 end
 
-local function BeforeSaveLoad()
+local function BeforeLoadGame()
     local charConstructs = {}
     for i, playerGUID in pairs(Osi.DB_NGP_PlayersEndGame:Get(nil)) do
     -- for i, playerGUID in pairs(Osi.DB_IsPlayer:Get(nil)) do
         playerGUID = playerGUID[1]
+        print(playerGUID)
+        if playerGUID == "NULL_00000000-0000-0000-0000-000000000000" then goto nextchar end
         local esvCharacter = Ext.Entity.GetCharacter(playerGUID)
         local playerInventory = esvCharacter:GetInventoryItems()
 
@@ -205,6 +207,7 @@ local function BeforeSaveLoad()
         charStats["playerSourcePoints"] = Osi.CharacterGetMaxSourcePoints(playerGUID)
         charStats["GameDifficulty"] = Ext.Utils.GetGlobalSwitches().Difficulty
         charConstructs[esvCharacter.MyGuid] = charStats
+        ::nextchar::
     end
 
     local LV_Chest_Data = {}
@@ -258,7 +261,7 @@ local function BeforeSaveLoad()
 
     Osi.LoadGame("_NEWGAMEPLUS_")
 end
-Ext.Osiris.NewCall(BeforeSaveLoad, "NGP_BeforeLoadGame", "")
+Ext.Osiris.NewCall(BeforeLoadGame, "NGP_BeforeLoadGame", "")
 
 local function AfterSaveLoaded(...)
     local charConstructs = Ext.Json.Parse(Ext.IO.LoadFile("charConstructs.json"))
@@ -319,6 +322,7 @@ local function AfterSaveLoaded(...)
         local playerCharTemplate = playerInfo.playerCharTemplate
         local playerLevel = playerInfo.playerLevel
         local playerRace = playerInfo.playerRace
+        print(playerGUID, playerCharTemplate, playerRootGUID)
         Osi.DB_CharToPlayerInfo(playerGUID, playerCharTemplate, playerRootGUID)
 
         --Устанавливает количество очков истока
@@ -620,6 +624,7 @@ end
 Ext.Osiris.NewCall(LevelUpRegion, "NGP_LevelUpRegion", "")
 
 local function GiveItemsToChar(CharForItems, CharFromPastGame)
+    print(CharForItems, CharFromPastGame)
     if CharForItems == "NULL_00000000-0000-0000-0000-000000000000" then return end
     local charConstructs = Ext.Json.Parse(Ext.IO.LoadFile("charConstructs.json"))
     local itemConstructs
@@ -634,7 +639,11 @@ local function GiveItemsToChar(CharForItems, CharFromPastGame)
         if pcall(function() local j = Osi.DB_MOD_ContainerIDs:Get(itemRoot) end) then
             ItemIsContainer = Osi.DB_MOD_ContainerIDs:Get(itemRoot)
         end
-        if ItemIsContainer then goto skipitem2 end
+        if ItemIsContainer then
+            if ItemIsContainer[1] then
+                goto skipitem2 
+            end
+        end
         local Amount = item.Amount
         local GenerationBoosts = item.GenerationBoosts
         local GenerationBoostSet = item.GenerationBoostSet
@@ -734,6 +743,7 @@ end
 Ext.Osiris.NewCall(GiveItemsToChar, "NGP_GiveItemsToChar", "(CHARACTERGUID)_C, (CHARACTERGUID)_P")
 
 local function GiveStatsForChar(CharForItems, CharTemplate)
+    if CharForItems == "NULL_00000000-0000-0000-0000-000000000000" then return end
     local charConstructs = Ext.Json.Parse(Ext.IO.LoadFile("charConstructs.json"))
     local playerTalents = {}
     local playerPowerups = {}
